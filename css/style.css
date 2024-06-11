@@ -1,11 +1,13 @@
+@charset "UTF-8";
 html,
 body {
   color: #000000;
-  font-family: "BIZ UDPGothic", sans-serif;
+  font-family: "Zen Maru Gothic", sans-serif;
   font-size: 16px;
   font-weight: "";
   letter-spacing: "";
   line-height: "";
+  background-color: #fcf9ed;
 }
 
 h1,
@@ -14,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #202020;
+  color: #212121;
   font-weight: 400;
   letter-spacing: "";
   line-height: "";
@@ -28,8 +30,17 @@ h1 {
   line-height: 3rem; /* 100% */
 }
 
-p {
-  margin: 2em 0;
+h2 {
+  font-size: 2rem;
+  line-height: 3rem; /* 100% */
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
 }
 
 a {
@@ -74,52 +85,205 @@ img {
   max-width: 100%;
 }
 
+.header {
+  background-color: #fcf9ed;
+  margin-bottom: 3.31rem;
+}
 .header__inner {
-  width: 93%;
-}
-.header__top {
-  display: flex;
-}
-.header__gnav {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 0;
-  margin-left: auto;
-  padding: 24px 0 24px 40px;
-  gap: 20px;
-}
-.header__gnav--link {
-  display: block;
-  color: #202020;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.firstView {
   width: 93%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: auto;
-  margin-bottom: 10px;
+  padding-top: 1.56rem;
 }
-.firstView__exText {
+.header__top {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem 2.5rem;
+  background-color: #fff;
+  border-radius: 5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__top--image {
+  width: 10rem;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 1.56rem;
+}
+.header__gnav {
+  display: none;
+}
+.header__gnav--link {
+  display: block;
+  color: #212121;
+  font-weight: bold;
   font-size: 1rem;
+  color: #76604e;
+}
+.header__gnav--link:hover {
+  color: #dc6b19;
+  transition: 0.3s;
+}
+
+@media screen and (min-width: 390px) {
+  .header {
+    background-color: #fcf9ed;
+    margin-bottom: 3.31rem;
+  }
+  .header__inner {
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.56rem;
+  }
+  .header__top {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem 2.5rem;
+    background-color: #fff;
+    border-radius: 5rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header__top--image {
+    width: 10rem;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 1.56rem;
+  }
+  .header__gnav {
+    display: flex;
+    gap: 2.5rem;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  .header__gnav--link {
+    display: block;
+    color: #212121;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #76604e;
+  }
+  .header__gnav--link:hover {
+    color: #dc6b19;
+    transition: 0.3s;
+  }
+}
+@-webkit-keyframes draw {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+path {
+  stroke: black;
+  stroke-width: 2;
+  fill: none;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: draw 5s linear forwards;
+          animation: draw 5s linear forwards;
+}
+
+.firstView__content {
+  display: flex;
+  justify-content: space-between;
+}
+.firstView__content--image {
+  height: 100vh;
+  border-radius: 0rem 18.96875rem 1.5rem 0rem;
+  background: url(../images/firstView.jpg) lightgray 50%/cover no-repeat;
+  width: 79%;
+}
+.topInfo {
+  position: absolute;
+  background-color: #ffffff;
+  bottom: 0;
+  right: 0;
+  padding: 1.5rem;
+  border-radius: 1.25rem 0rem 0rem 1.25rem;
+  display: flex;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+  color: #5d4a3a;
+}
+.topInfo::before {
+  content: "もうすぐ開催";
+  position: absolute;
+  top: -1.4rem;
+  left: 2.38rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #dc6b19;
+  border-radius: 6.25rem;
+  color: #fff;
+  padding: 0.25rem 1rem;
+}
+.topInfo__day {
+  font-family: "BIZ UDPGothic";
+}
+.topInfo__day--year {
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 2rem; /* 200% */
-  margin-top: 1.56rem;
+  line-height: 1.25rem;
+  margin-bottom: 0.5rem;
 }
-.firstView .svg-wrap {
-  position: rerative;
-  overflow: hidden;
+.topInfo__day--month {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem; /* 100% */
+}
+.topInfo__day--month .small {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+.topInfo__title {
+  font-family: "BIZ UDPGothic";
+}
+.topInfo__title--text {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.125rem; /* 170% */
+  padding-right: 3rem;
+}
+.topInfo__title--detail {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3rem; /* 130% */
+}
+
+.opening {
+  margin-top: 6.8rem;
+}
+.opening__parts {
+  background-color: #dc6b19;
+  padding: 3.5rem 0;
+  width: 66%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.opening__parts--title {
   text-align: center;
-  max-width: 700px;
-  width: 100%;
-  margin: 0 auto;
-}
-.firstView .svg-wrap .svg {
-  margin: -8% auto 0;
-  width: 90%;
-  height: 100%;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
