@@ -8,7 +8,7 @@ $color-white: #ffffff;
 $color-brown: #5d4a3a;
 
 $breakpoints: (
-  "sm": "screen and (min-width: 390px)",
+  "sm": "screen and (min-width: 391px)",
   "md": "screen and (min-width: 768px)",
   "lg": "screen and (min-width: 992px)",
   "xl": "screen and (min-width: 1200px)",
@@ -127,6 +127,8 @@ img {
     border-radius: 5rem;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0px 0px 20px 0px rgba(55, 23, 0, 0.05);
+    z-index: 100;
     &--image {
       width: 10rem;
       height: auto;
@@ -136,7 +138,6 @@ img {
   }
   &__gnav {
     display: none;
-
     &--link {
       display: block;
       color: $color-black;
@@ -147,6 +148,16 @@ img {
         color: $color-main;
         transition: 0.3s;
       }
+    }
+  }
+  &__menu {
+    display: none;
+    background-color: $color-main;
+    width: 100%;
+    height: 100vh;
+    z-index: 50;
+    &.open {
+      display: block;
     }
   }
 }
@@ -197,49 +208,73 @@ img {
   }
 }
 
-@keyframes draw {
-  from {
-    stroke-dashoffset: 1000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-path {
-  stroke: black;
-  stroke-width: 2;
-  fill: none;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: draw 5s linear forwards;
-}
-
 .firstView {
   &__content {
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    margin-bottom: 3.69rem;
+    @include mx;
     &--image {
       height: 100vh;
       border-radius: 0rem 18.96875rem 1.5rem 0rem;
       background: url(../images/firstView.jpg) lightgray 50% / cover no-repeat;
       width: 79%;
+      margin-bottom: 3.8rem;
     }
     &--text {
+      @include mx;
+      width: 83%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.firstView {
+  @include media("sm") {
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      &--image {
+        height: 100vh;
+        border-radius: 0rem 18.96875rem 1.5rem 0rem;
+        background: url(../images/firstView.jpg) lightgray 50% / cover no-repeat;
+        width: 79%;
+      }
+      &--text {
+        width: 50%;
+        padding: 5rem 3rem;
+        background-color: $color-main;
+        border-radius: 1.5rem;
+        color: #fff;
+        &--title {
+          font-size: 2.5rem;
+          font-weight: 700;
+          margin-bottom: 1.5rem;
+        }
+        &--detail {
+          font-size: 1.25rem;
+          font-weight: 400;
+          line-height: 1.5rem;
+        }
+      }
     }
   }
 }
 
 .topInfo {
-  position: absolute;
+  position: relative;
   background-color: $color-white;
-  bottom: 0;
-  right: 0;
   padding: 1.5rem;
   border-radius: 1.25rem 0rem 0rem 1.25rem;
   display: flex;
+  flex-direction: column;
   column-gap: 5rem;
+  row-gap: 1.75rem;
   color: $color-brown;
+  width: 83%;
+  @include mx;
+  margin-bottom: 3.62rem;
   &::before {
     content: "もうすぐ開催";
     position: absolute;
@@ -291,16 +326,197 @@ path {
   }
 }
 
+@include media("sm") {
+  .topInfo {
+    position: absolute;
+    background-color: $color-white;
+    bottom: 0;
+    right: 0;
+    padding: 1.5rem;
+    border-radius: 1.25rem 0rem 0rem 1.25rem;
+    display: flex;
+    column-gap: 5rem;
+    color: $color-brown;
+    &::before {
+      content: "もうすぐ開催";
+      position: absolute;
+      top: -1.4rem;
+      left: 2.38rem;
+      width: fit-content;
+      background-color: $color-main;
+      border-radius: 6.25rem;
+      color: #fff;
+      padding: 0.25rem 1rem;
+    }
+    &__day {
+      font-family: "BIZ UDPGothic";
+      &--year {
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.25rem;
+        margin-bottom: 0.5rem;
+      }
+      &--month {
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.5rem; /* 100% */
+        .small {
+          font-size: 1.25rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 2.5rem;
+        }
+      }
+    }
+    &__title {
+      font-family: "BIZ UDPGothic";
+      &--text {
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.125rem; /* 170% */
+        padding-right: 3rem;
+      }
+      &--detail {
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3rem; /* 130% */
+      }
+    }
+  }
+}
+
 .opening {
-  margin-top: 6.8rem;
   &__parts {
+    border-radius: 1.5rem;
     background-color: $color-main;
-    padding: 3.5rem 0;
-    width: 66%;
+    padding: 3.5rem 2rem;
     @include mx;
+    width: 83%;
+    margin-bottom: 2.5rem;
     &--title {
       text-align: center;
       color: #fff;
+      margin-bottom: 1.5rem;
+    }
+    &--text {
+      align-self: stretch;
+      font-family: "BIZ UDPGothic";
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.8rem; /* 180% */
+      color: #fff;
+      margin-bottom: 2.5rem;
+    }
+    &--button {
+      background-color: $color-white;
+      width: fit-content;
+      border-radius: 6.25rem;
+      padding: 1rem 2.5rem;
+      @include mx;
+      color: $color-main;
+      &---text {
+        font-family: "BIZ UDPGothic";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2rem; /* 200% */
+      }
+      i {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+@include media("sm") {
+  .opening {
+    margin-top: 6.8rem;
+    &__parts {
+      background-color: $color-main;
+      padding: 3.5rem 0;
+      width: 66%;
+      @include mx;
+      &--title {
+        text-align: center;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.section__title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3.69rem;
+  &::after {
+    content: "";
+    top: 100%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    background-color: $color-main;
+    border-radius: 25px;
+  }
+}
+
+.event {
+  background-color: $color-white;
+  padding-top: 6.5rem;
+  padding-bottom: 6.5rem;
+
+  &__image--box {
+    margin-bottom: 2.5rem;
+  }
+
+  &__image {
+    margin-bottom: 0.5rem;
+  }
+  &__name {
+    text-align: right;
+    font-size: 0.9375rem;
+  }
+
+  &__detail {
+    margin-bottom: 2.5rem;
+    width: 83%;
+    @include mx;
+    &--copy {
+      font-family: "Zen Maru Gothic";
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 2.4rem; /* 120% */
+      color: $color-brown;
+      margin-bottom: 1.5rem;
+    }
+    &--text {
+    }
+  }
+  &__parts {
+    &--button {
+      background-color: $color-main;
+      width: fit-content;
+      border-radius: 6.25rem;
+      padding: 1rem 2.5rem;
+      @include mx;
+      color: $color-white;
+      &---text {
+        font-family: "BIZ UDPGothic";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2rem; /* 200% */
+      }
+      i {
+        margin-left: 0.5rem;
+      }
     }
   }
 }
