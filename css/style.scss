@@ -2,13 +2,13 @@
 
 $color-black: #212121;
 $color-gray: #e9e9e9;
-$color-main: #dc6b19;
+$color-main: #ff7f3e;
 $color-base2: #fcf9ed;
 $color-white: #ffffff;
 $color-brown: #5d4a3a;
 
 $breakpoints: (
-  "sm": "screen and (min-width: 391px)",
+  "sm": "screen and (min-width: 431:ppx)",
   "md": "screen and (min-width: 768px)",
   "lg": "screen and (min-width: 992px)",
   "xl": "screen and (min-width: 1200px)",
@@ -454,15 +454,23 @@ img {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 3.69rem;
-  &::after {
+  margin-inline: auto;
+  width: fit-content;
+  position: relative;
+  &::before {
+    display: block;
+    margin-inline: auto;
     content: "";
-    top: 100%;
-    left: 50%;
-    width: 10px;
+    top: -4rem;
+    left: 0%;
+    width: 100%;
     height: 10px;
     z-index: 1;
-    background-color: $color-main;
-    border-radius: 25px;
+    margin-top: 1rem;
+    font-size: 15px;
+    color: $color-main;
+    position: absolute;
+    font-family: "BIZ UDPGothic";
   }
 }
 
@@ -470,6 +478,29 @@ img {
   background-color: $color-white;
   padding-top: 6.5rem;
   padding-bottom: 6.5rem;
+  border-radius: 2.5rem 2.5rem 0rem 0rem;
+
+  &__title {
+    font-family: "Zen Maru Gothic";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.5rem;
+    &::before {
+      display: block;
+      margin-inline: auto;
+      content: ".event";
+      top: -4rem;
+      left: 0%;
+      width: 100%;
+      height: 10px;
+      z-index: 1;
+      margin-top: 1rem;
+      font-size: 15px;
+      color: $color-main;
+      position: absolute;
+    }
+  }
 
   &__image--box {
     margin-bottom: 2.5rem;
@@ -487,6 +518,7 @@ img {
     margin-bottom: 2.5rem;
     width: 83%;
     @include mx;
+    color: $color-brown;
     &--copy {
       font-family: "Zen Maru Gothic";
       font-size: 2rem;
@@ -497,8 +529,184 @@ img {
       margin-bottom: 1.5rem;
     }
     &--text {
+      font-family: "BIZ UDPGothic";
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.8rem; /* 180% */
     }
   }
+  &__parts {
+    &--button {
+      background-color: $color-main;
+      width: fit-content;
+      border-radius: 6.25rem;
+      padding: 1rem 2.5rem;
+      @include mx;
+      color: $color-white;
+      &---text {
+        font-family: "BIZ UDPGothic";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2rem; /* 200% */
+      }
+      i {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+.storeInfo {
+  background-color: $color-white;
+  padding-top: 6.5rem;
+  padding-bottom: 6.5rem;
+
+  &__title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3.69rem;
+    margin-inline: auto;
+    width: fit-content;
+    position: relative;
+    &::before {
+      display: block;
+      margin-inline: auto;
+      content: "Shop";
+      top: -4rem;
+      left: 0%;
+      width: 100%;
+      height: 10px;
+      z-index: 1;
+      margin-top: 1rem;
+      font-size: 15px;
+      color: $color-main;
+      position: absolute;
+    }
+  }
+
+  &__text {
+    width: 83%;
+    @include mx;
+    color: $color-brown;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.8rem; /* 180% */
+    margin-bottom: 2.5rem;
+  }
+}
+
+.bg-main {
+  background-color: $color-base2;
+}
+
+.latestInfo {
+  padding-top: 6.5rem;
+  padding-bottom: 6.5rem;
+  font-family: "Zen Maru Gothic";
+
+  &__title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3.69rem;
+    margin-inline: auto;
+    width: fit-content;
+    position: relative;
+    &::before {
+      content: "News";
+      top: -3rem;
+      left: 0%;
+      width: 100%;
+      height: 10px;
+      z-index: 1;
+      margin-top: 1rem;
+      font-size: 15px;
+      color: $color-main;
+      position: absolute;
+    }
+  }
+
+  &__text {
+    width: 83%;
+    @include mx;
+    color: $color-brown;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.8rem; /* 180% */
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+
+  &__parts {
+    &--button {
+      background-color: $color-main;
+      width: fit-content;
+      border-radius: 6.25rem;
+      padding: 1rem 2.5rem;
+      @include mx;
+      color: $color-white;
+      &---text {
+        font-family: "BIZ UDPGothic";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2rem; /* 200% */
+      }
+      i {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+.about {
+  &__imagebox {
+    border-radius: 0rem 1.5rem 1.5rem 0rem;
+    background: url(/images/firstView.jpg) lightgray 50% / cover no-repeat;
+    flex-shrink: 0;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3.69rem;
+    margin-inline: auto;
+    width: fit-content;
+    position: relative;
+    color: $color-brown;
+    &::before {
+      content: "About";
+      top: -3rem;
+      left: 0%;
+      width: 100%;
+      height: 10px;
+      z-index: 1;
+      margin-top: 1rem;
+      font-size: 15px;
+      color: $color-main;
+      position: absolute;
+      font-family: "BIZ UDPGothic";
+    }
+  }
+  &__text {
+    font-family: "BIZ UDPGothic";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.75rem; /* 300% */
+    color: $color-brown;
+    margin-bottom: 2.5rem;
+    width: 83%;
+    @include mx;
+    text-align: center;
+  }
+
   &__parts {
     &--button {
       background-color: $color-main;
