@@ -32,9 +32,6 @@ img {
 
 .event__content {
     display: flex;
-    width: 80.0625rem;
-    align-items: flex-start;
-    gap: 5rem;
 
     &__image {
         height: 436px;
@@ -57,10 +54,10 @@ img {
         &__text p {
             color: $color-main;
             font-family: "BIZ UDPGothic";
-            font-size: 0.9375rem;
+            font-size: 15px;
             font-style: normal;
             font-weight: 700;
-            line-height: 1.5rem;
+            line-height: 24px;
             /* 160% */
         }
     }
