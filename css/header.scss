@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+$color-black: #212121;
+$color-gray: #e9e9e9;
+$color-main: #ff7f3e;
+$color-base2: #fcf9ed;
+$color-white: #ffffff;
+$color-brown: #5d4a3a;
+$color-skyblue: #80c4e9;
+
+$breakpoints: (
+  "sm": "screen and (min-width: 430px)",
+  "md": "screen and (min-width: 768px)",
+  "lg": "screen and (min-width: 992px)",
+  "xl": "screen and (min-width: 1200px)",
+) !default;
+
+@mixin mx {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin media($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+.header {
+  background-color: $color-base2;
+  margin-bottom: 3.31rem;
+  &__inner {
+    width: 93%;
+    @include mx;
+    padding-top: 1.56rem;
+  }
+  &__top {
+    display: flex;
+    @include mx;
+    padding: 1.5rem 2.5rem;
+    background-color: #fff;
+    border-radius: 5rem;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 20px 0px rgba(55, 23, 0, 0.05);
+    z-index: 100;
+    &--image {
+      width: 23%;
+      min-width: 70px;
+      height: auto;
+      border-radius: 50%;
+      margin-right: 1.56rem;
+    }
+  }
+  &__gnav {
+    display: none;
+    &--link {
+      display: block;
+      color: $color-black;
+      font-weight: bold;
+      font-size: 1rem;
+      color: #76604e;
+      &:hover {
+        color: $color-main;
+        transition: 0.3s;
+      }
+    }
+  }
+  &__menu {
+    display: none;
+    background-color: $color-main;
+    width: 100%;
+    height: 100vh;
+    z-index: 50;
+    &.open {
+      display: block;
+    }
+  }
+  &__menuButton {
+    &--image {
+      min-width: 50px;
+    }
+  }
+}
+
+@include media("md") {
+  .header {
+    background-color: $color-base2;
+    margin-bottom: 3.31rem;
+    &__inner {
+      width: 93%;
+      @include mx;
+      padding-top: 1.56rem;
+    }
+    &__top {
+      display: flex;
+      @include mx;
+      padding: 1.5rem 2.5rem;
+      background-color: #fff;
+      border-radius: 5rem;
+      align-items: center;
+      justify-content: space-between;
+      &--image {
+        width: 10%;
+        max-width: 7rem;
+        height: auto;
+        border-radius: 50%;
+        margin-right: 1.56rem;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &__gnav {
+      display: flex;
+      gap: 2.5rem;
+      width: 100%;
+      align-items: center;
+      justify-content: flex-end;
+      &--link {
+        display: block;
+        color: $color-black;
+        font-weight: 700;
+        font-size: 1rem;
+        color: #76604e;
+        &:hover {
+          color: $color-main;
+          transition: 0.3s;
+        }
+        .fa-instagram {
+          color: $color-white;
+          background-color: $color-main;
+          border-radius: 25px;
+          padding: 0.69rem;
+        }
+      }
+    }
+
+    &__menuButton {
+      display: none;
+    }
+  }
+}

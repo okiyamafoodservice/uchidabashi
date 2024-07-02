@@ -6,9 +6,10 @@ $color-main: #ff7f3e;
 $color-base2: #fcf9ed;
 $color-white: #ffffff;
 $color-brown: #5d4a3a;
+$color-skyblue: #80c4e9;
 
 $breakpoints: (
-  "sm": "screen and (min-width: 431:ppx)",
+  "sm": "screen and (min-width: 430px)",
   "md": "screen and (min-width: 768px)",
   "lg": "screen and (min-width: 992px)",
   "xl": "screen and (min-width: 1200px)",
@@ -24,6 +25,10 @@ $breakpoints: (
     @content;
   }
 }
+
+@import url(./header.css);
+
+@import url(./footer.css);
 
 html,
 body {
@@ -111,100 +116,11 @@ img {
   max-width: 100%;
 }
 
-.header {
-  background-color: $color-base2;
-  margin-bottom: 3.31rem;
-  &__inner {
-    width: 93%;
-    @include mx;
-    padding-top: 1.56rem;
-  }
-  &__top {
-    display: flex;
-    @include mx;
-    padding: 1.5rem 2.5rem;
-    background-color: #fff;
-    border-radius: 5rem;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0px 0px 20px 0px rgba(55, 23, 0, 0.05);
-    z-index: 100;
-    &--image {
-      width: 10rem;
-      height: auto;
-      border-radius: 50%;
-      margin-right: 1.56rem;
-    }
-  }
-  &__gnav {
-    display: none;
-    &--link {
-      display: block;
-      color: $color-black;
-      font-weight: bold;
-      font-size: 1rem;
-      color: #76604e;
-      &:hover {
-        color: $color-main;
-        transition: 0.3s;
-      }
-    }
-  }
-  &__menu {
-    display: none;
-    background-color: $color-main;
-    width: 100%;
-    height: 100vh;
-    z-index: 50;
-    &.open {
-      display: block;
-    }
-  }
-}
-
-@include media("sm") {
-  .header {
-    background-color: $color-base2;
-    margin-bottom: 3.31rem;
-    &__inner {
-      width: 93%;
-      @include mx;
-      padding-top: 1.56rem;
-    }
-    &__top {
-      display: flex;
-      @include mx;
-      padding: 1.5rem 2.5rem;
-      background-color: #fff;
-      border-radius: 5rem;
-      align-items: center;
-      justify-content: space-between;
-      &--image {
-        width: 10rem;
-        height: auto;
-        border-radius: 50%;
-        margin-right: 1.56rem;
-      }
-    }
-    &__gnav {
-      display: flex;
-      gap: 2.5rem;
-      width: 100%;
-      align-items: flex-start;
-      justify-content: flex-end;
-
-      &--link {
-        display: block;
-        color: $color-black;
-        font-weight: bold;
-        font-size: 1rem;
-        color: #76604e;
-        &:hover {
-          color: $color-main;
-          transition: 0.3s;
-        }
-      }
-    }
+.button {
+  &:hover {
+    background-color: $color-skyblue;
+    color: $color-white;
+    transition: 0.3s;
   }
 }
 
@@ -226,12 +142,21 @@ img {
       img {
         width: 100%;
       }
+      .verticalCatch {
+        display: none;
+      }
+      .horizontalCatch {
+        display: block;
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+      }
     }
   }
 }
 
-.firstView {
-  @include media("sm") {
+@include media("md") {
+  .firstView {
     &__content {
       display: flex;
       justify-content: space-between;
@@ -242,11 +167,16 @@ img {
         width: 79%;
       }
       &--text {
-        width: 50%;
+        width: 22%;
         padding: 5rem 3rem;
-        background-color: $color-main;
-        border-radius: 1.5rem;
-        color: #fff;
+        background-color: none;
+        .verticalCatch {
+          display: block;
+          margin-bottom: 1.5rem;
+        }
+        .horizontalCatch {
+          display: none;
+        }
         &--title {
           font-size: 2.5rem;
           font-weight: 700;
@@ -326,17 +256,16 @@ img {
   }
 }
 
-@include media("sm") {
+@include media("md") {
   .topInfo {
     position: absolute;
-    background-color: $color-white;
     bottom: 0;
     right: 0;
     padding: 1.5rem;
     border-radius: 1.25rem 0rem 0rem 1.25rem;
     display: flex;
-    column-gap: 5rem;
-    color: $color-brown;
+    flex-direction: row;
+    width: auto;
     &::before {
       content: "もうすぐ開催";
       position: absolute;
@@ -347,6 +276,9 @@ img {
       border-radius: 6.25rem;
       color: #fff;
       padding: 0.25rem 1rem;
+    }
+    * {
+      width: fit-content;
     }
     &__day {
       font-family: "BIZ UDPGothic";
@@ -396,7 +328,7 @@ img {
     padding: 3.5rem 2rem;
     @include mx;
     width: 83%;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3.62rem;
     &--title {
       text-align: center;
       color: #fff;
@@ -411,6 +343,9 @@ img {
       line-height: 1.8rem; /* 180% */
       color: #fff;
       margin-bottom: 2.5rem;
+      span {
+        display: inline;
+      }
     }
     &--button {
       background-color: $color-white;
@@ -433,7 +368,7 @@ img {
   }
 }
 
-@include media("sm") {
+@include media("md") {
   .opening {
     margin-top: 6.8rem;
     &__parts {
@@ -444,6 +379,23 @@ img {
       &--title {
         text-align: center;
         color: #fff;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2rem; /* 100% */
+      }
+      &--text {
+        width: 32rem;
+        text-align: center;
+        font-family: "BIZ UDPGothic";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.8rem; /* 180% */
+        @include mx;
+        span {
+          display: inline;
+        }
       }
     }
   }
@@ -461,7 +413,7 @@ img {
     display: block;
     margin-inline: auto;
     content: "";
-    top: -4rem;
+    top: -3rem;
     left: 0%;
     width: 100%;
     height: 10px;
@@ -474,12 +426,38 @@ img {
   }
 }
 
+@include media("md") {
+  .section__title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3.69rem;
+    margin-inline: auto;
+    width: fit-content;
+    position: relative;
+    &::before {
+      display: block;
+      margin-inline: auto;
+      content: "";
+      top: -3rem;
+      left: 0%;
+      width: 100%;
+      height: 10px;
+      z-index: 1;
+      margin-top: 1rem;
+      font-size: 15px;
+      color: $color-main;
+      position: absolute;
+      font-family: "BIZ UDPGothic";
+    }
+  }
+}
+
 .event {
   background-color: $color-white;
   padding-top: 6.5rem;
   padding-bottom: 6.5rem;
   border-radius: 2.5rem 2.5rem 0rem 0rem;
-
   &__title {
     font-family: "Zen Maru Gothic";
     font-size: 2rem;
@@ -489,8 +467,8 @@ img {
     &::before {
       display: block;
       margin-inline: auto;
-      content: ".event";
-      top: -4rem;
+      content: "Event";
+      top: -3rem;
       left: 0%;
       width: 100%;
       height: 10px;
@@ -558,6 +536,45 @@ img {
   }
 }
 
+@include media("md") {
+  .event {
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 6.5rem;
+      align-items: center;
+    }
+    &__image--box {
+      width: 50%;
+      border-radius: 0rem 1rem;
+      padding: 0;
+
+      img {
+        border-radius: 0rem 1rem 1rem 0;
+      }
+    }
+    &__name {
+      font-family: "BIZ UDPGothic";
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 2.5rem; /* 200% */
+    }
+    &__expl {
+      padding-right: 6.5rem;
+      text-align: left;
+      width: 40%;
+    }
+
+    &__detail {
+      width: 100%;
+    }
+    &__parts--button {
+      margin-left: 0;
+    }
+  }
+}
+
 .storeInfo {
   background-color: $color-white;
   padding-top: 6.5rem;
@@ -575,7 +592,7 @@ img {
       display: block;
       margin-inline: auto;
       content: "Shop";
-      top: -4rem;
+      top: -3rem;
       left: 0%;
       width: 100%;
       height: 10px;
@@ -596,6 +613,86 @@ img {
     font-weight: 700;
     line-height: 1.8rem; /* 180% */
     margin-bottom: 2.5rem;
+  }
+
+  ul {
+    list-style: none;
+  }
+  @keyframes infinity-scroll-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .scroll-infinity__wrap {
+    display: flex;
+    overflow: hidden;
+  }
+  .scroll-infinity__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  .scroll-infinity__list--left {
+    animation: infinity-scroll-left 80s infinite linear 0.5s both;
+  }
+
+  .scroll-infinity__item {
+    width: calc(100vw / 1.5);
+    margin-right: 1.5rem;
+  }
+  .scroll-infinity__item > img {
+    width: 100%;
+    border-radius: 1.25rem;
+  }
+
+  @keyframes infinity-scroll-right {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .scroll-infinity__wrap {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .scroll-infinity__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+
+  .scroll-infinity__list--right {
+    animation: infinity-scroll-right 80s infinite linear 0.5s both;
+  }
+
+  .scroll-infinity__item {
+    width: calc(100vw / 1.5);
+    margin-right: 1.5rem;
+  }
+
+  .scroll-infinity__item > img {
+    width: 100%;
+    border-radius: 1.25rem;
+  }
+}
+
+@include media("md") {
+  .scroll-infinity__item {
+    width: calc(100vw / 3);
+    margin-right: 4rem;
+    max-width: 22rem;
+  }
+  .scroll-infinity__item > img {
+    width: 100%;
+    border-radius: 1.25rem;
   }
 }
 
@@ -665,6 +762,7 @@ img {
 }
 
 .about {
+  padding-bottom: 6.5rem;
   &__imagebox {
     border-radius: 0rem 1.5rem 1.5rem 0rem;
     background: url(/images/firstView.jpg) lightgray 50% / cover no-repeat;
@@ -721,6 +819,225 @@ img {
         font-style: normal;
         font-weight: 700;
         line-height: 2rem; /* 200% */
+      }
+      i {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+  .image__area {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.69rem;
+    :nth-child(1) {
+      border-radius: 1.5rem;
+    }
+  }
+
+  &__opening {
+    width: 83%;
+    background-color: $color-white;
+    padding: 7.5rem 2rem 3.5rem;
+    @include mx;
+    border-radius: 1.5rem;
+    &__title {
+      text-align: center;
+      font-family: "Zen Maru Gothic";
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 2.5rem; /* 125% */
+      margin-inline: auto;
+      width: fit-content;
+      position: relative;
+      color: $color-brown;
+      &::before {
+        content: "Opening a store";
+        top: -3rem;
+        left: 0%;
+        width: 100%;
+        height: 10px;
+        z-index: 1;
+        font-size: 15px;
+        color: $color-main;
+        position: absolute;
+        font-family: "BIZ UDPGothic";
+      }
+    }
+
+    &__text {
+      font-family: "BIZ UDPGothic";
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.8rem; /* 180% */
+      color: $color-brown;
+      margin: 2.5rem auto;
+      text-align: center;
+    }
+
+    &__parts {
+      &--button {
+        background-color: $color-main;
+        width: fit-content;
+        border-radius: 6.25rem;
+        padding: 1rem 2.5rem;
+        @include mx;
+        color: $color-white;
+        &---text {
+          font-family: "BIZ UDPGothic";
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 2rem; /* 200% */
+        }
+        i {
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+.access {
+  padding-top: 6.5rem;
+  padding-bottom: 3.5rem;
+  background-color: $color-white;
+  &__title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    margin-inline: auto;
+    width: fit-content;
+    position: relative;
+    color: $color-brown;
+    &::before {
+      content: "Access";
+      top: -3rem;
+      left: 0%;
+      width: 100%;
+      height: 10px;
+      z-index: 1;
+      font-size: 15px;
+      color: $color-main;
+      position: absolute;
+      font-family: "BIZ UDPGothic";
+    }
+  }
+
+  &__map {
+    width: 85%;
+    @include mx;
+    aspect-ratio: 1/1;
+    border: 0.2px solid #4e4e4e;
+    border-radius: 0.5rem;
+    margin-bottom: 2.5rem;
+    iframe {
+      width: 100%;
+      height: 100%;
+      border-radius: 0.5rem;
+      padding: auto;
+    }
+  }
+
+  &__link {
+    display: block;
+    color: $color-brown;
+    width: 85%;
+    @include mx;
+    font-family: "BIZ UDPGothic";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.8rem; /* 180% */
+    text-decoration-line: underline;
+    margin-bottom: 2.5rem;
+  }
+  &__route {
+    &--guide {
+      display: flex;
+      margin-bottom: 2.5rem;
+      gap: 1.5rem;
+      width: 85%;
+      @include mx;
+      &__title {
+        width: 27%;
+        font-family: "BIZ UDPGothic";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.8rem; /* 180% */
+        border-radius: 1.5rem;
+        border: 2px solid $color-main;
+        padding: 0 1rem;
+        color: $color-main;
+        height: fit-content;
+        text-align: center;
+      }
+      .dlwrap {
+        width: 73%;
+      }
+      &__text {
+        font-family: "BIZ UDPGothic";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.8rem; /* 180% */
+        color: $color-brown;
+        &.caution {
+          color: $color-main;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  background-color: $color-main;
+  padding: 3.5rem 0;
+  &__title {
+    width: 85%;
+    text-align: center;
+    @include mx;
+    font-family: "Zen Maru Gothic";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.4rem; /* 120% */
+    color: $color-white;
+    span {
+      display: inline-block;
+    }
+    margin-bottom: 1.5rem;
+  }
+  &__text {
+    text-align: center;
+    font-family: "BIZ UDPGothic";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem; /* 200% */
+    width: 85%;
+    color: $color-base2;
+    @include mx;
+    margin-bottom: 2.5rem;
+  }
+  &__parts {
+    &--button {
+      background-color: $color-white;
+      width: fit-content;
+      border-radius: 6.25rem;
+      padding: 1rem 2.5rem;
+      @include mx;
+      color: $color-white;
+      &---text {
+        font-family: "BIZ UDPGothic";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2rem; /* 200% */
+        color: $color-main;
       }
       i {
         margin-left: 0.5rem;

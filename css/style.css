@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url(./header.css);
+@import url(./footer.css);
 html,
 body {
   color: #000000;
@@ -85,105 +87,12 @@ img {
   max-width: 100%;
 }
 
-.header {
-  background-color: #fcf9ed;
-  margin-bottom: 3.31rem;
-}
-.header__inner {
-  width: 93%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1.56rem;
-}
-.header__top {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.5rem 2.5rem;
-  background-color: #fff;
-  border-radius: 5rem;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0px 0px 20px 0px rgba(55, 23, 0, 0.05);
-  z-index: 100;
-}
-.header__top--image {
-  width: 10rem;
-  height: auto;
-  border-radius: 50%;
-  margin-right: 1.56rem;
-}
-.header__gnav {
-  display: none;
-}
-.header__gnav--link {
-  display: block;
-  color: #212121;
-  font-weight: bold;
-  font-size: 1rem;
-  color: #76604e;
-}
-.header__gnav--link:hover {
-  color: #ff7f3e;
+.button:hover {
+  background-color: #80c4e9;
+  color: #ffffff;
   transition: 0.3s;
 }
-.header__menu {
-  display: none;
-  background-color: #ff7f3e;
-  width: 100%;
-  height: 100vh;
-  z-index: 50;
-}
-.header__menu.open {
-  display: block;
-}
 
-@media screen and (min-width: 431:ppx) {
-  .header {
-    background-color: #fcf9ed;
-    margin-bottom: 3.31rem;
-  }
-  .header__inner {
-    width: 93%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 1.56rem;
-  }
-  .header__top {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5rem 2.5rem;
-    background-color: #fff;
-    border-radius: 5rem;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .header__top--image {
-    width: 10rem;
-    height: auto;
-    border-radius: 50%;
-    margin-right: 1.56rem;
-  }
-  .header__gnav {
-    display: flex;
-    gap: 2.5rem;
-    width: 100%;
-    align-items: flex-start;
-    justify-content: flex-end;
-  }
-  .header__gnav--link {
-    display: block;
-    color: #212121;
-    font-weight: bold;
-    font-size: 1rem;
-    color: #76604e;
-  }
-  .header__gnav--link:hover {
-    color: #ff7f3e;
-    transition: 0.3s;
-  }
-}
 .firstView__content {
   display: block;
   margin-bottom: 3.69rem;
@@ -205,8 +114,17 @@ img {
 .firstView__content--text img {
   width: 100%;
 }
+.firstView__content--text .verticalCatch {
+  display: none;
+}
+.firstView__content--text .horizontalCatch {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
 
-@media screen and (min-width: 431:ppx) {
+@media screen and (min-width: 768px) {
   .firstView__content {
     display: flex;
     justify-content: space-between;
@@ -218,11 +136,16 @@ img {
     width: 79%;
   }
   .firstView__content--text {
-    width: 50%;
+    width: 22%;
     padding: 5rem 3rem;
-    background-color: #ff7f3e;
-    border-radius: 1.5rem;
-    color: #fff;
+    background-color: none;
+  }
+  .firstView__content--text .verticalCatch {
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+  .firstView__content--text .horizontalCatch {
+    display: none;
   }
   .firstView__content--text--title {
     font-size: 2.5rem;
@@ -235,7 +158,6 @@ img {
     line-height: 1.5rem;
   }
 }
-
 .topInfo {
   position: relative;
   background-color: #ffffff;
@@ -304,18 +226,16 @@ img {
   line-height: 1.3rem; /* 130% */
 }
 
-@media screen and (min-width: 431:ppx) {
+@media screen and (min-width: 768px) {
   .topInfo {
     position: absolute;
-    background-color: #ffffff;
     bottom: 0;
     right: 0;
     padding: 1.5rem;
     border-radius: 1.25rem 0rem 0rem 1.25rem;
     display: flex;
-    -moz-column-gap: 5rem;
-         column-gap: 5rem;
-    color: #5d4a3a;
+    flex-direction: row;
+    width: auto;
   }
   .topInfo::before {
     content: "もうすぐ開催";
@@ -329,6 +249,11 @@ img {
     border-radius: 6.25rem;
     color: #fff;
     padding: 0.25rem 1rem;
+  }
+  .topInfo * {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .topInfo__day {
     font-family: "BIZ UDPGothic";
@@ -376,7 +301,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 83%;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.62rem;
 }
 .opening__parts--title {
   text-align: center;
@@ -392,6 +317,9 @@ img {
   line-height: 1.8rem; /* 180% */
   color: #fff;
   margin-bottom: 2.5rem;
+}
+.opening__parts--text span {
+  display: inline;
 }
 .opening__parts--button {
   background-color: #ffffff;
@@ -415,7 +343,7 @@ img {
   margin-left: 0.5rem;
 }
 
-@media screen and (min-width: 431:ppx) {
+@media screen and (min-width: 768px) {
   .opening {
     margin-top: 6.8rem;
   }
@@ -429,6 +357,24 @@ img {
   .opening__parts--title {
     text-align: center;
     color: #fff;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem; /* 100% */
+  }
+  .opening__parts--text {
+    width: 32rem;
+    text-align: center;
+    font-family: "BIZ UDPGothic";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.8rem; /* 180% */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .opening__parts--text span {
+    display: inline;
   }
 }
 .section__title {
@@ -446,7 +392,7 @@ img {
   display: block;
   margin-inline: auto;
   content: "";
-  top: -4rem;
+  top: -3rem;
   left: 0%;
   width: 100%;
   height: 10px;
@@ -458,6 +404,34 @@ img {
   font-family: "BIZ UDPGothic";
 }
 
+@media screen and (min-width: 768px) {
+  .section__title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3.69rem;
+    margin-inline: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+  }
+  .section__title::before {
+    display: block;
+    margin-inline: auto;
+    content: "";
+    top: -3rem;
+    left: 0%;
+    width: 100%;
+    height: 10px;
+    z-index: 1;
+    margin-top: 1rem;
+    font-size: 15px;
+    color: #ff7f3e;
+    position: absolute;
+    font-family: "BIZ UDPGothic";
+  }
+}
 .event {
   background-color: #ffffff;
   padding-top: 6.5rem;
@@ -474,8 +448,8 @@ img {
 .event__title::before {
   display: block;
   margin-inline: auto;
-  content: ".event";
-  top: -4rem;
+  content: "Event";
+  top: -3rem;
   left: 0%;
   width: 100%;
   height: 10px;
@@ -540,6 +514,41 @@ img {
   margin-left: 0.5rem;
 }
 
+@media screen and (min-width: 768px) {
+  .event__content {
+    display: flex;
+    justify-content: space-between;
+    -moz-column-gap: 6.5rem;
+         column-gap: 6.5rem;
+    align-items: center;
+  }
+  .event__image--box {
+    width: 50%;
+    border-radius: 0rem 1rem;
+    padding: 0;
+  }
+  .event__image--box img {
+    border-radius: 0rem 1rem 1rem 0;
+  }
+  .event__name {
+    font-family: "BIZ UDPGothic";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.5rem; /* 200% */
+  }
+  .event__expl {
+    padding-right: 6.5rem;
+    text-align: left;
+    width: 40%;
+  }
+  .event__detail {
+    width: 100%;
+  }
+  .event__parts--button {
+    margin-left: 0;
+  }
+}
 .storeInfo {
   background-color: #ffffff;
   padding-top: 6.5rem;
@@ -560,7 +569,7 @@ img {
   display: block;
   margin-inline: auto;
   content: "Shop";
-  top: -4rem;
+  top: -3rem;
   left: 0%;
   width: 100%;
   height: 10px;
@@ -581,7 +590,95 @@ img {
   line-height: 1.8rem; /* 180% */
   margin-bottom: 2.5rem;
 }
+.storeInfo ul {
+  list-style: none;
+}
+@-webkit-keyframes infinity-scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes infinity-scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.storeInfo .scroll-infinity__wrap {
+  display: flex;
+  overflow: hidden;
+}
+.storeInfo .scroll-infinity__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.storeInfo .scroll-infinity__list--left {
+  -webkit-animation: infinity-scroll-left 80s infinite linear 0.5s both;
+          animation: infinity-scroll-left 80s infinite linear 0.5s both;
+}
+.storeInfo .scroll-infinity__item {
+  width: 66.6666666667vw;
+  margin-right: 1.5rem;
+}
+.storeInfo .scroll-infinity__item > img {
+  width: 100%;
+  border-radius: 1.25rem;
+}
+@-webkit-keyframes infinity-scroll-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes infinity-scroll-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.storeInfo .scroll-infinity__wrap {
+  display: flex;
+  overflow: hidden;
+}
+.storeInfo .scroll-infinity__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.storeInfo .scroll-infinity__list--right {
+  -webkit-animation: infinity-scroll-right 80s infinite linear 0.5s both;
+          animation: infinity-scroll-right 80s infinite linear 0.5s both;
+}
+.storeInfo .scroll-infinity__item {
+  width: 66.6666666667vw;
+  margin-right: 1.5rem;
+}
+.storeInfo .scroll-infinity__item > img {
+  width: 100%;
+  border-radius: 1.25rem;
+}
 
+@media screen and (min-width: 768px) {
+  .scroll-infinity__item {
+    width: 33.3333333333vw;
+    margin-right: 4rem;
+    max-width: 22rem;
+  }
+  .scroll-infinity__item > img {
+    width: 100%;
+    border-radius: 1.25rem;
+  }
+}
 .bg-main {
   background-color: #fcf9ed;
 }
@@ -648,6 +745,9 @@ img {
   margin-left: 0.5rem;
 }
 
+.about {
+  padding-bottom: 6.5rem;
+}
 .about__imagebox {
   border-radius: 0rem 1.5rem 1.5rem 0rem;
   background: url(/images/firstView.jpg) lightgray 50%/cover no-repeat;
@@ -710,6 +810,233 @@ img {
   line-height: 2rem; /* 200% */
 }
 .about__parts--button i {
+  margin-left: 0.5rem;
+}
+.about .image__area {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.69rem;
+}
+.about .image__area :nth-child(1) {
+  border-radius: 1.5rem;
+}
+.about__opening {
+  width: 83%;
+  background-color: #ffffff;
+  padding: 7.5rem 2rem 3.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1.5rem;
+}
+.about__opening__title {
+  text-align: center;
+  font-family: "Zen Maru Gothic";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem; /* 125% */
+  margin-inline: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  color: #5d4a3a;
+}
+.about__opening__title::before {
+  content: "Opening a store";
+  top: -3rem;
+  left: 0%;
+  width: 100%;
+  height: 10px;
+  z-index: 1;
+  font-size: 15px;
+  color: #ff7f3e;
+  position: absolute;
+  font-family: "BIZ UDPGothic";
+}
+.about__opening__text {
+  font-family: "BIZ UDPGothic";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.8rem; /* 180% */
+  color: #5d4a3a;
+  margin: 2.5rem auto;
+  text-align: center;
+}
+.about__opening__parts--button {
+  background-color: #ff7f3e;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 6.25rem;
+  padding: 1rem 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+}
+.about__opening__parts--button---text {
+  font-family: "BIZ UDPGothic";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem; /* 200% */
+}
+.about__opening__parts--button i {
+  margin-left: 0.5rem;
+}
+
+.access {
+  padding-top: 6.5rem;
+  padding-bottom: 3.5rem;
+  background-color: #ffffff;
+}
+.access__title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  margin-inline: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  color: #5d4a3a;
+}
+.access__title::before {
+  content: "Access";
+  top: -3rem;
+  left: 0%;
+  width: 100%;
+  height: 10px;
+  z-index: 1;
+  font-size: 15px;
+  color: #ff7f3e;
+  position: absolute;
+  font-family: "BIZ UDPGothic";
+}
+.access__map {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  aspect-ratio: 1/1;
+  border: 0.2px solid #4e4e4e;
+  border-radius: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+.access__map iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  padding: auto;
+}
+.access__link {
+  display: block;
+  color: #5d4a3a;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "BIZ UDPGothic";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.8rem; /* 180% */
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  margin-bottom: 2.5rem;
+}
+.access__route--guide {
+  display: flex;
+  margin-bottom: 2.5rem;
+  gap: 1.5rem;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.access__route--guide__title {
+  width: 27%;
+  font-family: "BIZ UDPGothic";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.8rem; /* 180% */
+  border-radius: 1.5rem;
+  border: 2px solid #ff7f3e;
+  padding: 0 1rem;
+  color: #ff7f3e;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+}
+.access__route--guide .dlwrap {
+  width: 73%;
+}
+.access__route--guide__text {
+  font-family: "BIZ UDPGothic";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.8rem; /* 180% */
+  color: #5d4a3a;
+}
+.access__route--guide__text.caution {
+  color: #ff7f3e;
+}
+
+.contact {
+  background-color: #ff7f3e;
+  padding: 3.5rem 0;
+}
+.contact__title {
+  width: 85%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Zen Maru Gothic";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem; /* 120% */
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+.contact__title span {
+  display: inline-block;
+}
+.contact__text {
+  text-align: center;
+  font-family: "BIZ UDPGothic";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem; /* 200% */
+  width: 85%;
+  color: #fcf9ed;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.5rem;
+}
+.contact__parts--button {
+  background-color: #ffffff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 6.25rem;
+  padding: 1rem 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+}
+.contact__parts--button---text {
+  font-family: "BIZ UDPGothic";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem; /* 200% */
+  color: #ff7f3e;
+}
+.contact__parts--button i {
   margin-left: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */
