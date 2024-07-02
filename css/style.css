@@ -20,8 +20,6 @@ h5,
 h6 {
   color: #212121;
   font-weight: 400;
-  letter-spacing: "";
-  line-height: "";
   word-break: break-all;
 }
 
@@ -669,12 +667,31 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .scroll-infinity__item {
+  .storeInfo .imageScroll {
+    margin-bottom: 3.75rem;
+  }
+  .storeInfo__text {
+    text-align: center;
+    font-family: "BIZ UDPGothic";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.8rem; /* 180% */
+    margin-bottom: 3.75rem;
+  }
+  .storeInfo__text span {
+    display: block;
+  }
+  .storeInfo .button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .storeInfo .scroll-infinity__item {
     width: 33.3333333333vw;
     margin-right: 4rem;
     max-width: 22rem;
   }
-  .scroll-infinity__item > img {
+  .storeInfo .scroll-infinity__item > img {
     width: 100%;
     border-radius: 1.25rem;
   }
