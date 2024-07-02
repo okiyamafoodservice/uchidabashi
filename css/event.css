@@ -2,6 +2,9 @@ img {
   max-width: 100%;
 }
 
+.event__content {
+  display: flex;
+}
 .event__content__image {
   height: 436px;
   border-radius: 0px 100px 24px 0px;
@@ -9,7 +12,6 @@ img {
   width: 1007px;
   flex-shrink: 0;
 }
-
 .event__content__text h1 {
   width: 32px;
   color: var(--, #5D4A3A);
