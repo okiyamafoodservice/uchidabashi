@@ -755,12 +755,12 @@ img {
 
     &--post {
       width: 7rem;
-      aspect-ratio: 1/1;
 
       img {
         width: 100%;
         height: auto;
         object-fit: cover;
+        aspect-ratio: 1/1;
       }
     }
   }
@@ -794,6 +794,20 @@ img {
       }
       i {
         margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+@include media("md") {
+  .latestInfo {
+    &__instagram {
+      margin-bottom: 3.75rem;
+      width: (716/1220) * 100%;
+      @include mx();
+      max-width: 716px;
+      &--post {
+        width: 13rem;
       }
     }
   }
@@ -933,6 +947,14 @@ img {
           margin-left: 0.5rem;
         }
       }
+    }
+  }
+}
+
+@include media("md") {
+  .about {
+    .button {
+      margin-bottom: 104px;
     }
   }
 }
