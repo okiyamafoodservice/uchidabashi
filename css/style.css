@@ -3,7 +3,7 @@
 @import url(./footer.css);
 html,
 body {
-  color: #000000;
+  color: #5d4a3a;
   font-family: "Zen Maru Gothic", sans-serif;
   font-size: 16px;
   font-weight: "";
@@ -18,7 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #212121;
+  color: #5d4a3a;
   font-weight: 400;
   word-break: break-all;
 }
@@ -727,6 +727,24 @@ img {
   font-size: 15px;
   color: #ff7f3e;
   position: absolute;
+}
+.latestInfo__instagram {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.69rem;
+  width: 83%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.latestInfo__instagram--post {
+  width: 7rem;
+  aspect-ratio: 1/1;
+}
+.latestInfo__instagram--post img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .latestInfo__text {
   width: 83%;

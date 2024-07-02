@@ -32,7 +32,7 @@ $breakpoints: (
 
 html,
 body {
-  color: #000000;
+  color: $color-brown;
   font-family: "Zen Maru Gothic", sans-serif;
   font-size: 16px;
   font-weight: "";
@@ -47,7 +47,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $color-black;
+  color: $color-brown;
   font-weight: 400;
   word-break: break-all;
 }
@@ -743,6 +743,25 @@ img {
       font-size: 15px;
       color: $color-main;
       position: absolute;
+    }
+  }
+
+  &__instagram {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.69rem;
+    width: 83%;
+    @include mx();
+
+    &--post {
+      width: 7rem;
+      aspect-ratio: 1/1;
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
     }
   }
 
