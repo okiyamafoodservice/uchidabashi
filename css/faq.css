@@ -95,24 +95,29 @@ img {
 .link-line {
   -webkit-text-decoration: underline 1px #5d4a3a;
           text-decoration: underline 1px #5d4a3a;
+  color: #5d4a3a;
 }
 
 .faq {
   width: 100%;
-  margin-top: 6.5rem;
+  margin-top: 3rem;
 }
 .faq__firstView {
-  display: flex;
   margin-bottom: 12.5rem;
+  width: 92%;
 }
 .faq__firstView-img {
-  width: 78%;
+  width: 100%;
   border-radius: 0 100px 24px 0;
+  height: 436px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 5rem;
 }
 .faq__title {
   writing-mode: vertical-rl;
   font-weight: bold;
-  padding-left: 5.5rem;
+  margin-left: auto;
 }
 .faq__title::after {
   content: "Faq";
@@ -124,7 +129,7 @@ img {
 
 .qAndA {
   background-color: #ffffff;
-  width: 67%;
+  width: 84%;
   margin-left: auto;
   margin-right: auto;
   padding: 2.5rem;
@@ -133,30 +138,26 @@ img {
 }
 
 .q {
-  display: flex;
-  align-items: center;
   padding-bottom: 2rem;
   border-bottom: 1px solid rgba(93, 74, 58, 0.2);
 }
 .q__img {
-  width: 3%;
+  width: 10%;
+  margin-bottom: 1rem;
 }
 .q__text {
-  padding-left: 2rem;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .a {
-  display: flex;
-  align-items: center;
   padding-top: 2rem;
 }
 .a__img {
-  width: 3%;
+  width: 10%;
+  margin-bottom: 1rem;
 }
 .a__text {
-  padding-left: 2rem;
   font-family: "BIZ UDPGothic";
 }
 /*# sourceMappingURL=faq.css.map */
