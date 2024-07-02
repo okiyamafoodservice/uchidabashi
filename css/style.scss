@@ -32,7 +32,7 @@ $breakpoints: (
 
 html,
 body {
-  color: #000000;
+  color: $color-brown;
   font-family: "Zen Maru Gothic", sans-serif;
   font-size: 16px;
   font-weight: "";
@@ -47,7 +47,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $color-black;
+  color: $color-brown;
   font-weight: 400;
   word-break: break-all;
 }
@@ -746,6 +746,25 @@ img {
     }
   }
 
+  &__instagram {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.69rem;
+    width: 83%;
+    @include mx();
+
+    &--post {
+      width: 7rem;
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        aspect-ratio: 1/1;
+      }
+    }
+  }
+
   &__text {
     width: 83%;
     @include mx;
@@ -775,6 +794,20 @@ img {
       }
       i {
         margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+@include media("md") {
+  .latestInfo {
+    &__instagram {
+      margin-bottom: 3.75rem;
+      width: (716/1220) * 100%;
+      @include mx();
+      max-width: 716px;
+      &--post {
+        width: 13rem;
       }
     }
   }
@@ -914,6 +947,14 @@ img {
           margin-left: 0.5rem;
         }
       }
+    }
+  }
+}
+
+@include media("md") {
+  .about {
+    .button {
+      margin-bottom: 104px;
     }
   }
 }
