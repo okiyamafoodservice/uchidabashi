@@ -45,6 +45,9 @@ img {
   margin-right: auto;
   width: 63%;
 }
+.content .content__header {
+  margin-bottom: 4rem;
+}
 .content .card__wapper {
   display: flex;
   flex-wrap: wrap;
