@@ -32,9 +32,6 @@ img {
 
 .event__content {
     display: flex;
-    width: 80.0625rem;
-    align-items: flex-start;
-    gap: 5rem;
 
     &__image {
         height: 436px;
@@ -45,23 +42,14 @@ img {
     }
 
     &__text h1 {
-        width: 2rem;
-        color: $color-brown;
-        font-family: "Zen Maru Gothic";
-        font-size: 2rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 2rem;
-        /* 100% */
-
-        &__text p {
-            color: $color-main;
-            font-family: "BIZ UDPGothic";
-            font-size: 0.9375rem;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 1.5rem;
-            /* 160% */
-        }
-    }
+        width: 32px;
+        color: var(--, #5D4A3A
+        );
+    font-family: "Zen Maru Gothic";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 100% */
+}
 }
