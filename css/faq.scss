@@ -136,29 +136,57 @@ img {
     width: 100%;
     margin-top: 3rem;
 
+    @include media(md) {
+        margin-top: 6.5rem;
+    }
+
     &__firstView {
-        margin-bottom: 5rem;
+        margin-bottom: 6.5rem;
         width: 92%;
+        display: flex;
+        flex-direction: column-reverse;
+
+        @include media(md) {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
     &__firstView-img {
         width: 100%;
         border-radius: 0 100px 24px 0;
-        height: 436px;
+        height: 500px;
         object-fit: cover;
-        margin-bottom: 5rem;
+
+        @include media(md) {
+            width: 78%;
+            height: 600px;
+        }
     }
 
     &__title {
+        font-weight: bold;
+        margin-left: 8%;
+        font-size: 1.8rem;
         -ms-writing-mode: tb-rl;
         writing-mode: vertical-rl;
-        font-weight: bold;
-        margin-left: auto;
+        margin-bottom: 3rem;
+
+        @include media(md) {
+            margin-left: 0rem;
+            text-align: left;
+            margin-right: 5%;
+        }
+
+        @include media(lg) {
+            margin-right: 8%;
+        }
 
         &::after {
             content: "Faq";
             color: $color-main;
-            font-size: 0.9375rem;
+            font-size: 1rem;
             display: block;
             font-weight: bold;
         }
@@ -173,37 +201,64 @@ img {
     padding: 2.5rem;
     border-radius: 24px;
     margin-bottom: 5rem;
+
+    @include media(lg) {
+        width: 67%;
+    }
 }
 
 .q {
-    // display: flex;
-    // align-items: center;
     padding-bottom: 2rem;
     border-bottom: 1px solid rgba(93, 74, 58, 0.2
     );
 
+@include media(md) {
+    display: flex;
+    align-items: center;
+}
+
 &__img {
-    width: 10%;
+    width: 1.5rem;
     margin-bottom: 1rem;
+
+    @include media(md) {
+        margin-bottom: 0;
+    }
 }
 
 &__text {
     font-weight: bold;
     font-size: 1.3rem;
+
+    @include media(md) {
+        padding-left: 1rem;
+    }
 }
 }
 
 .a {
-    // display: flex;
-    // align-items: center;
     padding-top: 2rem;
 
+    @include media(md) {
+        display: flex;
+        align-items: center;
+    }
+
+
     &__img {
-        width: 10%;
+        width: 1.5rem;
         margin-bottom: 1rem;
+
+        @include media(md) {
+            margin-bottom: 0;
+        }
     }
 
     &__text {
         font-family: "BIZ UDPGothic";
+
+        @include media(md) {
+            padding-left: 1rem;
+        }
     }
 }
