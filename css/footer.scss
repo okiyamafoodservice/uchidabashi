@@ -26,6 +26,59 @@ $breakpoints: (
   }
 }
 
+.contact {
+  background-color: $color-main;
+  padding: 3.5rem 0;
+  &__title {
+    width: 85%;
+    text-align: center;
+    @include mx;
+    font-family: "Zen Maru Gothic";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.4rem; /* 120% */
+    color: $color-white;
+    span {
+      display: inline-block;
+    }
+    margin-bottom: 1.5rem;
+  }
+  &__text {
+    text-align: center;
+    font-family: "BIZ UDPGothic";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem; /* 200% */
+    width: 85%;
+    color: $color-base2;
+    @include mx;
+    margin-bottom: 2.5rem;
+  }
+  &__parts {
+    &--button {
+      background-color: $color-white;
+      width: fit-content;
+      border-radius: 6.25rem;
+      padding: 1rem 2.5rem;
+      @include mx;
+      color: $color-white;
+      &---text {
+        font-family: "BIZ UDPGothic";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2rem; /* 200% */
+        color: $color-main;
+      }
+      i {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
 .footer {
   padding: 3.5rem 0;
   background-color: $color-white;
@@ -57,6 +110,7 @@ $breakpoints: (
       font-size: 1.5rem;
       font-style: normal;
       line-height: 1.8rem; /* 120% */
+      margin-right: 1rem;
     }
     font-family: "BIZ UDPGothic";
     font-size: 1.25rem;
@@ -85,6 +139,17 @@ $breakpoints: (
       i {
         color: $color-white;
       }
+    }
+  }
+}
+@include media("md") {
+  .footer {
+    &__inner {
+      width: 85%;
+    }
+    &__link {
+      @include mx;
+      display: flex;
     }
   }
 }
