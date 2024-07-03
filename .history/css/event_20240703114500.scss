@@ -34,6 +34,7 @@ img {
 
 .event__content {
     display: flex;
+    width: 80.0625rem;
     align-items: flex-start;
     gap: 5rem;
     padding-bottom: 12.5rem;
@@ -42,7 +43,7 @@ img {
         height: 27.25rem;
         border-radius: 0rem 6.25rem 1.5rem 0rem;
         background: url(../images/makiwaramatsuri.jpeg) lightgray 50% / cover no-repeat;
-        width: 79%;
+        width: 62.9375rem;
         flex-shrink: 0;
     }
 
@@ -58,13 +59,11 @@ img {
     }
 
     &__text p {
-        transform: rotate(90deg
-        );
-    color: $color-main;
-    font-family: "BIZ UDPGothic";
-    font-size: 0.9375rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.5rem;
-}
+        color: $color-main;
+        font-family: "BIZ UDPGothic";
+        font-size: 0.9375rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5rem;
+    }
 }

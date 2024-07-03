@@ -34,6 +34,7 @@ img {
 
 .event__content {
     display: flex;
+    width: 80rem;
     align-items: flex-start;
     gap: 5rem;
     padding-bottom: 12.5rem;
@@ -42,7 +43,7 @@ img {
         height: 27.25rem;
         border-radius: 0rem 6.25rem 1.5rem 0rem;
         background: url(../images/makiwaramatsuri.jpeg) lightgray 50% / cover no-repeat;
-        width: 79%;
+        width: 62.9375rem;
         flex-shrink: 0;
     }
 
