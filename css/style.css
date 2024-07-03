@@ -130,7 +130,7 @@ img {
     justify-content: space-between;
   }
   .firstView__content--image {
-    height: 100vh;
+    height: 80vh;
     border-radius: 0rem 18.96875rem 1.5rem 0rem;
     background: url(../images/firstView.jpg) lightgray 50%/cover no-repeat;
     width: 79%;
@@ -143,6 +143,7 @@ img {
   .firstView__content--text .verticalCatch {
     display: block;
     margin-bottom: 1.5rem;
+    width: 80%;
   }
   .firstView__content--text .horizontalCatch {
     display: none;
@@ -232,7 +233,7 @@ img {
 @media screen and (min-width: 768px) {
   .topInfo {
     position: absolute;
-    bottom: 0;
+    bottom: 10vh;
     right: 0;
     padding: 1.5rem;
     border-radius: 1.25rem 0rem 0rem 1.25rem;
