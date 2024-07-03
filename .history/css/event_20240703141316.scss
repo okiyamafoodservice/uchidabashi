@@ -79,15 +79,14 @@ img {
     margin-right: auto;
     width: 63%;
 
-    .card__wapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
     .card {
         color: $color-brown;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6.5rem 5rem;
         width: 45%;
+        flex-wrap: wrap;
 
 
 

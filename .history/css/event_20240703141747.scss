@@ -79,17 +79,13 @@ img {
     margin-right: auto;
     width: 63%;
 
-    .card__wapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
     .card {
         color: $color-brown;
         width: 45%;
 
-
+        &__wapper {
+            display: flex;
+        }
 
         &__title {
             font-family: "Zen Maru Gothic";

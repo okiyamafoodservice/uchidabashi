@@ -75,49 +75,5 @@ img {
 }
 
 .content {
-    margin-left: auto;
-    margin-right: auto;
-    width: 63%;
-
-    .card__wapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .card {
-        color: $color-brown;
-        width: 45%;
-
-
-
-        &__title {
-            font-family: "Zen Maru Gothic";
-            font-size: 1.625rem;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 1.5rem;
-            /* 92.308% */
-        }
-
-        &__date {
-            font-family: "BIZ UDPGothic";
-            font-size: 1.25rem;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 1.5rem;
-            /* 120% */
-        }
-
-        &__text {
-            font-family: "BIZ UDPGothic";
-            font-size: 1rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 1.8rem;
-            /* 180% */
-        }
-    }
-
-
+    text-align: center;
 }
