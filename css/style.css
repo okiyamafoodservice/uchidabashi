@@ -27,12 +27,14 @@ h1 {
   font-size: 3rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 3rem; /* 100% */
+  line-height: 3rem;
+  /* 100% */
 }
 
 h2 {
   font-size: 2rem;
-  line-height: 3rem; /* 100% */
+  line-height: 3rem;
+  /* 100% */
 }
 
 h3 {
@@ -199,7 +201,8 @@ img {
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 2.5rem; /* 100% */
+  line-height: 2.5rem;
+  /* 100% */
 }
 .topInfo__day--month .small {
   font-size: 1.25rem;
@@ -214,14 +217,16 @@ img {
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 2.125rem; /* 170% */
+  line-height: 2.125rem;
+  /* 170% */
   padding-right: 3rem;
 }
 .topInfo__title--detail {
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.3rem; /* 130% */
+  line-height: 1.3rem;
+  /* 130% */
 }
 
 @media screen and (min-width: 768px) {
@@ -267,7 +272,8 @@ img {
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 2.5rem; /* 100% */
+    line-height: 2.5rem;
+    /* 100% */
   }
   .topInfo__day--month .small {
     font-size: 1.25rem;
@@ -282,14 +288,16 @@ img {
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 2.125rem; /* 170% */
+    line-height: 2.125rem;
+    /* 170% */
     padding-right: 3rem;
   }
   .topInfo__title--detail {
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.3rem; /* 130% */
+    line-height: 1.3rem;
+    /* 130% */
   }
 }
 .opening__parts {
@@ -312,7 +320,8 @@ img {
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.8rem; /* 180% */
+  line-height: 1.8rem;
+  /* 180% */
   color: #fff;
   margin-bottom: 2.5rem;
 }
@@ -335,7 +344,8 @@ img {
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 2rem; /* 200% */
+  line-height: 2rem;
+  /* 200% */
 }
 .opening__parts--button i {
   margin-left: 0.5rem;
@@ -358,7 +368,8 @@ img {
     font-size: 2rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 2rem; /* 100% */
+    line-height: 2rem;
+    /* 100% */
   }
   .opening__parts--text {
     width: 32rem;
@@ -367,7 +378,8 @@ img {
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.8rem; /* 180% */
+    line-height: 1.8rem;
+    /* 180% */
     margin-left: auto;
     margin-right: auto;
   }
@@ -479,7 +491,8 @@ img {
   font-size: 2rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 2.4rem; /* 120% */
+  line-height: 2.4rem;
+  /* 120% */
   color: #5d4a3a;
   margin-bottom: 1.5rem;
 }
@@ -488,7 +501,8 @@ img {
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.8rem; /* 180% */
+  line-height: 1.8rem;
+  /* 180% */
 }
 .event__parts--button {
   background-color: #ff7f3e;
@@ -506,7 +520,8 @@ img {
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 2rem; /* 200% */
+  line-height: 2rem;
+  /* 200% */
 }
 .event__parts--button i {
   margin-left: 0.5rem;
@@ -533,7 +548,8 @@ img {
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 2.5rem; /* 200% */
+    line-height: 2.5rem;
+    /* 200% */
   }
   .event__expl {
     padding-right: 6.5rem;
@@ -585,7 +601,8 @@ img {
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.8rem; /* 180% */
+  line-height: 1.8rem;
+  /* 180% */
   margin-bottom: 2.5rem;
 }
 .storeInfo ul {
@@ -676,7 +693,8 @@ img {
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.8rem; /* 180% */
+    line-height: 1.8rem;
+    /* 180% */
     margin-bottom: 3.75rem;
   }
   .storeInfo__text span {
@@ -754,7 +772,8 @@ img {
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.8rem; /* 180% */
+  line-height: 1.8rem;
+  /* 180% */
   margin-bottom: 2.5rem;
   text-align: center;
 }
@@ -774,7 +793,8 @@ img {
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 2rem; /* 200% */
+  line-height: 2rem;
+  /* 200% */
 }
 .latestInfo__parts--button i {
   margin-left: 0.5rem;
@@ -830,7 +850,8 @@ img {
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 3.75rem; /* 300% */
+  line-height: 3.75rem;
+  /* 300% */
   color: #5d4a3a;
   margin-bottom: 2.5rem;
   width: 83%;
@@ -854,7 +875,8 @@ img {
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 2rem; /* 200% */
+  line-height: 2rem;
+  /* 200% */
 }
 .about__parts--button i {
   margin-left: 0.5rem;
@@ -881,7 +903,8 @@ img {
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 2.5rem; /* 125% */
+  line-height: 2.5rem;
+  /* 125% */
   margin-inline: auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -906,7 +929,8 @@ img {
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.8rem; /* 180% */
+  line-height: 1.8rem;
+  /* 180% */
   color: #5d4a3a;
   margin: 2.5rem auto;
   text-align: center;
@@ -927,7 +951,8 @@ img {
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 2rem; /* 200% */
+  line-height: 2rem;
+  /* 200% */
 }
 .about__opening__parts--button i {
   margin-left: 0.5rem;
@@ -992,7 +1017,8 @@ img {
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.8rem; /* 180% */
+  line-height: 1.8rem;
+  /* 180% */
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   margin-bottom: 2.5rem;
@@ -1011,7 +1037,8 @@ img {
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.8rem; /* 180% */
+  line-height: 1.8rem;
+  /* 180% */
   border-radius: 1.5rem;
   border: 2px solid #ff7f3e;
   padding: 0 1rem;
@@ -1029,7 +1056,8 @@ img {
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.8rem; /* 180% */
+  line-height: 1.8rem;
+  /* 180% */
   color: #5d4a3a;
 }
 .access__route--guide__text.caution {

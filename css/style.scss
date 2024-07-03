@@ -13,7 +13,7 @@ $breakpoints: (
   "md": "screen and (min-width: 768px)",
   "lg": "screen and (min-width: 992px)",
   "xl": "screen and (min-width: 1200px)",
-) !default;
+  ) !default;
 
 @mixin mx {
   margin-left: auto;
@@ -30,10 +30,12 @@ $breakpoints: (
 
 @import url(./footer.css);
 
+
 html,
 body {
   color: $color-brown;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "Zen Maru Gothic",
+    sans-serif;
   font-size: 16px;
   font-weight: "";
   letter-spacing: "";
@@ -56,12 +58,14 @@ h1 {
   font-size: 3rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 3rem; /* 100% */
+  line-height: 3rem;
+  /* 100% */
 }
 
 h2 {
   font-size: 2rem;
-  line-height: 3rem; /* 100% */
+  line-height: 3rem;
+  /* 100% */
 }
 
 h3 {
@@ -127,6 +131,7 @@ img {
     display: block;
     margin-bottom: 3.69rem;
     @include mx;
+
     &--image {
       height: 100vh;
       border-radius: 0rem 18.96875rem 1.5rem 0rem;
@@ -134,15 +139,19 @@ img {
       width: 79%;
       margin-bottom: 3.8rem;
     }
+
     &--text {
       @include mx;
       width: 83%;
+
       img {
         width: 100%;
       }
+
       .verticalCatch {
         display: none;
       }
+
       .horizontalCatch {
         display: block;
         font-size: 1.25rem;
@@ -158,28 +167,34 @@ img {
     &__content {
       display: flex;
       justify-content: space-between;
+
       &--image {
         height: 100vh;
         border-radius: 0rem 18.96875rem 1.5rem 0rem;
         background: url(../images/firstView.jpg) lightgray 50% / cover no-repeat;
         width: 79%;
       }
+
       &--text {
         width: 22%;
         padding: 5rem 3rem;
         background-color: none;
+
         .verticalCatch {
           display: block;
           margin-bottom: 1.5rem;
         }
+
         .horizontalCatch {
           display: none;
         }
+
         &--title {
           font-size: 2.5rem;
           font-weight: 700;
           margin-bottom: 1.5rem;
         }
+
         &--detail {
           font-size: 1.25rem;
           font-weight: 400;
@@ -203,6 +218,7 @@ img {
   width: 83%;
   @include mx;
   margin-bottom: 3.62rem;
+
   &::before {
     content: "もうすぐ開催";
     position: absolute;
@@ -214,8 +230,10 @@ img {
     color: #fff;
     padding: 0.25rem 1rem;
   }
+
   &__day {
     font-family: "BIZ UDPGothic";
+
     &--year {
       font-size: 1.25rem;
       font-style: normal;
@@ -223,11 +241,14 @@ img {
       line-height: 1.25rem;
       margin-bottom: 0.5rem;
     }
+
     &--month {
       font-size: 2.5rem;
       font-style: normal;
       font-weight: 700;
-      line-height: 2.5rem; /* 100% */
+      line-height: 2.5rem;
+
+      /* 100% */
       .small {
         font-size: 1.25rem;
         font-style: normal;
@@ -236,20 +257,25 @@ img {
       }
     }
   }
+
   &__title {
     font-family: "BIZ UDPGothic";
+
     &--text {
       font-size: 1.25rem;
       font-style: normal;
       font-weight: 700;
-      line-height: 2.125rem; /* 170% */
+      line-height: 2.125rem;
+      /* 170% */
       padding-right: 3rem;
     }
+
     &--detail {
       font-size: 1rem;
       font-style: normal;
       font-weight: 400;
-      line-height: 1.3rem; /* 130% */
+      line-height: 1.3rem;
+      /* 130% */
     }
   }
 }
@@ -264,6 +290,7 @@ img {
     display: flex;
     flex-direction: row;
     width: auto;
+
     &::before {
       content: "もうすぐ開催";
       position: absolute;
@@ -275,11 +302,14 @@ img {
       color: #fff;
       padding: 0.25rem 1rem;
     }
+
     * {
       width: fit-content;
     }
+
     &__day {
       font-family: "BIZ UDPGothic";
+
       &--year {
         font-size: 1.25rem;
         font-style: normal;
@@ -287,11 +317,14 @@ img {
         line-height: 1.25rem;
         margin-bottom: 0.5rem;
       }
+
       &--month {
         font-size: 2.5rem;
         font-style: normal;
         font-weight: 700;
-        line-height: 2.5rem; /* 100% */
+        line-height: 2.5rem;
+
+        /* 100% */
         .small {
           font-size: 1.25rem;
           font-style: normal;
@@ -300,20 +333,25 @@ img {
         }
       }
     }
+
     &__title {
       font-family: "BIZ UDPGothic";
+
       &--text {
         font-size: 1.25rem;
         font-style: normal;
         font-weight: 700;
-        line-height: 2.125rem; /* 170% */
+        line-height: 2.125rem;
+        /* 170% */
         padding-right: 3rem;
       }
+
       &--detail {
         font-size: 1rem;
         font-style: normal;
         font-weight: 400;
-        line-height: 1.3rem; /* 130% */
+        line-height: 1.3rem;
+        /* 130% */
       }
     }
   }
@@ -327,24 +365,29 @@ img {
     @include mx;
     width: 83%;
     margin-bottom: 3.62rem;
+
     &--title {
       text-align: center;
       color: #fff;
       margin-bottom: 1.5rem;
     }
+
     &--text {
       align-self: stretch;
       font-family: "BIZ UDPGothic";
       font-size: 1rem;
       font-style: normal;
       font-weight: 400;
-      line-height: 1.8rem; /* 180% */
+      line-height: 1.8rem;
+      /* 180% */
       color: #fff;
       margin-bottom: 2.5rem;
+
       span {
         display: inline;
       }
     }
+
     &--button {
       background-color: $color-white;
       width: fit-content;
@@ -352,13 +395,16 @@ img {
       padding: 1rem 2.5rem;
       @include mx;
       color: $color-main;
+
       &---text {
         font-family: "BIZ UDPGothic";
         font-size: 1rem;
         font-style: normal;
         font-weight: 700;
-        line-height: 2rem; /* 200% */
+        line-height: 2rem;
+        /* 200% */
       }
+
       i {
         margin-left: 0.5rem;
       }
@@ -369,19 +415,23 @@ img {
 @include media("md") {
   .opening {
     margin-top: 6.8rem;
+
     &__parts {
       background-color: $color-main;
       padding: 3.5rem 0;
       width: 66%;
       @include mx;
+
       &--title {
         text-align: center;
         color: #fff;
         font-size: 2rem;
         font-style: normal;
         font-weight: 500;
-        line-height: 2rem; /* 100% */
+        line-height: 2rem;
+        /* 100% */
       }
+
       &--text {
         width: 32rem;
         text-align: center;
@@ -389,8 +439,10 @@ img {
         font-size: 1rem;
         font-style: normal;
         font-weight: 700;
-        line-height: 1.8rem; /* 180% */
+        line-height: 1.8rem;
+        /* 180% */
         @include mx;
+
         span {
           display: inline;
         }
@@ -407,6 +459,7 @@ img {
   margin-inline: auto;
   width: fit-content;
   position: relative;
+
   &::before {
     display: block;
     margin-inline: auto;
@@ -433,6 +486,7 @@ img {
     margin-inline: auto;
     width: fit-content;
     position: relative;
+
     &::before {
       display: block;
       margin-inline: auto;
@@ -456,12 +510,14 @@ img {
   padding-top: 6.5rem;
   padding-bottom: 6.5rem;
   border-radius: 2.5rem 2.5rem 0rem 0rem;
+
   &__title {
     font-family: "Zen Maru Gothic";
     font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     line-height: 2.5rem;
+
     &::before {
       display: block;
       margin-inline: auto;
@@ -485,6 +541,7 @@ img {
   &__image {
     margin-bottom: 0.5rem;
   }
+
   &__name {
     text-align: right;
     font-size: 0.9375rem;
@@ -495,23 +552,28 @@ img {
     width: 83%;
     @include mx;
     color: $color-brown;
+
     &--copy {
       font-family: "Zen Maru Gothic";
       font-size: 2rem;
       font-style: normal;
       font-weight: 500;
-      line-height: 2.4rem; /* 120% */
+      line-height: 2.4rem;
+      /* 120% */
       color: $color-brown;
       margin-bottom: 1.5rem;
     }
+
     &--text {
       font-family: "BIZ UDPGothic";
       font-size: 1rem;
       font-style: normal;
       font-weight: 700;
-      line-height: 1.8rem; /* 180% */
+      line-height: 1.8rem;
+      /* 180% */
     }
   }
+
   &__parts {
     &--button {
       background-color: $color-main;
@@ -520,13 +582,16 @@ img {
       padding: 1rem 2.5rem;
       @include mx;
       color: $color-white;
+
       &---text {
         font-family: "BIZ UDPGothic";
         font-size: 1rem;
         font-style: normal;
         font-weight: 700;
-        line-height: 2rem; /* 200% */
+        line-height: 2rem;
+        /* 200% */
       }
+
       i {
         margin-left: 0.5rem;
       }
@@ -542,6 +607,7 @@ img {
       column-gap: 6.5rem;
       align-items: center;
     }
+
     &__image--box {
       width: 50%;
       border-radius: 0rem 1rem;
@@ -551,13 +617,16 @@ img {
         border-radius: 0rem 1rem 1rem 0;
       }
     }
+
     &__name {
       font-family: "BIZ UDPGothic";
       font-size: 1.25rem;
       font-style: normal;
       font-weight: 700;
-      line-height: 2.5rem; /* 200% */
+      line-height: 2.5rem;
+      /* 200% */
     }
+
     &__expl {
       padding-right: 6.5rem;
       text-align: left;
@@ -567,6 +636,7 @@ img {
     &__detail {
       width: 100%;
     }
+
     &__parts--button {
       margin-left: 0;
     }
@@ -586,6 +656,7 @@ img {
     margin-inline: auto;
     width: fit-content;
     position: relative;
+
     &::before {
       display: block;
       margin-inline: auto;
@@ -609,77 +680,85 @@ img {
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.8rem; /* 180% */
+    line-height: 1.8rem;
+    /* 180% */
     margin-bottom: 2.5rem;
   }
 
   ul {
     list-style: none;
   }
+
   @keyframes infinity-scroll-left {
     from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
+      transform: translateX(0
+      );
   }
 
-  .scroll-infinity__wrap {
-    display: flex;
-    overflow: hidden;
+  to {
+    transform: translateX(-100%);
   }
-  .scroll-infinity__list {
-    display: flex;
-    list-style: none;
-    padding: 0;
-  }
-  .scroll-infinity__list--left {
-    animation: infinity-scroll-left 80s infinite linear 0.5s both;
+}
+
+.scroll-infinity__wrap {
+  display: flex;
+  overflow: hidden;
+}
+
+.scroll-infinity__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.scroll-infinity__list--left {
+  animation: infinity-scroll-left 80s infinite linear 0.5s both;
+}
+
+.scroll-infinity__item {
+  width: calc(100vw / 1.5);
+  margin-right: 1.5rem;
+}
+
+.scroll-infinity__item>img {
+  width: 100%;
+  border-radius: 1.25rem;
+}
+
+@keyframes infinity-scroll-right {
+  from {
+    transform: translateX(-100%);
   }
 
-  .scroll-infinity__item {
-    width: calc(100vw / 1.5);
-    margin-right: 1.5rem;
+  to {
+    transform: translateX(0);
   }
-  .scroll-infinity__item > img {
-    width: 100%;
-    border-radius: 1.25rem;
-  }
+}
 
-  @keyframes infinity-scroll-right {
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(0);
-    }
-  }
+.scroll-infinity__wrap {
+  display: flex;
+  overflow: hidden;
+}
 
-  .scroll-infinity__wrap {
-    display: flex;
-    overflow: hidden;
-  }
+.scroll-infinity__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
 
-  .scroll-infinity__list {
-    display: flex;
-    list-style: none;
-    padding: 0;
-  }
+.scroll-infinity__list--right {
+  animation: infinity-scroll-right 80s infinite linear 0.5s both;
+}
 
-  .scroll-infinity__list--right {
-    animation: infinity-scroll-right 80s infinite linear 0.5s both;
-  }
+.scroll-infinity__item {
+  width: calc(100vw / 1.5);
+  margin-right: 1.5rem;
+}
 
-  .scroll-infinity__item {
-    width: calc(100vw / 1.5);
-    margin-right: 1.5rem;
-  }
-
-  .scroll-infinity__item > img {
-    width: 100%;
-    border-radius: 1.25rem;
-  }
+.scroll-infinity__item>img {
+  width: 100%;
+  border-radius: 1.25rem;
+}
 }
 
 @include media("md") {
@@ -687,14 +766,17 @@ img {
     .imageScroll {
       margin-bottom: 3.75rem;
     }
+
     &__text {
       text-align: center;
       font-family: "BIZ UDPGothic";
       font-size: 1rem;
       font-style: normal;
       font-weight: 700;
-      line-height: 1.8rem; /* 180% */
+      line-height: 1.8rem;
+      /* 180% */
       margin-bottom: 3.75rem;
+
       span {
         display: block;
       }
@@ -703,12 +785,14 @@ img {
     .button {
       @include mx;
     }
+
     .scroll-infinity__item {
       width: calc(100vw / 3);
       margin-right: 4rem;
       max-width: 22rem;
     }
-    .scroll-infinity__item > img {
+
+    .scroll-infinity__item>img {
       width: 100%;
       border-radius: 1.25rem;
     }
@@ -732,6 +816,7 @@ img {
     margin-inline: auto;
     width: fit-content;
     position: relative;
+
     &::before {
       content: "News";
       top: -3rem;
@@ -772,7 +857,8 @@ img {
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.8rem; /* 180% */
+    line-height: 1.8rem;
+    /* 180% */
     margin-bottom: 2.5rem;
     text-align: center;
   }
@@ -785,13 +871,16 @@ img {
       padding: 1rem 2.5rem;
       @include mx;
       color: $color-white;
+
       &---text {
         font-family: "BIZ UDPGothic";
         font-size: 1rem;
         font-style: normal;
         font-weight: 700;
-        line-height: 2rem; /* 200% */
+        line-height: 2rem;
+        /* 200% */
       }
+
       i {
         margin-left: 0.5rem;
       }
@@ -806,6 +895,7 @@ img {
       width: (716/1220) * 100%;
       @include mx();
       max-width: 716px;
+
       &--post {
         width: 13rem;
       }
@@ -815,6 +905,7 @@ img {
 
 .about {
   padding-bottom: 6.5rem;
+
   &__imagebox {
     border-radius: 0rem 1.5rem 1.5rem 0rem;
     background: url(/images/firstView.jpg) lightgray 50% / cover no-repeat;
@@ -830,6 +921,7 @@ img {
     width: fit-content;
     position: relative;
     color: $color-brown;
+
     &::before {
       content: "About";
       top: -3rem;
@@ -844,12 +936,14 @@ img {
       font-family: "BIZ UDPGothic";
     }
   }
+
   &__text {
     font-family: "BIZ UDPGothic";
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 3.75rem; /* 300% */
+    line-height: 3.75rem;
+    /* 300% */
     color: $color-brown;
     margin-bottom: 2.5rem;
     width: 83%;
@@ -865,22 +959,27 @@ img {
       padding: 1rem 2.5rem;
       @include mx;
       color: $color-white;
+
       &---text {
         font-family: "BIZ UDPGothic";
         font-size: 1rem;
         font-style: normal;
         font-weight: 700;
-        line-height: 2rem; /* 200% */
+        line-height: 2rem;
+        /* 200% */
       }
+
       i {
         margin-left: 0.5rem;
       }
     }
   }
+
   .image__area {
     display: flex;
     justify-content: space-between;
     margin-bottom: 3.69rem;
+
     :nth-child(1) {
       border-radius: 1.5rem;
     }
@@ -892,17 +991,20 @@ img {
     padding: 7.5rem 2rem 3.5rem;
     @include mx;
     border-radius: 1.5rem;
+
     &__title {
       text-align: center;
       font-family: "Zen Maru Gothic";
       font-size: 2rem;
       font-style: normal;
       font-weight: 700;
-      line-height: 2.5rem; /* 125% */
+      line-height: 2.5rem;
+      /* 125% */
       margin-inline: auto;
       width: fit-content;
       position: relative;
       color: $color-brown;
+
       &::before {
         content: "Opening a store";
         top: -3rem;
@@ -922,7 +1024,8 @@ img {
       font-size: 1rem;
       font-style: normal;
       font-weight: 700;
-      line-height: 1.8rem; /* 180% */
+      line-height: 1.8rem;
+      /* 180% */
       color: $color-brown;
       margin: 2.5rem auto;
       text-align: center;
@@ -936,13 +1039,16 @@ img {
         padding: 1rem 2.5rem;
         @include mx;
         color: $color-white;
+
         &---text {
           font-family: "BIZ UDPGothic";
           font-size: 1rem;
           font-style: normal;
           font-weight: 700;
-          line-height: 2rem; /* 200% */
+          line-height: 2rem;
+          /* 200% */
         }
+
         i {
           margin-left: 0.5rem;
         }
@@ -963,6 +1069,7 @@ img {
   padding-top: 6.5rem;
   padding-bottom: 3.5rem;
   background-color: $color-white;
+
   &__title {
     text-align: center;
     font-size: 2.5rem;
@@ -972,6 +1079,7 @@ img {
     width: fit-content;
     position: relative;
     color: $color-brown;
+
     &::before {
       content: "Access";
       top: -3rem;
@@ -993,6 +1101,7 @@ img {
     border: 0.2px solid #4e4e4e;
     border-radius: 0.5rem;
     margin-bottom: 2.5rem;
+
     iframe {
       width: 100%;
       height: 100%;
@@ -1010,10 +1119,12 @@ img {
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.8rem; /* 180% */
+    line-height: 1.8rem;
+    /* 180% */
     text-decoration-line: underline;
     margin-bottom: 2.5rem;
   }
+
   &__route {
     &--guide {
       display: flex;
@@ -1021,13 +1132,15 @@ img {
       gap: 1.5rem;
       width: 85%;
       @include mx;
+
       &__title {
         width: 27%;
         font-family: "BIZ UDPGothic";
         font-size: 1rem;
         font-style: normal;
         font-weight: 700;
-        line-height: 1.8rem; /* 180% */
+        line-height: 1.8rem;
+        /* 180% */
         border-radius: 1.5rem;
         border: 2px solid $color-main;
         padding: 0 1rem;
@@ -1035,16 +1148,20 @@ img {
         height: fit-content;
         text-align: center;
       }
+
       .dlwrap {
         width: 73%;
       }
+
       &__text {
         font-family: "BIZ UDPGothic";
         font-size: 1rem;
         font-style: normal;
         font-weight: 700;
-        line-height: 1.8rem; /* 180% */
+        line-height: 1.8rem;
+        /* 180% */
         color: $color-brown;
+
         &.caution {
           color: $color-main;
         }
