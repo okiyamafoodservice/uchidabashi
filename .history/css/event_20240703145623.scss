@@ -84,12 +84,13 @@ img {
         flex-wrap: wrap;
         justify-content: space-between;
         line-height: 1rem;
-        row-gap: 6.5rem;
     }
 
     .card {
         color: $color-brown;
         width: 45%;
+        margin-bottom: 6.5rem;
+
 
         &__image {
             width: 100%;

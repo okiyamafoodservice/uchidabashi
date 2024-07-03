@@ -49,10 +49,23 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  line-height: 1rem;
+  row-gap: 6.5rem;
 }
 .content .card {
   color: #5d4a3a;
   width: 45%;
+}
+.content .card__image {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.content .card__image img {
+  width: 100%;
+  border-radius: 1.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 4/3;
 }
 .content .card__title {
   font-family: "Zen Maru Gothic";
@@ -60,6 +73,7 @@ img {
   font-style: normal;
   font-weight: 700;
   line-height: 1.5rem;
+  margin-bottom: 1rem;
   /* 92.308% */
 }
 .content .card__date {
@@ -68,6 +82,8 @@ img {
   font-style: normal;
   font-weight: 700;
   line-height: 1.5rem;
+  display: inline-block;
+  margin-bottom: 1rem;
   /* 120% */
 }
 .content .card__text {
