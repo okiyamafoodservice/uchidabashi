@@ -82,14 +82,15 @@ $breakpoints: (
 .footer {
   padding: 3.5rem 0;
   background-color: $color-white;
+  &__inner {
+    width: 100%;
+  }
 
   &__head {
-    width: 85%;
     @include mx;
     margin-bottom: 2.5rem;
   }
   &__text {
-    width: 85%;
     @include mx;
     font-family: "BIZ UDPGothic";
     font-size: 1rem;
@@ -102,7 +103,6 @@ $breakpoints: (
     }
   }
   &__tel {
-    width: 85%;
     @include mx;
     display: block;
     i {
@@ -146,10 +146,16 @@ $breakpoints: (
   .footer {
     &__inner {
       width: 85%;
+      @include mx;
     }
     &__link {
-      @include mx;
       display: flex;
+      width: 100%;
+      column-gap: 2.5rem;
+      padding-left: 0;
+      &--list {
+        font-size: 1rem;
+      }
     }
   }
 }

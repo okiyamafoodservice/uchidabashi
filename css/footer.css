@@ -58,14 +58,15 @@
   padding: 3.5rem 0;
   background-color: #ffffff;
 }
+.footer__inner {
+  width: 100%;
+}
 .footer__head {
-  width: 85%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2.5rem;
 }
 .footer__text {
-  width: 85%;
   margin-left: auto;
   margin-right: auto;
   font-family: "BIZ UDPGothic";
@@ -79,7 +80,6 @@
   display: inline-block;
 }
 .footer__tel {
-  width: 85%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -120,11 +120,18 @@
 @media screen and (min-width: 768px) {
   .footer__inner {
     width: 85%;
-  }
-  .footer__link {
     margin-left: auto;
     margin-right: auto;
+  }
+  .footer__link {
     display: flex;
+    width: 100%;
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
+    padding-left: 0;
+  }
+  .footer__link--list {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=footer.css.map */
