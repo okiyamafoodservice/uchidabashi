@@ -9,61 +9,59 @@ $color-brown: #5d4a3a;
 $color-skyblue: #80c4e9;
 
 $breakpoints: (
-    "sm": "screen and (min-width: 430px)",
-    "md": "screen and (min-width: 768px)",
-    "lg": "screen and (min-width: 992px)",
-    "xl": "screen and (min-width: 1200px)",
-    ) !default;
+  "sm": "screen and (min-width: 430px)",
+  "md": "screen and (min-width: 768px)",
+  "lg": "screen and (min-width: 992px)",
+  "xl": "screen and (min-width: 1200px)",
+) !default;
 
 @mixin mx {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @mixin media($breakpoint) {
-    @media #{map-get($breakpoints, $breakpoint)} {
-        @content;
-    }
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
 }
 
 body {
-    background-color: $color-base2;
+  background-color: $color-base2;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-
 .event__content {
-    display: flex;
-    align-items: flex-start;
-    gap: 5rem;
-    padding-bottom: 12.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 5rem;
+  padding-bottom: 12.5rem;
 
+  &__image {
+    height: 27.25rem;
+    border-radius: 0rem 6.25rem 1.5rem 0rem;
+    background: url(../images/makiwaramatsuri.jpeg) lightgray 50% / cover
+      no-repeat;
+    width: 79%;
+    flex-shrink: 0;
+  }
 
-    &__image {
-        height: 27.25rem;
-        border-radius: 0rem 6.25rem 1.5rem 0rem;
-        background: url(../images/makiwaramatsuri.jpeg) lightgray 50% / cover no-repeat;
-        width: 79%;
-        flex-shrink: 0;
-    }
+  &__text h1 {
+    width: 2rem;
+    color: $color-brown;
+    font-family: "Zen Maru Gothic";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem;
+    /* 100% */
+  }
 
-    &__text h1 {
-        width: 2rem;
-        color: $color-brown;
-        font-family: "Zen Maru Gothic";
-        font-size: 2rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 2rem;
-        /* 100% */
-    }
-
-    &__text p {
-        transform: rotate(90deg
-        );
+  &__text p {
+    transform: rotate(90deg);
     color: $color-main;
     font-family: "BIZ UDPGothic";
     font-size: 0.9375rem;
@@ -71,14 +69,15 @@ img {
     font-weight: 700;
     line-height: 1.5rem;
     /* 100% */
-}
+  }
 }
 
 .content {
-    margin-left: auto;
-    margin-right: auto;
-    width: 63%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 63%;
 
+<<<<<<< HEAD
     .content__header {
         margin-bottom: 4rem;
     }
@@ -89,55 +88,60 @@ img {
         justify-content: space-between;
         line-height: 1rem;
         row-gap: 6.5rem;
+=======
+  .card__wapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 1rem;
+    row-gap: 6.5rem;
+  }
+
+  .card {
+    color: $color-brown;
+    width: 45%;
+
+    &__image {
+      width: 100%;
+      margin-bottom: 1.5rem;
+
+      img {
+        width: 100%;
+        border-radius: 1.5rem;
+        object-fit: cover;
+        aspect-ratio: 4/3;
+      }
+>>>>>>> 52ddab5 (okiyama)
     }
 
-    .card {
-        color: $color-brown;
-        width: 45%;
-
-        &__image {
-            width: 100%;
-            margin-bottom: 1.5rem;
-
-            img {
-                width: 100%;
-                border-radius: 1.5rem;
-                object-fit: cover;
-                aspect-ratio: 4/3;
-            }
-        }
-
-
-        &__title {
-            font-family: "Zen Maru Gothic";
-            font-size: 1.625rem;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 1.5rem;
-            margin-bottom: 1rem;
-            /* 92.308% */
-        }
-
-        &__date {
-            font-family: "BIZ UDPGothic";
-            font-size: 1.25rem;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 1.5rem;
-            display: inline-block;
-            margin-bottom: 1rem;
-            /* 120% */
-        }
-
-        &__text {
-            font-family: "BIZ UDPGothic";
-            font-size: 1rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 1.8rem;
-            /* 180% */
-        }
+    &__title {
+      font-family: "Zen Maru Gothic";
+      font-size: 1.625rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.5rem;
+      margin-bottom: 1rem;
+      /* 92.308% */
     }
 
+    &__date {
+      font-family: "BIZ UDPGothic";
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.5rem;
+      display: inline-block;
+      margin-bottom: 1rem;
+      /* 120% */
+    }
 
+    &__text {
+      font-family: "BIZ UDPGothic";
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.8rem;
+      /* 180% */
+    }
+  }
 }
