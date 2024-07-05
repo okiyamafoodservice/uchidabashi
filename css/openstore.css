@@ -112,6 +112,7 @@ img {
   .sub-head {
     display: flex;
     align-items: center;
+    margin-bottom: 3rem;
   }
 }
 .sub-head__text {
@@ -137,6 +138,7 @@ img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 3rem;
   }
 }
 .card--flex__content {
@@ -191,13 +193,57 @@ img {
   }
 }
 
+.flow-card .special {
+  background-color: #ff7f3e;
+  color: #ffffff;
+}
+.flow-card:nth-child(-n+6):after {
+  content: "";
+  width: 2px;
+  height: 4rem;
+  background-color: #DBCCB6;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .flow-card__contant {
   background-color: #ffffff;
-  padding: 2.5rem;
+  padding: 3rem 2rem 2rem 2rem;
   border-radius: 1.25rem;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .flow-card__contant {
+    width: 85%;
+    padding: 2.5rem 4rem;
+  }
 }
 .flow-card__img {
-  width: 20%;
+  position: absolute;
+  left: 0rem;
+  top: -2rem;
+  width: 70px;
   margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .flow-card__img {
+    left: -2rem;
+    width: 80px;
+  }
+}
+.flow-card__head {
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+@media screen and (min-width: 768px) {
+  .flow-card__head {
+    margin-bottom: 1rem;
+  }
+}
+.flow-card__caption {
+  font-family: "BIZ UDPGothic";
 }
 /*# sourceMappingURL=openstore.css.map */

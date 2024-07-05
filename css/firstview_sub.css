@@ -10,6 +10,7 @@
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 6rem;
   }
 }
 .firstView-sub__img {

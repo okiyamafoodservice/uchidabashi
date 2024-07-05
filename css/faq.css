@@ -108,6 +108,9 @@ img {
     margin-top: 6.5rem;
   }
 }
+.faq__main {
+  padding: 3rem 0;
+}
 
 .qAndA {
   background-color: #ffffff;
