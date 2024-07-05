@@ -67,6 +67,7 @@ $breakpoints: (
     }
   }
   &__menu {
+    z-index: 100;
     display: none;
     background-color: $color-main;
     width: 100%;

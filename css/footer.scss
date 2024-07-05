@@ -83,7 +83,8 @@ $breakpoints: (
   padding: 3.5rem 0;
   background-color: $color-white;
   &__inner {
-    width: 100%;
+    width: 85%;
+    @include mx;
   }
 
   &__head {
@@ -122,6 +123,7 @@ $breakpoints: (
   }
 
   &__link {
+    padding: 0;
     &--list {
       margin-bottom: 2rem;
       color: $color-brown;

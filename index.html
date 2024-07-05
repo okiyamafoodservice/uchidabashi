@@ -78,6 +78,22 @@
       </div>
     </header>
 
+    <!-- モーダルウィンドウ -->
+    <div class="modal" id="menuModal">
+      <div class="modal__content">
+        <span class="modal__close" id="closeModal">&times;</span>
+        <a href="" class="modal__link">イベント情報</a>
+        <a href="" class="modal__link">店舗情報</a>
+        <a href="" class="modal__link">商店街について</a>
+        <a href="" class="modal__link">出店について</a>
+        <a href="" class="modal__link">アクセス</a>
+        <a href="" class="modal__link">お問い合わせ</a>
+        <a href="" class="modal__link"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+    </div>
+
     <!-- ここ以下を作成 -->
     <!-- CSSはheader/footerはインポートファイルで作成しているので、新たに作成したページもheader/footer同様新規にファイルを作成してください -->
 
@@ -320,44 +336,50 @@
 
         <section class="access">
           <h2 class="access__title">アクセス</h2>
-          <div class="access__map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1261.112474717234!2d136.90670908426625!3d35.11589231400829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037bac7d252995%3A0x24b9daf6c5a01907!2z5YaF55Sw5qmL5ZWG5bqX6KGX77yI6YCa56ewOuODgOODkOOCt--8iQ!5e0!3m2!1sja!2sjp!4v1719371126126!5m2!1sja!2sjp"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-          <a href="" class="access__link"
-            >〒457-0862 愛知県名古屋市南区内田橋１丁目(Google Maps)<i
-              class="fa-solid fa-arrow-up-right-from-square"
-            ></i>
-          </a>
 
-          <div class="acess__route">
-            <dl class="access__route--guide">
-              <dt class="access__route--guide__title">電車</dt>
-              <dd class="dlwrap">
-                <p class="access__route--guide__text">
-                  地下鉄名城線「熱田神宮伝馬町」駅から徒歩5分
-                </p>
-                <p class="access__route--guide__text">
-                  名鉄常滑線「豊田本町」駅から徒歩6分
-                </p>
-                <p class="access__route--guide__text caution">
-                  ※名鉄名古屋からお越しの際は、東岡崎行きの電車に乗ってはいけません！
-                </p>
-              </dd>
-            </dl>
-            <dl class="access__route--guide">
-              <dt class="access__route--guide__title">バス</dt>
-              <dd class="access__route--guide__text">
-                市バス「内田橋」から徒歩1分
-              </dd>
-            </dl>
+          <div class="access__wrapper">
+            <div class="access__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1261.112474717234!2d136.90670908426625!3d35.11589231400829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037bac7d252995%3A0x24b9daf6c5a01907!2z5YaF55Sw5qmL5ZWG5bqX6KGX77yI6YCa56ewOuODgOODkOOCt--8iQ!5e0!3m2!1sja!2sjp!4v1719371126126!5m2!1sja!2sjp"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+            <div class="access__info">
+              <a href="" class="access__link"
+                >〒457-0862 愛知県名古屋市南区内田橋１丁目(Google Maps)<i
+                  class="fa-solid fa-arrow-up-right-from-square"
+                ></i>
+              </a>
+
+              <div class="acess__route">
+                <dl class="access__route--guide">
+                  <dt class="access__route--guide__title">電車</dt>
+                  <dd class="dlwrap">
+                    <p class="access__route--guide__text">
+                      地下鉄名城線「熱田神宮伝馬町」駅から徒歩5分
+                    </p>
+                    <p class="access__route--guide__text">
+                      名鉄常滑線「豊田本町」駅から徒歩6分
+                    </p>
+                    <p class="access__route--guide__text caution">
+                      ※名鉄名古屋からお越しの際は、東岡崎行きの電車に乗ってはいけません！
+                    </p>
+                  </dd>
+                </dl>
+                <dl class="access__route--guide">
+                  <dt class="access__route--guide__title">バス</dt>
+                  <dd class="access__route--guide__text">
+                    市バス「内田橋」から徒歩1分
+                  </dd>
+                </dl>
+              </div>
+            </div>
           </div>
         </section>
       </div>
