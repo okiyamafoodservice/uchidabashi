@@ -1,104 +1,6 @@
 @import url(./header.css);
 @import url(./footer.css);
 @import url(./firstview_sub.css);
-html,
-body {
-  color: #5d4a3a;
-  font-family: "Zen Maru Gothic", sans-serif;
-  font-size: 16px;
-  font-weight: "";
-  letter-spacing: "";
-  line-height: "";
-  background-color: #fcf9ed;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #5d4a3a;
-  font-weight: 400;
-  word-break: break-all;
-}
-
-h1 {
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 3rem;
-  /* 100% */
-}
-
-h2 {
-  font-size: 2rem;
-  line-height: 3rem;
-  /* 100% */
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1.25rem;
-}
-
-a {
-  text-decoration: none;
-}
-
-pre {
-  font-size: inherit;
-}
-
-table {
-  max-width: 100%;
-}
-
-th,
-td {
-  padding: 0.5em;
-}
-
-ol,
-ul {
-  padding-left: 2em;
-}
-
-iframe {
-  max-width: 100%;
-}
-
-input,
-textarea,
-button {
-  font-size: inherit;
-  line-height: "";
-}
-
-code {
-  font-size: inherit;
-  word-break: break-all;
-}
-
-img {
-  max-width: 100%;
-}
-
-.button:hover {
-  background-color: #80c4e9;
-  color: #ffffff;
-  transition: 0.3s;
-}
-
-.link-line {
-  -webkit-text-decoration: underline 1px #5d4a3a;
-          text-decoration: underline 1px #5d4a3a;
-  color: #5d4a3a;
-}
-
 .faq {
   width: 100%;
   margin-top: 3rem;
@@ -127,58 +29,58 @@ img {
   }
 }
 
-.q {
+.question {
   padding-bottom: 2rem;
   border-bottom: 1px solid rgba(93, 74, 58, 0.2);
 }
 @media screen and (min-width: 768px) {
-  .q {
+  .question {
     display: flex;
     align-items: center;
   }
 }
-.q__img {
+.question__img {
   width: 1.5rem;
   margin-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .q__img {
+  .question__img {
     margin-bottom: 0;
   }
 }
-.q__text {
+.question__text {
   font-weight: bold;
   font-size: 1.3rem;
 }
 @media screen and (min-width: 768px) {
-  .q__text {
+  .question__text {
     padding-left: 1rem;
   }
 }
 
-.a {
+.answer {
   padding-top: 2rem;
 }
 @media screen and (min-width: 768px) {
-  .a {
+  .answer {
     display: flex;
     align-items: center;
   }
 }
-.a__img {
+.answer__img {
   width: 1.5rem;
   margin-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .a__img {
+  .answer__img {
     margin-bottom: 0;
   }
 }
-.a__text {
+.answer__text {
   font-family: "BIZ UDPGothic";
 }
 @media screen and (min-width: 768px) {
-  .a__text {
+  .answer__text {
     padding-left: 1rem;
   }
 }
