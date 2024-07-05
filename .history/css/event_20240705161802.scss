@@ -85,31 +85,28 @@ img {
     font-style: normal;
     font-weight: 700;
     line-height: 2rem;
-  }
+    /* 100% */
 
-  /* 100% */
+    &__content__header {
+      position: relative;
+      display: inline-block;
+      padding-right: 10px;
+    }
 
-  &__header {
-
-    display: flex;
-    align-items: center;
-    gap: 2em;
-    white-space: nowrap;
-  }
-
-  &__header::after {
-    content: "";
-    display: block;
-
-
-    width: 100%;
-    /* 破線の長さ */
-    height: 1px;
-    background: linear-gradient(to right, $color-main, transparent 100%);
-    background-size: 10px 1px;
+    &__content__header::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: translateY(-50%);
+      width: 100px;
+      /* 破線の長さ */
+      height: 1px;
+      background: linear-gradient(to right, black 50%, transparent 50%);
+      background-size: 10px 1px;
+    }
   }
 }
-
 
 .card__wapper {
   display: flex;

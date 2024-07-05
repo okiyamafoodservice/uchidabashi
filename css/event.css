@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: #fcf9ed;
 }
@@ -44,33 +45,75 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 63%;
+  /* 100% */
 }
-.content .content__header {
+.content__header {
   margin-bottom: 4rem;
+  color: #5d4a3a;
+  font-family: "Zen Maru Gothic";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
 }
-.content .card__wapper {
+.content__header {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  white-space: nowrap;
+}
+.content__header::after {
+  content: "";
+  display: block;
+  width: 100%;
+  /* 破線の長さ */
+  height: 1px;
+  background: linear-gradient(to right, #ff7f3e, transparent 100%);
+  background-size: 10px 1px;
+}
+
+.card__wapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   line-height: 1rem;
   row-gap: 6.5rem;
 }
-.content .card {
+.card__wapper .card__wapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  line-height: 1rem;
+  row-gap: 6.5rem;
+}
+.card__wapper .card {
   color: #5d4a3a;
   width: 45%;
+  position: relative;
 }
-.content .card__image {
+.card__wapper .card::before {
+  content: "参加無料";
+  display: inline-block;
+  background-color: #ff7f3e;
+  color: #ffffff;
+  font-size: 1.125rem;
+  border-radius: 25px;
+  padding: 1rem;
+  position: absolute;
+  top: -5%;
+}
+.card__wapper .card__image {
   width: 100%;
   margin-bottom: 1.5rem;
 }
-.content .card__image img {
+.card__wapper .card__image img {
   width: 100%;
   border-radius: 1.5rem;
   -o-object-fit: cover;
      object-fit: cover;
   aspect-ratio: 4/3;
 }
-.content .card__title {
+.card__wapper .card__title {
   font-family: "Zen Maru Gothic";
   font-size: 1.625rem;
   font-style: normal;
@@ -79,7 +122,7 @@ img {
   margin-bottom: 1rem;
   /* 92.308% */
 }
-.content .card__date {
+.card__wapper .card__date {
   font-family: "BIZ UDPGothic";
   font-size: 1.25rem;
   font-style: normal;
@@ -89,7 +132,7 @@ img {
   margin-bottom: 1rem;
   /* 120% */
 }
-.content .card__text {
+.card__wapper .card__text {
   font-family: "BIZ UDPGothic";
   font-size: 1rem;
   font-style: normal;

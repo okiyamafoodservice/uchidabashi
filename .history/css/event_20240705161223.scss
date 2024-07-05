@@ -77,7 +77,7 @@ img {
   margin-right: auto;
   width: 63%;
 
-  &__header {
+  .content__header {
     margin-bottom: 4rem;
     color: $color-brown;
     font-family: "Zen Maru Gothic";
@@ -85,38 +85,13 @@ img {
     font-style: normal;
     font-weight: 700;
     line-height: 2rem;
+    /* 100% */
+
+    position: relative;
+    display: inline-block;
+    padding-right: 0.625rem;
+    /* 10px / 16px = 0.625rem */
   }
-
-  /* 100% */
-
-  &__header {
-
-    display: flex;
-    align-items: center;
-    gap: 2em;
-    white-space: nowrap;
-  }
-
-  &__header::after {
-    content: "";
-    display: block;
-
-
-    width: 100%;
-    /* 破線の長さ */
-    height: 1px;
-    background: linear-gradient(to right, $color-main, transparent 100%);
-    background-size: 10px 1px;
-  }
-}
-
-
-.card__wapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  line-height: 1rem;
-  row-gap: 6.5rem;
 
   .card__wapper {
     display: flex;
@@ -124,65 +99,73 @@ img {
     justify-content: space-between;
     line-height: 1rem;
     row-gap: 6.5rem;
-  }
 
-  .card {
-    color: $color-brown;
-    width: 45%;
-    position: relative;
-
-    &::before {
-      content: "参加無料";
-      display: inline-block;
-      background-color: $color-main;
-      color: $color-white;
-      font-size: 1.125rem;
-      border-radius: 25px;
-      padding: 1rem;
-      position: absolute;
-      top: -5%;
+    .card__wapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      line-height: 1rem;
+      row-gap: 6.5rem;
     }
 
-    &__image {
-      width: 100%;
-      margin-bottom: 1.5rem;
+    .card {
+      color: $color-brown;
+      width: 45%;
+      position: relative;
 
-      img {
-        width: 100%;
-        border-radius: 1.5rem;
-        object-fit: cover;
-        aspect-ratio: 4/3;
+      &::before {
+        content: "参加無料";
+        display: inline-block;
+        background-color: $color-main;
+        color: $color-white;
+        font-size: 1.125rem;
+        border-radius: 25px;
+        padding: 1rem;
+        position: absolute;
+        top: -5%;
       }
-    }
 
-    &__title {
-      font-family: "Zen Maru Gothic";
-      font-size: 1.625rem;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 1.5rem;
-      margin-bottom: 1rem;
-      /* 92.308% */
-    }
+      &__image {
+        width: 100%;
+        margin-bottom: 1.5rem;
 
-    &__date {
-      font-family: "BIZ UDPGothic";
-      font-size: 1.25rem;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 1.5rem;
-      display: inline-block;
-      margin-bottom: 1rem;
-      /* 120% */
-    }
+        img {
+          width: 100%;
+          border-radius: 1.5rem;
+          object-fit: cover;
+          aspect-ratio: 4/3;
+        }
+      }
 
-    &__text {
-      font-family: "BIZ UDPGothic";
-      font-size: 1rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 1.8rem;
-      /* 180% */
+      &__title {
+        font-family: "Zen Maru Gothic";
+        font-size: 1.625rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+        /* 92.308% */
+      }
+
+      &__date {
+        font-family: "BIZ UDPGothic";
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5rem;
+        display: inline-block;
+        margin-bottom: 1rem;
+        /* 120% */
+      }
+
+      &__text {
+        font-family: "BIZ UDPGothic";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.8rem;
+        /* 180% */
+      }
     }
   }
 }

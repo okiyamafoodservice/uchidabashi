@@ -90,22 +90,21 @@ img {
   /* 100% */
 
   &__header {
-
-    display: flex;
-    align-items: center;
-    gap: 2em;
-    white-space: nowrap;
+    position: relative;
+    display: inline-block;
+    padding-right: 10px;
   }
 
   &__header::after {
     content: "";
-    display: block;
-
-
-    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    width: 100px;
     /* 破線の長さ */
     height: 1px;
-    background: linear-gradient(to right, $color-main, transparent 100%);
+    background: linear-gradient(to right, $color-main, transparent 50%);
     background-size: 10px 1px;
   }
 }
