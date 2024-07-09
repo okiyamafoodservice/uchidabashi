@@ -9,51 +9,70 @@ $color-brown: #5d4a3a;
 $color-skyblue: #80c4e9;
 
 $breakpoints: (
-    "sm": "screen and (min-width: 430px)",
-    "md": "screen and (min-width: 768px)",
-    "lg": "screen and (min-width: 992px)",
-    "xl": "screen and (min-width: 1200px)",
-    ) !default;
+  "sm": "screen and (min-width: 430px)",
+  "md": "screen and (min-width: 768px)",
+  "lg": "screen and (min-width: 992px)",
+  "xl": "screen and (min-width: 1200px)",
+) !default;
 
 @mixin mx {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @mixin media($breakpoint) {
-    @media #{map-get($breakpoints, $breakpoint)} {
-        @content;
-    }
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
 }
 
 .firstView-sub {
-    margin-top: 6rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  width: 92%;
+  display: flex;
+  flex-direction: column-reverse;
 
-    margin-bottom: 3rem;
-    width: 92%;
-    display: flex;
-    flex-direction: column-reverse;
+  @include media(md) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 0 100px 24px 0;
+    height: 500px;
+    object-fit: cover;
 
     @include media(md) {
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 6rem;
+      width: 78%;
+      height: 600px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    margin-left: 8%;
+    font-size: 1.8rem;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    margin-bottom: 3rem;
+
+    @include media(md) {
+      margin-left: 0rem;
+      text-align: left;
+      margin-right: 5%;
+      margin-bottom: 0;
     }
 
-
-    &__img {
-        width: 100%;
-        border-radius: 0 100px 24px 0;
-        height: 500px;
-        object-fit: cover;
-
-        @include media(md) {
-            width: 78%;
-            height: 600px;
-        }
+    @include media(lg) {
+      margin-right: 8%;
     }
+  }
 
+<<<<<<< HEAD
     &__title {
         font-weight: bold;
         margin-left: 8%;
@@ -62,28 +81,16 @@ $breakpoints: (
         writing-mode: vertical-rl;
         margin-bottom: 3rem;
         font-family: "Zen Maru Gothic";
+=======
+  &__main-title {
+    margin: 0;
+    font-weight: bold;
+  }
+>>>>>>> 421aa5e0c729114f852aa65f8bb7f91d5824cfde
 
-        @include media(md) {
-            margin-left: 0rem;
-            text-align: left;
-            margin-right: 5%;
-            margin-bottom: 0;
-        }
-
-        @include media(lg) {
-            margin-right: 8%;
-        }
-
-    }
-
-    &__main-title {
-        margin: 0;
-        font-weight: bold;
-    }
-
-    &__sub-title {
-        font-size: 1rem;
-        color: $color-main;
-        padding-right: 0.5rem;
-    }
+  &__sub-title {
+    font-size: 1rem;
+    color: $color-main;
+    padding-right: 0.5rem;
+  }
 }
