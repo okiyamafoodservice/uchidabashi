@@ -276,6 +276,20 @@ img {
   }
 }
 
+.main {
+  &-section {
+    @include mx(
+  );
+  width: 80%;
+  max-width: 1280px;
+  padding: 3rem 0;
+
+  @include media(md) {
+    padding: 6rem 0;
+  }
+}
+}
+
 //shimizu------------------
 
 .topInfo {
@@ -764,74 +778,73 @@ img {
 
   @keyframes infinity-scroll-left {
     from {
-      transform: translateX(0
-      );
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
   }
 
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.scroll-infinity__wrap {
-  display: flex;
-  overflow: hidden;
-}
-
-.scroll-infinity__list {
-  display: flex;
-  list-style: none;
-  padding: 0;
-}
-
-.scroll-infinity__list--left {
-  animation: infinity-scroll-left 80s infinite linear 0.5s both;
-}
-
-.scroll-infinity__item {
-  width: calc(100vw / 1.5);
-  margin-right: 1.5rem;
-}
-
-.scroll-infinity__item>img {
-  width: 100%;
-  border-radius: 1.25rem;
-}
-
-@keyframes infinity-scroll-right {
-  from {
-    transform: translateX(-100%);
+  .scroll-infinity__wrap {
+    display: flex;
+    overflow: hidden;
   }
 
-  to {
-    transform: translateX(0);
+  .scroll-infinity__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
   }
-}
 
-.scroll-infinity__wrap {
-  display: flex;
-  overflow: hidden;
-}
+  .scroll-infinity__list--left {
+    animation: infinity-scroll-left 80s infinite linear 0.5s both;
+  }
 
-.scroll-infinity__list {
-  display: flex;
-  list-style: none;
-  padding: 0;
-}
+  .scroll-infinity__item {
+    width: calc(100vw / 1.5);
+    margin-right: 1.5rem;
+  }
 
-.scroll-infinity__list--right {
-  animation: infinity-scroll-right 80s infinite linear 0.5s both;
-}
+  .scroll-infinity__item>img {
+    width: 100%;
+    border-radius: 1.25rem;
+  }
 
-.scroll-infinity__item {
-  width: calc(100vw / 1.5);
-  margin-right: 1.5rem;
-}
+  @keyframes infinity-scroll-right {
+    from {
+      transform: translateX(-100%);
+    }
 
-.scroll-infinity__item>img {
-  width: 100%;
-  border-radius: 1.25rem;
-}
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .scroll-infinity__wrap {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .scroll-infinity__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+
+  .scroll-infinity__list--right {
+    animation: infinity-scroll-right 80s infinite linear 0.5s both;
+  }
+
+  .scroll-infinity__item {
+    width: calc(100vw / 1.5);
+    margin-right: 1.5rem;
+  }
+
+  .scroll-infinity__item>img {
+    width: 100%;
+    border-radius: 1.25rem;
+  }
 }
 
 @include media("md") {
