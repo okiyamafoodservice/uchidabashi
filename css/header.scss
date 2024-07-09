@@ -26,13 +26,27 @@ $breakpoints: (
   }
 }
 
+a {
+  text-decoration: none;
+}
+
+//   _    _                 _
+//  | |  | |               | |
+//  | |__| | ___  __ _  ___| | _____ _ __
+//  |  __  |/ _ \/ _` |/ __| |/ / _ \ '__|
+//  | |  | |  __/ (_| | (__|   <  __/ |
+//  |_|  |_|\___|\__,_|\___|_|\_\___|_|
+
 .header {
   background-color: $color-base2;
   margin-bottom: 3.31rem;
+  height: 8rem;
   &__inner {
-    width: 93%;
     @include mx;
     padding-top: 1.56rem;
+    display: flex;
+    justify-content: center; /* 中央配置 */
+    width: 95%;
   }
   &__top {
     display: flex;
@@ -43,15 +57,18 @@ $breakpoints: (
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 0px 20px 0px rgba(55, 23, 0, 0.05);
-    z-index: 100;
-    position: relative; /* 追加 */
-    z-index: 10; /* 追加 */
+    position: fixed;
+    z-index: 10;
+    width: 93%;
     &--image {
       width: 23%;
       min-width: 70px;
       height: auto;
       border-radius: 50%;
       margin-right: 1.56rem;
+      img {
+        width: 100%;
+      }
     }
   }
   &__gnav {
@@ -90,10 +107,12 @@ $breakpoints: (
   .header {
     background-color: $color-base2;
     margin-bottom: 3.31rem;
+    height: 10.77rem;
     &__inner {
-      width: 93%;
       @include mx;
       padding-top: 1.56rem;
+      display: flex;
+      justify-content: center; /* 中央配置 */
     }
     &__top {
       display: flex;
@@ -138,7 +157,6 @@ $breakpoints: (
         }
       }
     }
-
     &__menuButton {
       display: none;
     }
