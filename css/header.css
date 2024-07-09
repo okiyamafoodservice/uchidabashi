@@ -129,5 +129,8 @@ a {
   .header__menuButton {
     display: none;
   }
+  .header #menuButton {
+    display: none;
+  }
 }
 /*# sourceMappingURL=header.css.map */

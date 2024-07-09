@@ -6,7 +6,7 @@ $color-main: #ff7f3e;
 $color-base2: #fcf9ed;
 $color-white: #ffffff;
 $color-brown: #5d4a3a;
-$color-skyblue: #80c4e9;
+$color-skyblue: #6ac3f3;
 
 $breakpoints: (
   "sm": "screen and (min-width: 430px)",
@@ -158,6 +158,9 @@ a {
       }
     }
     &__menuButton {
+      display: none;
+    }
+    #menuButton {
       display: none;
     }
   }

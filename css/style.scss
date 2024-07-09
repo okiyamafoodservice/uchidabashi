@@ -268,7 +268,6 @@ button {
   }
 }
 
-<<<<<<< HEAD
 //shimizu--------------------
 .sub-head {
   margin-bottom: 1rem;
@@ -301,22 +300,19 @@ button {
 
 .main {
   &-section {
-    @include mx(
-  );
-  width: 80%;
-  max-width: 1280px;
-  padding: 3rem 0;
+    @include mx();
+    width: 80%;
+    max-width: 1280px;
+    padding: 3rem 0;
 
-  @include media(md) {
-    padding: 6rem 0;
+    @include media(md) {
+      padding: 6rem 0;
+    }
   }
-}
 }
 
 //shimizu------------------
 
-=======
->>>>>>> 8922951 (okiyama)
 .topInfo {
   position: relative;
   background-color: $color-white;
@@ -504,7 +500,7 @@ button {
 .opening {
   &__parts {
     border-radius: 1.5rem;
-    background-color: $color-main;
+    background-color: $color-skyblue;
     padding: 3.5rem 2rem;
     @include mx;
     width: 83%;
@@ -538,7 +534,7 @@ button {
       border-radius: 6.25rem;
       padding: 1rem 2.5rem;
       @include mx;
-      color: $color-main;
+      color: $color-skyblue;
 
       &---text {
         font-family: "BIZ UDPGothic";
@@ -561,7 +557,6 @@ button {
     margin-top: 6.8rem;
 
     &__parts {
-      background-color: $color-main;
       padding: 3.5rem 0;
       width: 66%;
       @include mx;
@@ -863,11 +858,7 @@ button {
     margin-right: 1.5rem;
   }
 
-<<<<<<< HEAD
-  .scroll-infinity__item>img {
-=======
   .scroll-infinity__item > img {
->>>>>>> 8922951 (okiyama)
     width: 100%;
     border-radius: 1.25rem;
   }
@@ -902,11 +893,7 @@ button {
     margin-right: 1.5rem;
   }
 
-<<<<<<< HEAD
-  .scroll-infinity__item>img {
-=======
   .scroll-infinity__item > img {
->>>>>>> 8922951 (okiyama)
     width: 100%;
     border-radius: 1.25rem;
   }
@@ -1283,6 +1270,10 @@ button {
       gap: 1.5rem;
       width: 85%;
       @include mx;
+      &:nth-child(2) {
+        margin-bottom: 0;
+        align-items: center;
+      }
 
       &__title {
         width: fit-content;
@@ -1293,7 +1284,6 @@ button {
         line-height: 1.8rem;
         /* 180% */
         border-radius: 1.5rem;
-        border: 2px solid $color-main;
         padding: 0.25rem 1rem;
         color: $color-main;
         height: fit-content;

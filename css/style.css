@@ -216,7 +216,6 @@ button {
     line-height: 1.5rem;
   }
 }
-<<<<<<< HEAD
 .sub-head {
   margin-bottom: 1rem;
 }
@@ -259,8 +258,6 @@ button {
   }
 }
 
-=======
->>>>>>> 8922951 (okiyama)
 .topInfo {
   position: relative;
   background-color: #ffffff;
@@ -434,7 +431,7 @@ button {
 
 .opening__parts {
   border-radius: 1.5rem;
-  background-color: #ff7f3e;
+  background-color: #80c4e9;
   padding: 3.5rem 2rem;
   margin-left: auto;
   margin-right: auto;
@@ -469,7 +466,7 @@ button {
   padding: 1rem 2.5rem;
   margin-left: auto;
   margin-right: auto;
-  color: #ff7f3e;
+  color: #80c4e9;
 }
 .opening__parts--button---text {
   font-family: "BIZ UDPGothic";
@@ -488,7 +485,6 @@ button {
     margin-top: 6.8rem;
   }
   .opening__parts {
-    background-color: #ff7f3e;
     padding: 3.5rem 0;
     width: 66%;
     margin-left: auto;
@@ -1163,6 +1159,10 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
+.access__route--guide:nth-child(2) {
+  margin-bottom: 0;
+  align-items: center;
+}
 .access__route--guide__title {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -1174,7 +1174,6 @@ button {
   line-height: 1.8rem;
   /* 180% */
   border-radius: 1.5rem;
-  border: 2px solid #ff7f3e;
   padding: 0.25rem 1rem;
   color: #ff7f3e;
   height: -webkit-fit-content;
