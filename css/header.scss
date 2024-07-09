@@ -44,6 +44,8 @@ $breakpoints: (
     justify-content: space-between;
     box-shadow: 0px 0px 20px 0px rgba(55, 23, 0, 0.05);
     z-index: 100;
+    position: relative; /* 追加 */
+    z-index: 10; /* 追加 */
     &--image {
       width: 23%;
       min-width: 70px;
