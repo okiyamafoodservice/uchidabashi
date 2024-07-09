@@ -38,6 +38,11 @@ $breakpoints: (
 
 .flowTime-group {
     font-family: "Zen Maru Gothic";
+    width: 80%;
+
+    &__content {
+        margin-bottom: 5rem;
+    }
 
     &__time {
         font-size: 2rem;
@@ -48,7 +53,8 @@ $breakpoints: (
 
     &__text {
         font-weight: 600;
-        text-align: right;
+        text-align: left;
+        font-size: 0.9rem;
     }
 
     &__img {
@@ -57,9 +63,14 @@ $breakpoints: (
     }
 }
 
+.flowTime-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
 .border-line {
     width: 2px;
-    height: 200px;
+    height: 400px;
     background-color: $color-main;
     animation: borderLine 1s linear;
     animation-fill-mode: forwards;

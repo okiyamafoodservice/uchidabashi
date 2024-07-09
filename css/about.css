@@ -6,6 +6,10 @@
 
 .flowTime-group {
   font-family: "Zen Maru Gothic";
+  width: 80%;
+}
+.flowTime-group__content {
+  margin-bottom: 5rem;
 }
 .flowTime-group__time {
   font-size: 2rem;
@@ -15,16 +19,22 @@
 }
 .flowTime-group__text {
   font-weight: 600;
-  text-align: right;
+  text-align: left;
+  font-size: 0.9rem;
 }
 .flowTime-group__img {
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
 
+.flowTime-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 .border-line {
   width: 2px;
-  height: 200px;
+  height: 400px;
   background-color: #ff7f3e;
   -webkit-animation: borderLine 1s linear;
           animation: borderLine 1s linear;
