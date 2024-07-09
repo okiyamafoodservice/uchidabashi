@@ -20,3 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+//shimizu-------------------------
+const trigger = new ScrollTrigger.default()
+trigger.add('[data-trigger]', {
+  once: true,
+})

@@ -13,7 +13,7 @@ $breakpoints: (
   "md": "screen and (min-width: 768px)",
   "lg": "screen and (min-width: 992px)",
   "xl": "screen and (min-width: 1200px)",
-) !default;
+  ) !default;
 
 @mixin mx {
   margin-left: auto;
@@ -72,21 +72,20 @@ $breakpoints: (
     }
   }
 
-<<<<<<< HEAD
-    &__title {
-        font-weight: bold;
-        margin-left: 8%;
-        font-size: 1.8rem;
-        -ms-writing-mode: tb-rl;
-        writing-mode: vertical-rl;
-        margin-bottom: 3rem;
-        font-family: "Zen Maru Gothic";
-=======
+  &__title {
+    font-weight: bold;
+    margin-left: 8%;
+    font-size: 1.8rem;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    margin-bottom: 3rem;
+    font-family: "Zen Maru Gothic";
+  }
+
   &__main-title {
     margin: 0;
     font-weight: bold;
   }
->>>>>>> 421aa5e0c729114f852aa65f8bb7f91d5824cfde
 
   &__sub-title {
     font-size: 1rem;
