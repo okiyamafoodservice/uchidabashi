@@ -90,7 +90,7 @@ img {
 .modal {
   display: none;
   position: fixed;
-  z-index: 99;
+  z-index: 5; /* ヘッダーより低い値に設定 */
   left: 0;
   top: 0;
   width: 100%;
