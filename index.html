@@ -50,7 +50,6 @@
 
   <body>
     <header class="header">
-      <div class="header__menu"></div>
       <div class="header__inner">
         <div class="header__top">
           <div class="header__top--image">
@@ -67,13 +66,13 @@
               ><i class="fa-brands fa-instagram"></i
             ></a>
           </div>
-          <div class="header__menuButton">
+          <button id="menuButton">
             <img
+              id="menuIcon"
               src="./images/menu_button.svg"
-              alt=""
-              class="header__menuButton--image"
+              alt="Menu Button"
             />
-          </div>
+          </button>
         </div>
       </div>
     </header>
@@ -81,7 +80,6 @@
     <!-- モーダルウィンドウ -->
     <div class="modal" id="menuModal">
       <div class="modal__content">
-        <span class="modal__close" id="closeModal">&times;</span>
         <a href="" class="modal__link">イベント情報</a>
         <a href="" class="modal__link">店舗情報</a>
         <a href="" class="modal__link">商店街について</a>
