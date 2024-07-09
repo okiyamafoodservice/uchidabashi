@@ -31,49 +31,6 @@ $breakpoints: (
 @import url(./footer.css);
 
 
-
-.main {
-    &-section {
-        @include mx(
-    );
-    width: 80%;
-    max-width: 1280px;
-    padding: 3rem 0;
-
-    @include media(md) {
-        padding: 6rem 0;
-    }
-}
-}
-
-.sub-head {
-    margin-bottom: 2.5rem;
-
-    @include media(md) {
-        display: flex;
-        align-items: center;
-        margin-bottom: 3rem;
-    }
-
-    &__text {
-        display: inline-block;
-        white-space: nowrap;
-        font-weight: 500;
-    }
-
-    hr {
-        height: 2px;
-        width: 100%;
-        border: none;
-        display: inline-block;
-        border-top: dashed 2px $color-main;
-
-        @include media(md) {
-            margin-left: 1rem;
-        }
-    }
-}
-
 .card--flex {
 
     @include media(md) {

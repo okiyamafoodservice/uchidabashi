@@ -4,7 +4,7 @@
 html,
 body {
   color: #5d4a3a;
-  font-family: "UDPGothic Gothic", sans-serif;
+  font-family: "UDPGothic", sans-serif;
   font-size: 16px;
   letter-spacing: 0.05em;
   line-height: 1.75;
@@ -90,7 +90,7 @@ img {
 .modal {
   display: none;
   position: fixed;
-  z-index: 99;
+  z-index: 5;
   left: 0;
   top: 0;
   width: 100%;
@@ -118,7 +118,8 @@ img {
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 2.5rem; /* 200% */
+  line-height: 2.5rem;
+  /* 200% */
   margin-bottom: 2.5rem;
 }
 
@@ -194,6 +195,48 @@ img {
     line-height: 1.5rem;
   }
 }
+.sub-head {
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .sub-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+}
+.sub-head__text {
+  display: inline-block;
+  white-space: nowrap;
+  font-weight: 500;
+  font-family: "Zen Maru Gothic";
+}
+.sub-head hr {
+  height: 2px;
+  width: 100%;
+  border: none;
+  display: inline-block;
+  border-top: dashed 2px #ff7f3e;
+}
+@media screen and (min-width: 768px) {
+  .sub-head hr {
+    margin-left: 1rem;
+  }
+}
+
+.main-section {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  max-width: 1280px;
+  padding: 3rem 0;
+}
+@media screen and (min-width: 768px) {
+  .main-section {
+    padding: 6rem 0;
+  }
+}
+
 .topInfo {
   position: relative;
   background-color: #ffffff;
