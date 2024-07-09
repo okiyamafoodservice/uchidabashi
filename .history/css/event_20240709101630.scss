@@ -107,13 +107,13 @@ img {
   }
 }
 
+
 .card__wapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   line-height: 1rem;
   row-gap: 6.5rem;
-  padding-bottom: 12.5rem;
 
   .card__wapper {
     display: flex;
@@ -179,10 +179,8 @@ img {
       font-style: normal;
       font-weight: 400;
       line-height: 1.8rem;
-
       /* 180% */
     }
   }
-
 
 }

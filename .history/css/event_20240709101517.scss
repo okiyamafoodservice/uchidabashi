@@ -99,6 +99,9 @@ img {
 
   &__header::after {
     content: "";
+    display: block;
+
+
     height: 2px;
     width: 100%;
     border: none;
@@ -107,13 +110,13 @@ img {
   }
 }
 
+
 .card__wapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   line-height: 1rem;
   row-gap: 6.5rem;
-  padding-bottom: 12.5rem;
 
   .card__wapper {
     display: flex;
@@ -179,10 +182,20 @@ img {
       font-style: normal;
       font-weight: 400;
       line-height: 1.8rem;
-
       /* 180% */
     }
   }
 
+  .year {
+    &__header {
+      margin-bottom: 4rem;
+      color: $color-brown;
+      font-family: "Zen Maru Gothic";
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 2rem;
+    }
+  }
 
 }

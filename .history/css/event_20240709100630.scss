@@ -99,13 +99,13 @@ img {
 
   &__header::after {
     content: "";
+    display: block;
+
+
     height: 2px;
-    width: 100%;
-    border: none;
-    display: inline-block;
-    border-top: dashed 2px #ff7f3e;
   }
 }
+
 
 .card__wapper {
   display: flex;
@@ -113,7 +113,6 @@ img {
   justify-content: space-between;
   line-height: 1rem;
   row-gap: 6.5rem;
-  padding-bottom: 12.5rem;
 
   .card__wapper {
     display: flex;
@@ -179,10 +178,8 @@ img {
       font-style: normal;
       font-weight: 400;
       line-height: 1.8rem;
-
       /* 180% */
     }
   }
-
 
 }
