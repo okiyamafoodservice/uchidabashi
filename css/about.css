@@ -1,3 +1,42 @@
 @import url(./header.css);
 @import url(./footer.css);
+.flowTime {
+  text-align: center;
+}
+
+.flowTime-group {
+  font-family: "Zen Maru Gothic";
+}
+.flowTime-group__time {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ff7f3e;
+  margin-bottom: 0.5rem;
+}
+.flowTime-group__text {
+  font-weight: 600;
+  text-align: right;
+}
+.flowTime-group__img {
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.border-line {
+  width: 2px;
+  height: 200px;
+  background-color: #ff7f3e;
+  -webkit-animation: borderLine 1s linear;
+          animation: borderLine 1s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.maru {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #ff7f3e;
+  transform: translateX(-0.4rem);
+}
 /*# sourceMappingURL=about.css.map */

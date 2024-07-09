@@ -38,3 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 500); // アニメーションの時間に合わせて変更
   });
 });
+
+//shimizu-------------------------
+const trigger = new ScrollTrigger.default()
+trigger.add('[data-trigger]', {
+  once: true,
+})

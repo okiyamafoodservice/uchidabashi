@@ -32,7 +32,6 @@
   font-size: 1.8rem;
   writing-mode: vertical-rl;
   margin-bottom: 3rem;
-  font-family: "Zen Maru Gothic";
 }
 @media screen and (min-width: 768px) {
   .firstView-sub__title {
@@ -46,6 +45,14 @@
   .firstView-sub__title {
     margin-right: 8%;
   }
+}
+.firstView-sub__title {
+  font-weight: bold;
+  margin-left: 8%;
+  font-size: 1.8rem;
+  writing-mode: vertical-rl;
+  margin-bottom: 3rem;
+  font-family: "Zen Maru Gothic";
 }
 .firstView-sub__main-title {
   margin: 0;
