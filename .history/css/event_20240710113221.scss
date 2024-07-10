@@ -131,7 +131,17 @@ img {
     width: 45%;
     position: relative;
 
-
+    &::before {
+      content: "参加無料";
+      display: inline-block;
+      background-color: $color-main;
+      color: $color-white;
+      font-size: 1.125rem;
+      border-radius: 25px;
+      padding: 1rem;
+      position: absolute;
+      top: -5%;
+    }
 
     &__image {
       width: 100%;
@@ -165,20 +175,6 @@ img {
       margin-bottom: 1rem;
       /* 120% */
     }
-
-    &__join {
-      color: $color-main;
-      font-family: "BIZ UDPGothic";
-      font-size: 1rem;
-      font-style: normal;
-      font-weight: 700;
-      border: 2px solid $color-main;
-      width: fit-content;
-      line-height: 1.5rem;
-      padding: 0.5rem;
-      margin-bottom: 16px;
-    }
-
 
     &__text {
       font-family: "BIZ UDPGothic";
