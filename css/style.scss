@@ -10,7 +10,7 @@ $color-skyblue: #80c4e9;
 
 $breakpoints: (
   "sm": "screen and (min-width: 430px)",
-  "md": "screen and (min-width: 768px)",
+  "md": "screen and (min-width: 1000px)",
   "lg": "screen and (min-width: 992px)",
   "xl": "screen and (min-width: 1200px)",
 ) !default;
@@ -500,7 +500,7 @@ button {
 .opening {
   &__parts {
     border-radius: 1.5rem;
-    background-color: $color-skyblue;
+    background-color: $color-main;
     padding: 3.5rem 2rem;
     @include mx;
     width: 83%;
@@ -534,7 +534,7 @@ button {
       border-radius: 6.25rem;
       padding: 1rem 2.5rem;
       @include mx;
-      color: $color-skyblue;
+      color: $color-main;
 
       &---text {
         font-family: "BIZ UDPGothic";
@@ -564,10 +564,11 @@ button {
       &--title {
         text-align: center;
         color: #fff;
-        font-size: 2rem;
+        font-size: 2.25rem;
         font-style: normal;
         font-weight: 500;
         line-height: 2rem;
+        font-family: "Zen Maru Gothic";
         /* 100% */
       }
 
@@ -975,6 +976,13 @@ button {
     margin-bottom: 3.69rem;
     width: 83%;
     @include mx();
+    list-style: none;
+
+    li {
+      width: 30%;
+      aspect-ratio: 1/1;
+      background-color: #212121;
+    }
 
     &--post {
       width: 7rem;
@@ -1028,12 +1036,12 @@ button {
 
 @include media("md") {
   .latestInfo {
+    margin-bottom: 6rem;
     &__instagram {
       margin-bottom: 3.75rem;
       width: (716/1220) * 100%;
       @include mx();
       max-width: 716px;
-
       &--post {
         width: 13rem;
       }
@@ -1043,11 +1051,12 @@ button {
 
 .about {
   padding-bottom: 6.5rem;
-
   &__imagebox {
-    border-radius: 0rem 1.5rem 1.5rem 0rem;
-    background: url(/images/firstView.jpg) lightgray 50% / cover no-repeat;
-    flex-shrink: 0;
+    width: 88%;
+    margin-bottom: 7.37rem;
+    img {
+      border-radius: 0rem 1.5rem 1.5rem 0rem;
+    }
   }
 
   &__title {
@@ -1097,6 +1106,7 @@ button {
       padding: 1rem 2.5rem;
       @include mx;
       color: $color-white;
+      margin-bottom: 3.12rem;
 
       &---text {
         font-family: "BIZ UDPGothic";
@@ -1115,9 +1125,24 @@ button {
 
   .image__area {
     display: flex;
-    justify-content: space-between;
     margin-bottom: 3.69rem;
-
+    flex-direction: row-reverse;
+    column-gap: 5%;
+    align-items: flex-start;
+    margin-bottom: 12.75rem;
+    img {
+      &:nth-child(1) {
+        width: 53%;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+      }
+      &:nth-child(2) {
+        margin-top: 20%;
+        width: 30%;
+        aspect-ratio: 1/1.124;
+        object-fit: cover;
+      }
+    }
     :nth-child(1) {
       border-radius: 1.5rem;
     }
@@ -1197,6 +1222,40 @@ button {
 
 @include media("md") {
   .about {
+    &__imagebox {
+      margin-bottom: 6.5rem;
+      width: 80%;
+      img {
+        border-radius: 0;
+        aspect-ratio: 2/1;
+        object-fit: cover;
+      }
+
+      .image__area {
+        display: flex;
+        margin-bottom: 3.69rem;
+        flex-direction: row-reverse;
+        column-gap: 4.5rem;
+        align-items: flex-start;
+        margin-bottom: 12.75rem;
+        img {
+          &:nth-child(1) {
+            width: 53%;
+            aspect-ratio: 3/2;
+            object-fit: contain;
+          }
+          &:nth-child(2) {
+            margin-top: 20%;
+            width: 30%;
+            aspect-ratio: 1/1.124;
+            object-fit: cover;
+          }
+        }
+        :nth-child(1) {
+          border-radius: 1.5rem;
+        }
+      }
+    }
     .button {
       margin-bottom: 104px;
     }

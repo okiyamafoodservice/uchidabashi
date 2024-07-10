@@ -10,7 +10,7 @@ $color-skyblue: #6ac3f3;
 
 $breakpoints: (
   "sm": "screen and (min-width: 430px)",
-  "md": "screen and (min-width: 768px)",
+  "md": "screen and (min-width: 1100px)",
   "lg": "screen and (min-width: 992px)",
   "xl": "screen and (min-width: 1200px)",
 ) !default;
@@ -29,13 +29,6 @@ $breakpoints: (
 a {
   text-decoration: none;
 }
-
-//   _    _                 _
-//  | |  | |               | |
-//  | |__| | ___  __ _  ___| | _____ _ __
-//  |  __  |/ _ \/ _` |/ __| |/ / _ \ '__|
-//  | |  | |  __/ (_| | (__|   <  __/ |
-//  |_|  |_|\___|\__,_|\___|_|\_\___|_|
 
 .header {
   background-color: $color-base2;
