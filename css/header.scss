@@ -13,7 +13,7 @@ $breakpoints: (
   "md": "screen and (min-width: 1100px)",
   "lg": "screen and (min-width: 992px)",
   "xl": "screen and (min-width: 1200px)",
-) !default;
+  ) !default;
 
 @mixin mx {
   margin-left: auto;
@@ -34,13 +34,16 @@ a {
   background-color: $color-base2;
   margin-bottom: 3.31rem;
   height: 8rem;
+
   &__inner {
     @include mx;
     padding-top: 1.56rem;
     display: flex;
-    justify-content: center; /* 中央配置 */
+    justify-content: center;
+    /* 中央配置 */
     width: 95%;
   }
+
   &__top {
     display: flex;
     @include mx;
@@ -49,51 +52,61 @@ a {
     border-radius: 5rem;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px 0px 20px 0px rgba(55, 23, 0, 0.05);
-    position: fixed;
-    z-index: 10;
-    width: 93%;
-    &--image {
-      width: 23%;
-      min-width: 70px;
-      height: auto;
-      border-radius: 50%;
-      margin-right: 1.56rem;
-      img {
-        width: 100%;
-      }
+    box-shadow: 0px 0px 20px 0px rgba(55, 23, 0, 0.05
+    );
+  position: fixed;
+  z-index: 10;
+  width: 93%;
+
+  &--image {
+    width: 23%;
+    min-width: 70px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 1.56rem;
+
+    img {
+      width: 100%;
     }
   }
-  &__gnav {
-    display: none;
-    &--link {
-      display: block;
-      color: $color-black;
-      font-weight: bold;
-      font-size: 1rem;
-      color: #76604e;
-      &:hover {
-        color: $color-main;
-        transition: 0.3s;
-      }
+}
+
+&__gnav {
+  display: none;
+  font-family: "Zen Maru Gothic", sans-serif;
+
+  &--link {
+    display: block;
+    color: $color-black;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #76604e;
+
+    &:hover {
+      color: $color-main;
+      transition: 0.3s;
     }
   }
-  &__menu {
-    z-index: 100;
-    display: none;
-    background-color: $color-main;
-    width: 100%;
-    height: 100vh;
-    z-index: 50;
-    &.open {
-      display: block;
-    }
+}
+
+&__menu {
+  z-index: 100;
+  display: none;
+  background-color: $color-main;
+  width: 100%;
+  height: 100vh;
+  z-index: 50;
+
+  &.open {
+    display: block;
   }
-  &__menuButton {
-    &--image {
-      min-width: 50px;
-    }
+}
+
+&__menuButton {
+  &--image {
+    min-width: 50px;
   }
+}
 }
 
 @include media("md") {
@@ -101,12 +114,15 @@ a {
     background-color: $color-base2;
     margin-bottom: 3.31rem;
     height: 10.77rem;
+
     &__inner {
       @include mx;
       padding-top: 1.56rem;
       display: flex;
-      justify-content: center; /* 中央配置 */
+      justify-content: center;
+      /* 中央配置 */
     }
+
     &__top {
       display: flex;
       @include mx;
@@ -115,33 +131,39 @@ a {
       border-radius: 5rem;
       align-items: center;
       justify-content: space-between;
+
       &--image {
         width: 10%;
         max-width: 7rem;
         height: auto;
         border-radius: 50%;
         margin-right: 1.56rem;
+
         img {
           width: 100%;
         }
       }
     }
+
     &__gnav {
       display: flex;
       gap: 2.5rem;
       width: 100%;
       align-items: center;
       justify-content: flex-end;
+
       &--link {
         display: block;
         color: $color-black;
         font-weight: 700;
         font-size: 1rem;
         color: #76604e;
+
         &:hover {
           color: $color-main;
           transition: 0.3s;
         }
+
         .fa-instagram {
           color: $color-white;
           background-color: $color-main;
@@ -150,9 +172,11 @@ a {
         }
       }
     }
+
     &__menuButton {
       display: none;
     }
+
     #menuButton {
       display: none;
     }
