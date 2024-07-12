@@ -743,6 +743,19 @@ button {
       }
     }
   }
+
+  &__info {
+    padding: 1px;
+    border: 1px solid $color-main;
+    width: fit-content;
+    @include mx;
+    &--title {
+      text-align: center;
+    }
+    &--content {
+      text-align: center;
+    }
+  }
 }
 
 @include media("md") {
