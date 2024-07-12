@@ -32,8 +32,8 @@ a {
 
 .header {
   background-color: $color-base2;
-  margin-bottom: 3.31rem;
-  height: 8rem;
+  // margin-bottom: 3.31rem;
+  // height: 8rem;
 
   &__inner {
     @include mx;
@@ -59,7 +59,7 @@ a {
   width: 93%;
 
   &--image {
-    width: 23%;
+    width: 35%;
     min-width: 70px;
     height: auto;
     border-radius: 50%;
@@ -112,8 +112,8 @@ a {
 @include media("md") {
   .header {
     background-color: $color-base2;
-    margin-bottom: 3.31rem;
-    height: 10.77rem;
+    // margin-bottom: 3.31rem;
+    // height: 10.77rem;
 
     &__inner {
       @include mx;

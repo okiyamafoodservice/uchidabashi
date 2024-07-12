@@ -120,6 +120,10 @@ img {
   max-width: 100%;
 }
 
+main {
+  padding-top: 10rem;
+}
+
 /* ボタンのデフォルトスタイルをリセット */
 button {
   background: none;
@@ -179,6 +183,10 @@ button {
     font-family: "Zen Maru Gothic",
       sans-serif;
     /* フォント名をクォートで囲む */
+
+    i {
+      font-size: 3rem;
+    }
   }
 }
 
@@ -190,6 +198,7 @@ button {
   }
 }
 
+
 .firstView {
   position: relative;
 
@@ -198,9 +207,14 @@ button {
     margin-bottom: 3.69rem;
     @include mx;
 
+    &--subtext {
+      display: none;
+      white-space: nowrap
+    }
+
     &--image {
       height: 60vh;
-      border-radius: 0rem 18.96875rem 1.5rem 0rem;
+      border-radius: 0rem 12rem 1.5rem 0rem;
       background: url(../images/makiwaradammy.png) lightgray 50% / cover no-repeat;
       width: 75%;
       margin-bottom: 3.8rem;
@@ -208,7 +222,6 @@ button {
 
     &--text {
       @include mx;
-      width: 83%;
 
       img {
         width: 100%;
@@ -223,6 +236,9 @@ button {
         font-size: 1.25rem;
         font-weight: 700;
         margin-bottom: 1.5rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
   }
@@ -235,41 +251,57 @@ button {
       justify-content: space-between;
 
       &--image {
-        height: 80vh;
+        height: 800px;
         border-radius: 0rem 18.96875rem 1.5rem 0rem;
         background: url(../images/makiwaradammy.png) lightgray 50% / cover no-repeat;
         width: 79%;
+        margin-bottom: 0;
       }
 
-      &--text {
-        width: 22%;
-        padding: 5rem 3rem;
-        background-color: none;
+      &--subtext {
+        color: rgba($color: $color-main, $alpha: 0.5
+        );
+      font-family: "Zen Maru Gothic",
+        sans-serif;
+      font-weight: 500;
+      display: block;
+    }
 
-        .verticalCatch {
-          display: block;
-          margin-bottom: 1.5rem;
-          width: 65%;
-        }
+    &--text-group {
+      padding-left: 4%;
+      padding-right: 7%;
+      margin-top: 5rem;
+    }
 
-        .horizontalCatch {
-          display: none;
-        }
+    &--text {
+      width: 100%;
+      background-color: none;
 
-        &--title {
-          font-size: 2.5rem;
-          font-weight: 700;
-          margin-bottom: 1.5rem;
-        }
+      .verticalCatch {
+        display: block;
+        margin-bottom: 4rem;
+        width: 100%;
+      }
 
-        &--detail {
-          font-size: 1.25rem;
-          font-weight: 400;
-          line-height: 1.5rem;
-        }
+      .horizontalCatch {
+        display: none;
+      }
+
+
+      &--title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+      }
+
+      &--detail {
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.5rem;
       }
     }
   }
+}
 }
 
 //shimizu--------------------
@@ -304,16 +336,15 @@ button {
 
 .main {
   &-section {
-    @include mx(
-  );
-  width: 80%;
-  max-width: 1280px;
-  padding: 3rem 0;
+    @include mx();
+    width: 80%;
+    max-width: 1280px;
+    padding: 3rem 0;
 
-  @include media(md) {
-    padding: 6rem 0;
+    @include media(md) {
+      padding: 6rem 0;
+    }
   }
-}
 }
 
 //shimizu------------------
@@ -515,6 +546,9 @@ button {
       text-align: center;
       color: #fff;
       margin-bottom: 1.5rem;
+      font-family: "Zen Maru Gothic";
+      font-weight: 500;
+      font-size: 1.8rem;
     }
 
     &--text {
@@ -559,7 +593,9 @@ button {
 
 @include media("md") {
   .opening {
-    margin-top: 6.8rem;
+    // margin-top: 6.8rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
 
     &__parts {
       padding: 3.5rem 0;
@@ -578,7 +614,7 @@ button {
       }
 
       &--text {
-        width: 32rem;
+        width: 34rem;
         text-align: center;
         font-family: "BIZ UDPGothic";
         font-size: 1rem;
@@ -668,15 +704,10 @@ button {
       display: block;
       margin-inline: auto;
       content: "Event";
-      top: -3rem;
-      left: 0%;
       width: 100%;
-      height: 10px;
-      z-index: 1;
       margin-top: 1rem;
       font-size: 15px;
       color: $color-main;
-      position: absolute;
     }
   }
 
@@ -796,7 +827,7 @@ button {
 
   &__title {
     text-align: center;
-    // font-size: 2.5rem;
+    line-height: 2.5rem;
     font-weight: 700;
     margin-bottom: 3.69rem;
     margin-inline: auto;
@@ -805,17 +836,12 @@ button {
 
     &::before {
       display: block;
-      margin-inline: auto;
       content: "Shop";
-      top: -3rem;
-      left: 0%;
+      margin-inline: auto;
       width: 100%;
-      height: 10px;
-      z-index: 1;
       margin-top: 1rem;
       font-size: 15px;
       color: $color-main;
-      position: absolute;
     }
   }
 
@@ -828,7 +854,8 @@ button {
     font-weight: 700;
     line-height: 1.8rem;
     /* 180% */
-    margin-bottom: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   ul {
@@ -957,22 +984,21 @@ button {
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
+    line-height: 2.5rem;
     margin-bottom: 3.69rem;
     margin-inline: auto;
     width: fit-content;
     position: relative;
+    display: block;
 
     &::before {
+      display: block;
       content: "News";
-      top: -3rem;
-      left: 0%;
+      margin-inline: auto;
       width: 100%;
-      height: 10px;
-      z-index: 1;
       margin-top: 1rem;
       font-size: 15px;
       color: $color-main;
-      position: absolute;
     }
   }
 
@@ -1005,6 +1031,7 @@ button {
   }
 
   &__text {
+    font-family: "BIZ UDPGothic";
     width: 83%;
     @include mx;
     color: $color-brown;
@@ -1077,6 +1104,7 @@ button {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 3.69rem;
+    line-height: 2.5rem;
     margin-inline: auto;
     width: fit-content;
     position: relative;
@@ -1084,17 +1112,13 @@ button {
     font-family: "Zen Maru Gothic";
 
     &::before {
+      display: block;
       content: "About";
-      top: -3rem;
-      left: 0%;
+      margin-inline: auto;
       width: 100%;
-      height: 10px;
-      z-index: 1;
       margin-top: 1rem;
       font-size: 15px;
       color: $color-main;
-      position: absolute;
-      font-family: "BIZ UDPGothic";
     }
   }
 
@@ -1137,13 +1161,22 @@ button {
     }
   }
 
+  .image__sub01,
+  .image__sub02 {
+    border-radius: 0.5rem;
+  }
+
+  .image__sub01 {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
   .image__area {
     display: flex;
     margin-bottom: 3.69rem;
     flex-direction: row-reverse;
     column-gap: 5%;
     align-items: flex-start;
-    margin-bottom: 12.75rem;
+    margin-bottom: 6.5rem;
 
     img {
       &:nth-child(1) {
@@ -1168,9 +1201,10 @@ button {
   &__opening {
     width: 83%;
     background-color: $color-white;
-    padding: 7.5rem 2rem 3.5rem;
+    padding: 3rem 2rem;
     @include mx;
     border-radius: 1.5rem;
+
 
     &__title {
       text-align: center;
@@ -1185,17 +1219,16 @@ button {
       position: relative;
       color: $color-brown;
 
+
       &::before {
         content: "Opening a store";
-        top: -3rem;
-        left: 0%;
+        display: block;
+        content: "About";
+        margin-inline: auto;
         width: 100%;
-        // height: 10px;
-        z-index: 1;
+        // margin-top: 1rem;
         font-size: 15px;
         color: $color-main;
-        position: absolute;
-        font-family: "BIZ UDPGothic";
       }
     }
 
@@ -1241,7 +1274,7 @@ button {
   .about {
     &__imagebox {
       margin-bottom: 6.5rem;
-      width: 80%;
+      width: 70%;
 
       img {
         border-radius: 0;
@@ -1278,9 +1311,6 @@ button {
       }
     }
 
-    .button {
-      margin-bottom: 104px;
-    }
   }
 }
 
@@ -1422,4 +1452,9 @@ button {
       }
     }
   }
+}
+
+//shimizu
+.scroll-infinity {
+  margin-bottom: 1rem;
 }

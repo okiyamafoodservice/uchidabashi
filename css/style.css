@@ -88,6 +88,10 @@ img {
   max-width: 100%;
 }
 
+main {
+  padding-top: 10rem;
+}
+
 /* ボタンのデフォルトスタイルをリセット */
 button {
   background: none;
@@ -142,6 +146,9 @@ button {
   font-family: "Zen Maru Gothic", sans-serif;
   /* フォント名をクォートで囲む */
 }
+.modal__link i {
+  font-size: 3rem;
+}
 
 .button:hover {
   background-color: #80c4e9;
@@ -158,9 +165,13 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
+.firstView__content--subtext {
+  display: none;
+  white-space: nowrap;
+}
 .firstView__content--image {
   height: 60vh;
-  border-radius: 0rem 18.96875rem 1.5rem 0rem;
+  border-radius: 0rem 12rem 1.5rem 0rem;
   background: url(../images/makiwaradammy.png) lightgray 50%/cover no-repeat;
   width: 75%;
   margin-bottom: 3.8rem;
@@ -168,7 +179,6 @@ button {
 .firstView__content--text {
   margin-left: auto;
   margin-right: auto;
-  width: 83%;
 }
 .firstView__content--text img {
   width: 100%;
@@ -181,6 +191,9 @@ button {
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 1000px) {
@@ -189,20 +202,31 @@ button {
     justify-content: space-between;
   }
   .firstView__content--image {
-    height: 80vh;
+    height: 800px;
     border-radius: 0rem 18.96875rem 1.5rem 0rem;
     background: url(../images/makiwaradammy.png) lightgray 50%/cover no-repeat;
     width: 79%;
+    margin-bottom: 0;
+  }
+  .firstView__content--subtext {
+    color: rgba(255, 127, 62, 0.5);
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 500;
+    display: block;
+  }
+  .firstView__content--text-group {
+    padding-left: 4%;
+    padding-right: 7%;
+    margin-top: 5rem;
   }
   .firstView__content--text {
-    width: 22%;
-    padding: 5rem 3rem;
+    width: 100%;
     background-color: none;
   }
   .firstView__content--text .verticalCatch {
     display: block;
-    margin-bottom: 1.5rem;
-    width: 65%;
+    margin-bottom: 4rem;
+    width: 100%;
   }
   .firstView__content--text .horizontalCatch {
     display: none;
@@ -444,6 +468,9 @@ button {
   text-align: center;
   color: #fff;
   margin-bottom: 1.5rem;
+  font-family: "Zen Maru Gothic";
+  font-weight: 500;
+  font-size: 1.8rem;
 }
 .opening__parts--text {
   align-self: stretch;
@@ -484,7 +511,8 @@ button {
 
 @media screen and (min-width: 1000px) {
   .opening {
-    margin-top: 6.8rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
   }
   .opening__parts {
     padding: 3.5rem 0;
@@ -503,7 +531,7 @@ button {
     /* 100% */
   }
   .opening__parts--text {
-    width: 32rem;
+    width: 34rem;
     text-align: center;
     font-family: "BIZ UDPGothic";
     font-size: 1rem;
@@ -591,15 +619,10 @@ button {
   display: block;
   margin-inline: auto;
   content: "Event";
-  top: -3rem;
-  left: 0%;
   width: 100%;
-  height: 10px;
-  z-index: 1;
   margin-top: 1rem;
   font-size: 15px;
   color: #ff7f3e;
-  position: absolute;
 }
 .event__image--box {
   margin-bottom: 2.5rem;
@@ -702,6 +725,7 @@ button {
 }
 .storeInfo__title {
   text-align: center;
+  line-height: 2.5rem;
   font-weight: 700;
   margin-bottom: 3.69rem;
   margin-inline: auto;
@@ -712,17 +736,12 @@ button {
 }
 .storeInfo__title::before {
   display: block;
-  margin-inline: auto;
   content: "Shop";
-  top: -3rem;
-  left: 0%;
+  margin-inline: auto;
   width: 100%;
-  height: 10px;
-  z-index: 1;
   margin-top: 1rem;
   font-size: 15px;
   color: #ff7f3e;
-  position: absolute;
 }
 .storeInfo__text {
   width: 83%;
@@ -734,7 +753,8 @@ button {
   font-weight: 700;
   line-height: 1.8rem;
   /* 180% */
-  margin-bottom: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .storeInfo ul {
   list-style: none;
@@ -858,24 +878,23 @@ button {
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
+  line-height: 2.5rem;
   margin-bottom: 3.69rem;
   margin-inline: auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
+  display: block;
 }
 .latestInfo__title::before {
+  display: block;
   content: "News";
-  top: -3rem;
-  left: 0%;
+  margin-inline: auto;
   width: 100%;
-  height: 10px;
-  z-index: 1;
   margin-top: 1rem;
   font-size: 15px;
   color: #ff7f3e;
-  position: absolute;
 }
 .latestInfo__instagram {
   display: flex;
@@ -904,6 +923,7 @@ button {
   aspect-ratio: 1/1;
 }
 .latestInfo__text {
+  font-family: "BIZ UDPGothic";
   width: 83%;
   margin-left: auto;
   margin-right: auto;
@@ -969,6 +989,7 @@ button {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 3.69rem;
+  line-height: 2.5rem;
   margin-inline: auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -978,17 +999,13 @@ button {
   font-family: "Zen Maru Gothic";
 }
 .about__title::before {
+  display: block;
   content: "About";
-  top: -3rem;
-  left: 0%;
+  margin-inline: auto;
   width: 100%;
-  height: 10px;
-  z-index: 1;
   margin-top: 1rem;
   font-size: 15px;
   color: #ff7f3e;
-  position: absolute;
-  font-family: "BIZ UDPGothic";
 }
 .about__text {
   font-family: "BIZ UDPGothic";
@@ -1027,6 +1044,13 @@ button {
 .about__parts--button i {
   margin-left: 0.5rem;
 }
+.about .image__sub01,
+.about .image__sub02 {
+  border-radius: 0.5rem;
+}
+.about .image__sub01 {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
 .about .image__area {
   display: flex;
   margin-bottom: 3.69rem;
@@ -1034,7 +1058,7 @@ button {
   -moz-column-gap: 5%;
        column-gap: 5%;
   align-items: flex-start;
-  margin-bottom: 12.75rem;
+  margin-bottom: 6.5rem;
 }
 .about .image__area img:nth-child(1) {
   width: 53%;
@@ -1055,7 +1079,7 @@ button {
 .about__opening {
   width: 83%;
   background-color: #ffffff;
-  padding: 7.5rem 2rem 3.5rem;
+  padding: 3rem 2rem;
   margin-left: auto;
   margin-right: auto;
   border-radius: 1.5rem;
@@ -1077,14 +1101,12 @@ button {
 }
 .about__opening__title::before {
   content: "Opening a store";
-  top: -3rem;
-  left: 0%;
+  display: block;
+  content: "About";
+  margin-inline: auto;
   width: 100%;
-  z-index: 1;
   font-size: 15px;
   color: #ff7f3e;
-  position: absolute;
-  font-family: "BIZ UDPGothic";
 }
 .about__opening__text {
   font-family: "BIZ UDPGothic";
@@ -1123,7 +1145,7 @@ button {
 @media screen and (min-width: 1000px) {
   .about__imagebox {
     margin-bottom: 6.5rem;
-    width: 80%;
+    width: 70%;
   }
   .about__imagebox img {
     border-radius: 0;
@@ -1155,9 +1177,6 @@ button {
   }
   .about__imagebox .image__area :nth-child(1) {
     border-radius: 1.5rem;
-  }
-  .about .button {
-    margin-bottom: 104px;
   }
 }
 .access {
@@ -1288,5 +1307,8 @@ button {
   .access__route--guide {
     width: 100%;
   }
+}
+.scroll-infinity {
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
