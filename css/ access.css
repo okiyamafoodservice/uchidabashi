@@ -1,2 +1,9 @@
-
+.head__text {
+  color: #5d4a3a;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+  /* 100% */
+}
 /*# sourceMappingURL= access.css.map */

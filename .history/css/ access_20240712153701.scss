@@ -28,12 +28,7 @@ $breakpoints: (
 }
 
 .head {
-    &__text {
+    &__h3 {
         color: $color-brown;
-        font-size: 2rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 2rem;
-        /* 100% */
     }
 }
