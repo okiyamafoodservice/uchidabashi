@@ -132,13 +132,15 @@ button {
 }
 .modal__link {
   display: block;
-  color: #ffffff; /* 変数を使っている場合 */
+  color: #ffffff;
+  /* 変数を使っている場合 */
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 700;
   line-height: 2.5rem;
   margin-bottom: 2.5rem;
-  font-family: "Zen Maru Gothic", sans-serif; /* フォント名をクォートで囲む */
+  font-family: "Zen Maru Gothic", sans-serif;
+  /* フォント名をクォートで囲む */
 }
 
 .button:hover {
@@ -157,10 +159,10 @@ button {
   margin-right: auto;
 }
 .firstView__content--image {
-  height: 100vh;
+  height: 60vh;
   border-radius: 0rem 18.96875rem 1.5rem 0rem;
   background: url(../images/makiwaradammy.png) lightgray 50%/cover no-repeat;
-  width: 79%;
+  width: 75%;
   margin-bottom: 3.8rem;
 }
 .firstView__content--text {
@@ -200,7 +202,7 @@ button {
   .firstView__content--text .verticalCatch {
     display: block;
     margin-bottom: 1.5rem;
-    width: 80%;
+    width: 65%;
   }
   .firstView__content--text .horizontalCatch {
     display: none;
@@ -518,7 +520,7 @@ button {
 }
 .section__title {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 3.69rem;
   margin-inline: auto;
@@ -526,6 +528,7 @@ button {
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
+  font-family: "Zen Maru Gothic", sans-serif;
 }
 .section__title::before {
   display: block;
@@ -546,7 +549,7 @@ button {
 @media screen and (min-width: 1000px) {
   .section__title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 3.69rem;
     margin-inline: auto;
@@ -699,7 +702,6 @@ button {
 }
 .storeInfo__title {
   text-align: center;
-  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 3.69rem;
   margin-inline: auto;
@@ -854,7 +856,7 @@ button {
 }
 .latestInfo__title {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 3.69rem;
   margin-inline: auto;
@@ -879,6 +881,7 @@ button {
   display: flex;
   justify-content: space-between;
   margin-bottom: 3.69rem;
+  padding-left: 0px !important;
   width: 83%;
   margin-left: auto;
   margin-right: auto;
@@ -888,6 +891,7 @@ button {
   width: 30%;
   aspect-ratio: 1/1;
   background-color: #212121;
+  border-radius: 0.5rem;
 }
 .latestInfo__instagram--post {
   width: 7rem;
@@ -962,7 +966,7 @@ button {
 }
 .about__title {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 3.69rem;
   margin-inline: auto;
@@ -971,6 +975,7 @@ button {
   width: fit-content;
   position: relative;
   color: #5d4a3a;
+  font-family: "Zen Maru Gothic";
 }
 .about__title::before {
   content: "About";
@@ -1075,7 +1080,6 @@ button {
   top: -3rem;
   left: 0%;
   width: 100%;
-  height: 10px;
   z-index: 1;
   font-size: 15px;
   color: #ff7f3e;
@@ -1163,7 +1167,8 @@ button {
 }
 .access__title {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  font-family: "Zen Maru Gothic";
   font-weight: 700;
   margin-bottom: 2.5rem;
   margin-inline: auto;
