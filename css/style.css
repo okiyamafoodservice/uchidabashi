@@ -154,6 +154,19 @@ button {
   background-color: #ff7f3e;
 }
 
+.shape--blue {
+  position: absolute;
+  right: 13rem;
+  top: 5rem;
+  opacity: 0.7;
+}
+.shape--orange {
+  position: absolute;
+  right: 1rem;
+  top: -10rem;
+  opacity: 0.4;
+}
+
 .firstView {
   position: relative;
 }
