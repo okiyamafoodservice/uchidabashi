@@ -614,6 +614,8 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 .event__title::before {
   display: block;
@@ -739,20 +741,16 @@ button {
   padding-bottom: 6.5rem;
 }
 .storeInfo__title {
-  text-align: center;
-  line-height: 2.5rem;
+  font-family: "Zen Maru Gothic";
+  font-size: 2rem;
+  font-style: normal;
   font-weight: 700;
-  margin-bottom: 3.69rem;
-  margin-inline: auto;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  position: relative;
+  line-height: 2.5rem;
 }
 .storeInfo__title::before {
   display: block;
-  content: "Shop";
   margin-inline: auto;
+  content: "Shop";
   width: 100%;
   margin-top: 1rem;
   font-size: 15px;
@@ -888,24 +886,21 @@ button {
   padding-top: 6.5rem;
   padding-bottom: 6.5rem;
   font-family: "Zen Maru Gothic";
+  text-align: center;
 }
 .latestInfo__title {
-  text-align: center;
+  font-family: "Zen Maru Gothic";
   font-size: 2rem;
+  font-style: normal;
   font-weight: 700;
   line-height: 2.5rem;
-  margin-bottom: 3.69rem;
-  margin-inline: auto;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  position: relative;
-  display: block;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 .latestInfo__title::before {
   display: block;
-  content: "News";
   margin-inline: auto;
+  content: "News";
   width: 100%;
   margin-top: 1rem;
   font-size: 15px;
@@ -1000,23 +995,18 @@ button {
   border-radius: 0rem 1.5rem 1.5rem 0rem;
 }
 .about__title {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 3.69rem;
-  line-height: 2.5rem;
-  margin-inline: auto;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  position: relative;
-  color: #5d4a3a;
   font-family: "Zen Maru Gothic";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 .about__title::before {
   display: block;
-  content: "About";
   margin-inline: auto;
+  content: "About";
   width: 100%;
   margin-top: 1rem;
   font-size: 15px;
@@ -1119,6 +1109,7 @@ button {
   display: block;
   content: "About";
   margin-inline: auto;
+  line-height: 2.5rem;
   width: 100%;
   font-size: 15px;
   color: #ff7f3e;
@@ -1200,29 +1191,22 @@ button {
   background-color: #ffffff;
 }
 .access__title {
-  text-align: center;
-  font-size: 2rem;
   font-family: "Zen Maru Gothic";
+  font-size: 2rem;
+  font-style: normal;
   font-weight: 700;
-  margin-bottom: 2.5rem;
-  margin-inline: auto;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  position: relative;
-  color: #5d4a3a;
+  line-height: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 .access__title::before {
-  content: "Access";
-  top: -3rem;
-  left: 0%;
+  display: block;
+  margin-inline: auto;
+  content: "Shop";
   width: 100%;
-  height: 10px;
-  z-index: 1;
+  margin-top: 1rem;
   font-size: 15px;
   color: #ff7f3e;
-  position: absolute;
-  font-family: "BIZ UDPGothic";
 }
 .access__map {
   width: 85%;
