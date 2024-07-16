@@ -681,6 +681,21 @@ button {
 .event__parts--button i {
   margin-left: 0.5rem;
 }
+.event__info {
+  padding: 1px;
+  border: 1px solid #ff7f3e;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.event__info--title {
+  text-align: center;
+}
+.event__info--content {
+  text-align: center;
+}
 
 @media screen and (min-width: 1000px) {
   .event__content {
