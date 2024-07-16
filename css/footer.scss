@@ -27,8 +27,8 @@ $breakpoints: (
 }
 
 .contact {
-  background-color: $color-main;
-  padding: 3.5rem 0;
+  background: url("/images/contect_bg.png") no-repeat center/cover;
+  padding: 6.5rem 0;
 
   &__title {
     width: 85%;
@@ -92,12 +92,13 @@ $breakpoints: (
 }
 
 .footer {
-  padding: 3.5rem 0;
+  padding-bottom: 6.5rem;
   background-color: $color-white;
 
   &__inner {
     width: 85%;
     @include mx;
+    margin-top: 6.5rem
   }
 
   &__head {

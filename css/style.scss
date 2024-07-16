@@ -1171,6 +1171,8 @@ button {
 
 .about {
   padding-bottom: 6.5rem;
+  padding-top: 6.5rem;
+  background-color: $color-base2;
 
   &__imagebox {
     width: 88%;
@@ -1189,6 +1191,7 @@ button {
     line-height: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
+    color: $color-brown;
 
     &::before {
       display: block;
@@ -1212,6 +1215,7 @@ button {
     width: 83%;
     @include mx;
     text-align: center;
+
   }
 
   &__parts {
@@ -1222,6 +1226,7 @@ button {
       @include mx;
       color: $color-white;
       margin-bottom: 3.12rem;
+      background-color: $color-main;
 
       &---text {
         font-family: "BIZ UDPGothic";
@@ -1394,7 +1399,7 @@ button {
 
 .access {
   padding-top: 6.5rem;
-  padding-bottom: 3.5rem;
+  padding-bottom: 6.5rem;
   background-color: $color-white;
 
   &__title {
@@ -1532,5 +1537,13 @@ button {
 
   @include media(md) {
     margin-bottom: 1rem;
+  }
+}
+
+.br__sp {
+  display: block;
+
+  @include media(md) {
+    display: none;
   }
 }

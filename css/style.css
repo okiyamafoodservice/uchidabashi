@@ -1040,6 +1040,8 @@ button {
 }
 .about {
   padding-bottom: 6.5rem;
+  padding-top: 6.5rem;
+  background-color: #fcf9ed;
 }
 .about__imagebox {
   width: 88%;
@@ -1056,6 +1058,7 @@ button {
   line-height: 2.5rem;
   text-align: center;
   margin-bottom: 3rem;
+  color: #5d4a3a;
 }
 .about__title::before {
   display: block;
@@ -1089,6 +1092,7 @@ button {
   margin-right: auto;
   color: #ffffff;
   margin-bottom: 3.12rem;
+  background-color: #ff7f3e;
 }
 .about__parts--button---text {
   font-family: "BIZ UDPGothic";
@@ -1239,7 +1243,7 @@ button {
 }
 .access {
   padding-top: 6.5rem;
-  padding-bottom: 3.5rem;
+  padding-bottom: 6.5rem;
   background-color: #ffffff;
 }
 .access__title {
@@ -1364,6 +1368,15 @@ button {
 @media screen and (min-width: 1000px) {
   .scroll-infinity {
     margin-bottom: 1rem;
+  }
+}
+
+.br__sp {
+  display: block;
+}
+@media screen and (min-width: 1000px) {
+  .br__sp {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
