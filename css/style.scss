@@ -535,6 +535,33 @@ button {
 
 .opening {
   @include mx();
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+
+  &__link {
+    display: inline-block;
+
+    &-pc {
+      display: none;
+    }
+
+    &-sp {
+      display: inline-block;
+      border: rgba($color: $color-brown, $alpha: 0.2) solid 1px;
+    }
+
+    @include media(md) {
+      &-pc {
+        display: inline-block;
+        border: rgba($color: $color-brown, $alpha: 0.2) solid 1px;
+      }
+
+      &-sp {
+        display: none;
+      }
+    }
+  }
 
 
   &__parts {
