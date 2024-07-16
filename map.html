@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>店舗マップ</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      #map {
+        position: relative;
+        height: 600px;
+        width: 100%;
+        border: 1px solid #000;
+      }
+      .store-marker {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .store-popup {
+        position: absolute;
+        background-color: white;
+        border: 1px solid #000;
+        padding: 5px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>店舗マップ</h1>
+    <div id="map"></div>
+
+    <script>
+      // JSONファイルから店舗情報を読み込む
+      fetch("stores.json")
+        .then((response) => response.json())
+        .then((data) => {
+          data.forEach((store) => {
+            // 各店舗の位置にマーカーを追加
+            const marker = document.createElement("div");
+            marker.classList.add("store-marker");
+            marker.style.left = store.position.x + "px";
+            marker.style.top = store.position.y + "px";
+            document.getElementById("map").appendChild(marker);
+
+            // ポップアップの作成
+            const popup = document.createElement("div");
+            popup.classList.add("store-popup");
+            popup.style.left = store.position.x + 20 + "px";
+            popup.style.top = store.position.y + "px";
+            popup.innerHTML = `<b>${store.name}</b><br>${store.genre}`;
+            document.getElementById("map").appendChild(popup);
+
+            // マーカーのクリックイベント
+            marker.addEventListener("click", () => {
+              // 他のポップアップを非表示にする
+              document
+                .querySelectorAll(".store-popup")
+                .forEach((p) => (p.style.display = "none"));
+              // クリックしたポップアップを表示
+              popup.style.display = "block";
+            });
+          });
+        })
+        .catch((error) => console.error("Error loading the JSON file:", error));
+    </script>
+  </body>
+</html>

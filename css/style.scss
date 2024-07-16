@@ -13,7 +13,7 @@ $breakpoints: (
   "md": "screen and (min-width: 1000px)",
   "lg": "screen and (min-width: 992px)",
   "xl": "screen and (min-width: 1200px)",
-  ) !default;
+) !default;
 
 @mixin mx {
   margin-left: auto;
@@ -30,12 +30,10 @@ $breakpoints: (
 
 @import url(./footer.css);
 
-
 html,
 body {
   color: $color-brown;
-  font-family: "UDPGothic",
-    sans-serif;
+  font-family: "UDPGothic", sans-serif;
   font-size: 16px;
   letter-spacing: 0.05em;
   line-height: 1.75;
@@ -100,7 +98,6 @@ ul {
   padding-left: 2em;
 }
 
-
 iframe {
   max-width: 100%;
 }
@@ -150,7 +147,7 @@ button {
   height: 100%;
   overflow: auto;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   background-color: $color-main;
 
   &.show {
@@ -181,8 +178,7 @@ button {
     font-weight: 700;
     line-height: 2.5rem;
     margin-bottom: 2.5rem;
-    font-family: "Zen Maru Gothic",
-      sans-serif;
+    font-family: "Zen Maru Gothic", sans-serif;
     /* フォント名をクォートで囲む */
 
     i {
@@ -201,6 +197,7 @@ button {
   // }
 }
 
+<<<<<<< HEAD
 
 .shape {
   &--blue {
@@ -234,6 +231,8 @@ button {
   }
 }
 
+=======
+>>>>>>> c2d7e10 (okiyama)
 .firstView {
   position: relative;
 
@@ -244,13 +243,14 @@ button {
 
     &--subtext {
       display: none;
-      white-space: nowrap
+      white-space: nowrap;
     }
 
     &--image {
       height: 60vh;
       border-radius: 0rem 12rem 1.5rem 0rem;
-      background: url(../images/makiwaradammy.png) lightgray 50% / cover no-repeat;
+      background: url(../images/makiwaradammy.png) lightgray 50% / cover
+        no-repeat;
       width: 75%;
       margin-bottom: 3.8rem;
     }
@@ -288,55 +288,53 @@ button {
       &--image {
         height: 800px;
         border-radius: 0rem 18.96875rem 1.5rem 0rem;
-        background: url(../images/makiwaradammy.png) lightgray 50% / cover no-repeat;
+        background: url(../images/makiwaradammy.png) lightgray 50% / cover
+          no-repeat;
         width: 79%;
         margin-bottom: 0;
       }
 
       &--subtext {
-        color: rgba($color: $color-main, $alpha: 0.5
-        );
-      font-family: "Zen Maru Gothic",
-        sans-serif;
-      font-weight: 500;
-      display: block;
-    }
-
-    &--text-group {
-      padding-left: 4%;
-      padding-right: 7%;
-      margin-top: 5rem;
-    }
-
-    &--text {
-      width: 100%;
-      background-color: none;
-
-      .verticalCatch {
+        color: rgba($color: $color-main, $alpha: 0.5);
+        font-family: "Zen Maru Gothic", sans-serif;
+        font-weight: 500;
         display: block;
-        margin-bottom: 4rem;
+      }
+
+      &--text-group {
+        padding-left: 4%;
+        padding-right: 7%;
+        margin-top: 5rem;
+      }
+
+      &--text {
         width: 100%;
-      }
+        background-color: none;
 
-      .horizontalCatch {
-        display: none;
-      }
+        .verticalCatch {
+          display: block;
+          margin-bottom: 4rem;
+          width: 100%;
+        }
 
+        .horizontalCatch {
+          display: none;
+        }
 
-      &--title {
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin-bottom: 1.5rem;
-      }
+        &--title {
+          font-size: 2.5rem;
+          font-weight: 700;
+          margin-bottom: 1.5rem;
+        }
 
-      &--detail {
-        font-size: 1.25rem;
-        font-weight: 400;
-        line-height: 1.5rem;
+        &--detail {
+          font-size: 1.25rem;
+          font-weight: 400;
+          line-height: 1.5rem;
+        }
       }
     }
   }
-}
 }
 
 //shimizu--------------------
@@ -977,7 +975,7 @@ button {
     margin-right: 1.5rem;
   }
 
-  .scroll-infinity__item>img {
+  .scroll-infinity__item > img {
     width: 100%;
     border-radius: 1.25rem;
   }
@@ -1012,7 +1010,7 @@ button {
     margin-right: 1.5rem;
   }
 
-  .scroll-infinity__item>img {
+  .scroll-infinity__item > img {
     width: 100%;
     border-radius: 1.25rem;
   }
@@ -1049,7 +1047,7 @@ button {
       max-width: 22rem;
     }
 
-    .scroll-infinity__item>img {
+    .scroll-infinity__item > img {
       width: 100%;
       border-radius: 1.25rem;
     }
@@ -1156,7 +1154,6 @@ button {
     margin-bottom: 6rem;
 
     &__instagram {
-
       margin-bottom: 3.75rem;
       width: (716/1220) * 100%;
       @include mx();
@@ -1286,7 +1283,6 @@ button {
     @include mx;
     border-radius: 1.5rem;
 
-
     &__title {
       text-align: center;
       font-family: "Zen Maru Gothic";
@@ -1299,7 +1295,6 @@ button {
       width: fit-content;
       position: relative;
       color: $color-brown;
-
 
       &::before {
         content: "Opening a store";
@@ -1392,7 +1387,6 @@ button {
         }
       }
     }
-
   }
 }
 
@@ -1532,6 +1526,7 @@ button {
 
 //shimizu
 .scroll-infinity {
+<<<<<<< HEAD
   margin-bottom: 0;
 
   @include media(md) {
@@ -1546,3 +1541,7 @@ button {
     display: none;
   }
 }
+=======
+  margin-bottom: 1rem;
+}
+>>>>>>> c2d7e10 (okiyama)
