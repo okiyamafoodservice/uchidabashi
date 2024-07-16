@@ -534,6 +534,9 @@ button {
 //shimizu------------------
 
 .opening {
+  @include mx();
+
+
   &__parts {
     border-radius: 1.5rem;
     background-color: $color-main;

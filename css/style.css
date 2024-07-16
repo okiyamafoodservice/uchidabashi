@@ -455,6 +455,10 @@ button {
   }
 }
 
+.opening {
+  margin-left: auto;
+  margin-right: auto;
+}
 .opening__parts {
   border-radius: 1.5rem;
   background-color: #ff7f3e;
