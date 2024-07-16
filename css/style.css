@@ -1041,7 +1041,7 @@ button {
 .about {
   padding-bottom: 6.5rem;
   padding-top: 6.5rem;
-  background-color: #fcf9ed;
+  background-color: #cee8f7;
 }
 .about__imagebox {
   width: 88%;
@@ -1066,7 +1066,7 @@ button {
   content: "About";
   width: 100%;
   font-size: 15px;
-  color: #ff7f3e;
+  color: #30a3e0;
 }
 .about__text {
   font-family: "BIZ UDPGothic";
@@ -1075,7 +1075,6 @@ button {
   font-weight: 700;
   line-height: 3.75rem;
   /* 300% */
-  color: #5d4a3a;
   margin-bottom: 2.5rem;
   width: 83%;
   margin-left: auto;
@@ -1092,7 +1091,7 @@ button {
   margin-right: auto;
   color: #ffffff;
   margin-bottom: 3.12rem;
-  background-color: #ff7f3e;
+  background-color: #1795d9;
 }
 .about__parts--button---text {
   font-family: "BIZ UDPGothic";
