@@ -488,6 +488,9 @@ button {
   margin-bottom: 3rem;
   margin-top: 3rem;
 }
+.opening__banner {
+  width: 100%;
+}
 .opening__link {
   display: inline-block;
 }
