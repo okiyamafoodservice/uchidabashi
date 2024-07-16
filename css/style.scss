@@ -191,11 +191,13 @@ button {
 }
 
 .button {
-  &:hover {
-    background-color: $color-skyblue;
-    color: $color-white;
-    transition: 0.3s;
-  }
+  background-color: $color-main;
+
+  // &:hover {
+  //   background-color: $color-main;
+  //   color: $color-white;
+  //   transition: 0.3s;
+  // }
 }
 
 
@@ -785,7 +787,6 @@ button {
 
   &__parts {
     &--button {
-      background-color: $color-main;
       width: fit-content;
       border-radius: 6.25rem;
       padding: 1rem 2.5rem;
@@ -1090,7 +1091,6 @@ button {
 
   &__parts {
     &--button {
-      background-color: $color-main;
       width: fit-content;
       border-radius: 6.25rem;
       padding: 1rem 2.5rem;
@@ -1179,7 +1179,6 @@ button {
 
   &__parts {
     &--button {
-      background-color: $color-main;
       width: fit-content;
       border-radius: 6.25rem;
       padding: 1rem 2.5rem;

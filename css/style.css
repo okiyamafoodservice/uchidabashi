@@ -150,10 +150,8 @@ button {
   font-size: 3rem;
 }
 
-.button:hover {
-  background-color: #80c4e9;
-  color: #ffffff;
-  transition: 0.3s;
+.button {
+  background-color: #ff7f3e;
 }
 
 .firstView {
@@ -688,7 +686,6 @@ button {
   /* 180% */
 }
 .event__parts--button {
-  background-color: #ff7f3e;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -973,7 +970,6 @@ button {
   text-align: center;
 }
 .latestInfo__parts--button {
-  background-color: #ff7f3e;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1053,7 +1049,6 @@ button {
   text-align: center;
 }
 .about__parts--button {
-  background-color: #ff7f3e;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
