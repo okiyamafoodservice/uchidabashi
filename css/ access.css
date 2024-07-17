@@ -24,4 +24,29 @@
   line-height: 2.5rem;
   /* 200% */
 }
+
+.time__head {
+  font-family: "BIZ UDPGothic";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.8rem;
+  /* 180% */
+}
+.time__text {
+  color: #ff7f3e;
+  font-family: "BIZ UDPGothic";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.8rem;
+}
+.time__bus {
+  font-family: "BIZ UDPGothic";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.8rem;
+  /* 180% */
+}
 /*# sourceMappingURL= access.css.map */
