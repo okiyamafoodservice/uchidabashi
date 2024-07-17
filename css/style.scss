@@ -199,7 +199,7 @@ button {
   // }
 }
 
-HEAD .shape {
+.shape {
   &--blue {
     position: absolute;
     right: 5rem;
@@ -1167,11 +1167,13 @@ HEAD .shape {
 .about {
   padding-bottom: 6.5rem;
   padding-top: 6.5rem;
-  background-color: #cee8f7;
+  background-color: rgba($color: $color-main, $alpha: 0.1);
+  // border-radius: 4rem 4rem 0 0;
 
   &__imagebox {
-    width: 88%;
-    margin-bottom: 7.37rem;
+    width: 70%;
+    margin-bottom: 2rem;
+    margin-top: 6rem;
 
     img {
       border-radius: 0rem 1.5rem 1.5rem 0rem;
@@ -1194,13 +1196,13 @@ HEAD .shape {
       content: "About";
       width: 100%;
       font-size: 15px;
-      color: #30a3e0;
+      color: $color-main;
     }
   }
 
   &__text {
     font-family: "BIZ UDPGothic";
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 700;
     line-height: 3.75rem;
@@ -1220,7 +1222,7 @@ HEAD .shape {
       @include mx;
       color: $color-white;
       margin-bottom: 3.12rem;
-      background-color: #1795d9;
+      background-color: $color-main;
 
       &---text {
         font-family: "BIZ UDPGothic";
@@ -1248,13 +1250,13 @@ HEAD .shape {
 
   .image__area {
     display: flex;
-    margin-bottom: 3.69rem;
     flex-direction: row-reverse;
     column-gap: 5%;
     align-items: flex-start;
-    margin-bottom: 6.5rem;
 
     img {
+      border-radius: 0.5rem;
+
       &:nth-child(1) {
         width: 53%;
         aspect-ratio: 3/2;
@@ -1269,9 +1271,6 @@ HEAD .shape {
       }
     }
 
-    :nth-child(1) {
-      border-radius: 1.5rem;
-    }
   }
 
   &__opening {

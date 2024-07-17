@@ -155,26 +155,26 @@ button {
   background-color: #ff7f3e;
 }
 
-HEAD .shape--blue {
+.shape--blue {
   position: absolute;
   right: 5rem;
   top: 5rem;
   opacity: 0.4;
 }
-HEAD .shape--orange {
+.shape--orange {
   position: absolute;
   right: -7rem;
   top: -10rem;
   opacity: 0.5;
 }
 @media screen and (min-width: 1000px) {
-  HEAD .shape--blue {
+  .shape--blue {
     position: absolute;
     right: 13rem;
     top: 5rem;
     opacity: 0.4;
   }
-  HEAD .shape--orange {
+  .shape--orange {
     position: absolute;
     right: 1rem;
     top: -10rem;
@@ -1041,11 +1041,12 @@ HEAD .shape--orange {
 .about {
   padding-bottom: 6.5rem;
   padding-top: 6.5rem;
-  background-color: #cee8f7;
+  background-color: rgba(255, 127, 62, 0.1);
 }
 .about__imagebox {
-  width: 88%;
-  margin-bottom: 7.37rem;
+  width: 70%;
+  margin-bottom: 2rem;
+  margin-top: 6rem;
 }
 .about__imagebox img {
   border-radius: 0rem 1.5rem 1.5rem 0rem;
@@ -1066,11 +1067,11 @@ HEAD .shape--orange {
   content: "About";
   width: 100%;
   font-size: 15px;
-  color: #30a3e0;
+  color: #ff7f3e;
 }
 .about__text {
   font-family: "BIZ UDPGothic";
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 700;
   line-height: 3.75rem;
@@ -1091,7 +1092,7 @@ HEAD .shape--orange {
   margin-right: auto;
   color: #ffffff;
   margin-bottom: 3.12rem;
-  background-color: #1795d9;
+  background-color: #ff7f3e;
 }
 .about__parts--button---text {
   font-family: "BIZ UDPGothic";
@@ -1113,12 +1114,13 @@ HEAD .shape--orange {
 }
 .about .image__area {
   display: flex;
-  margin-bottom: 3.69rem;
   flex-direction: row-reverse;
   -moz-column-gap: 5%;
        column-gap: 5%;
   align-items: flex-start;
-  margin-bottom: 6.5rem;
+}
+.about .image__area img {
+  border-radius: 0.5rem;
 }
 .about .image__area img:nth-child(1) {
   width: 53%;
@@ -1132,9 +1134,6 @@ HEAD .shape--orange {
   aspect-ratio: 1/1.124;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.about .image__area :nth-child(1) {
-  border-radius: 1.5rem;
 }
 .about__opening {
   width: 83%;
