@@ -27,7 +27,7 @@ $breakpoints: (
     }
 }
 
-.main-section {
+.head {
     &__text {
         color: $color-brown;
         font-size: 2rem;
@@ -36,4 +36,8 @@ $breakpoints: (
         line-height: 2rem;
         /* 100% */
     }
+}
+
+.detail {
+    display: flex;
 }

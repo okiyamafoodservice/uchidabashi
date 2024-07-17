@@ -27,7 +27,7 @@ $breakpoints: (
     }
 }
 
-.main-section {
+.head {
     &__text {
         color: $color-brown;
         font-size: 2rem;
@@ -35,5 +35,11 @@ $breakpoints: (
         font-weight: 700;
         line-height: 2rem;
         /* 100% */
+    }
+}
+
+.main-section {
+    &__address__head {
+        font-size: 1.25rem;
     }
 }
