@@ -24,6 +24,9 @@
   line-height: 2.5rem;
   /* 200% */
 }
+.address__tel i {
+  color: #ff7f3e;
+}
 
 .time__head {
   font-family: "BIZ UDPGothic";
@@ -48,5 +51,11 @@
   font-weight: 700;
   line-height: 1.8rem;
   /* 180% */
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 /*# sourceMappingURL= access.css.map */

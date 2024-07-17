@@ -56,13 +56,9 @@ $breakpoints: (
         font-style: normal;
         font-weight: 700;
         line-height: 2.5rem;
-
         /* 200% */
-        i {
-            color: $color-main;
-        }
+        color: $color-main;
     }
-
 }
 
 .time {
