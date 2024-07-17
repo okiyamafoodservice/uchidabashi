@@ -1172,7 +1172,8 @@ button {
 .about {
   padding-bottom: 6.5rem;
   padding-top: 6.5rem;
-  background-color: #cee8f7;
+  background-color: rgba($color: $color-main, $alpha: 0.1);
+  // border-radius: 4rem 4rem 0 0;
 
   &__imagebox {
     width: 88%;
@@ -1199,13 +1200,13 @@ button {
       content: "About";
       width: 100%;
       font-size: 15px;
-      color: #30a3e0;
+      color: $color-main;
     }
   }
 
   &__text {
     font-family: "BIZ UDPGothic";
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 700;
     line-height: 3.75rem;
@@ -1225,7 +1226,7 @@ button {
       @include mx;
       color: $color-white;
       margin-bottom: 3.12rem;
-      background-color: #1795d9;
+      background-color: $color-main;
 
       &---text {
         font-family: "BIZ UDPGothic";
