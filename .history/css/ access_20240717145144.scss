@@ -38,6 +38,12 @@ $breakpoints: (
         font-weight: 700;
         line-height: 2.5rem;
         /* 200% */
+
+        img {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
     }
 
     &__text {

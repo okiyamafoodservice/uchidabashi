@@ -28,7 +28,7 @@ $breakpoints: (
 }
 
 .address {
-
+    display: flex;
 
     &__head {
         color: $color-brown;
@@ -47,10 +47,6 @@ $breakpoints: (
         font-weight: 700;
         line-height: 1.8rem;
         text-decoration-line: underline;
-
-        a {
-            color: $color-brown;
-        }
     }
 
     &__tel {
@@ -59,17 +55,12 @@ $breakpoints: (
         font-style: normal;
         font-weight: 700;
         line-height: 2.5rem;
-
         /* 200% */
-        i {
-            color: $color-main;
-        }
     }
 
 }
 
 .time {
-
 
     &__head {
         font-family: "BIZ UDPGothic";
@@ -78,7 +69,6 @@ $breakpoints: (
         font-weight: 700;
         line-height: 1.8rem;
         /* 180% */
-
     }
 
     &__text {
@@ -88,7 +78,6 @@ $breakpoints: (
         font-style: normal;
         font-weight: 700;
         line-height: 1.8rem;
-        gap: 0.5rem;
     }
 
     &__bus {
@@ -99,11 +88,4 @@ $breakpoints: (
         line-height: 1.8rem;
         /* 180% */
     }
-}
-
-.detail {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1.5rem;
 }

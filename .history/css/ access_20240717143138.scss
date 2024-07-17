@@ -29,6 +29,9 @@ $breakpoints: (
 
 .address {
 
+    img {
+        display: flex;
+    }
 
     &__head {
         color: $color-brown;
@@ -47,10 +50,6 @@ $breakpoints: (
         font-weight: 700;
         line-height: 1.8rem;
         text-decoration-line: underline;
-
-        a {
-            color: $color-brown;
-        }
     }
 
     &__tel {
@@ -88,7 +87,6 @@ $breakpoints: (
         font-style: normal;
         font-weight: 700;
         line-height: 1.8rem;
-        gap: 0.5rem;
     }
 
     &__bus {
