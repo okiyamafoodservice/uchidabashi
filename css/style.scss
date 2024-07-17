@@ -199,7 +199,7 @@ button {
   // }
 }
 
-HEAD .shape {
+.shape {
   &--blue {
     position: absolute;
     right: 5rem;
@@ -1171,8 +1171,9 @@ HEAD .shape {
   // border-radius: 4rem 4rem 0 0;
 
   &__imagebox {
-    width: 88%;
-    margin-bottom: 7.37rem;
+    width: 70%;
+    margin-bottom: 2rem;
+    margin-top: 6rem;
 
     img {
       border-radius: 0rem 1.5rem 1.5rem 0rem;
@@ -1249,13 +1250,13 @@ HEAD .shape {
 
   .image__area {
     display: flex;
-    margin-bottom: 3.69rem;
     flex-direction: row-reverse;
     column-gap: 5%;
     align-items: flex-start;
-    margin-bottom: 6.5rem;
 
     img {
+      border-radius: 0.5rem;
+
       &:nth-child(1) {
         width: 53%;
         aspect-ratio: 3/2;
@@ -1270,9 +1271,6 @@ HEAD .shape {
       }
     }
 
-    :nth-child(1) {
-      border-radius: 1.5rem;
-    }
   }
 
   &__opening {
