@@ -11,6 +11,7 @@ body {
   background-color: #fcf9ed;
   position: relative;
   width: 100%;
+  overflow-x: hidden;
 }
 
 h1,
@@ -150,10 +151,35 @@ button {
   font-size: 3rem;
 }
 
-.button:hover {
-  background-color: #80c4e9;
-  color: #ffffff;
-  transition: 0.3s;
+.button {
+  background-color: #ff7f3e;
+}
+
+.shape--blue {
+  position: absolute;
+  right: 5rem;
+  top: 5rem;
+  opacity: 0.4;
+}
+.shape--orange {
+  position: absolute;
+  right: -7rem;
+  top: -10rem;
+  opacity: 0.5;
+}
+@media screen and (min-width: 1000px) {
+  .shape--blue {
+    position: absolute;
+    right: 13rem;
+    top: 5rem;
+    opacity: 0.4;
+  }
+  .shape--orange {
+    position: absolute;
+    right: 1rem;
+    top: -10rem;
+    opacity: 0.5;
+  }
 }
 
 .firstView {
@@ -462,6 +488,9 @@ button {
   margin-bottom: 3rem;
   margin-top: 3rem;
 }
+.opening__banner {
+  width: 100%;
+}
 .opening__link {
   display: inline-block;
 }
@@ -471,11 +500,13 @@ button {
 .opening__link-sp {
   display: inline-block;
   border: rgba(93, 74, 58, 0.2) solid 1px;
+  width: 80%;
 }
 @media screen and (min-width: 1000px) {
   .opening__link-pc {
     display: inline-block;
     border: rgba(93, 74, 58, 0.2) solid 1px;
+    width: 50%;
   }
   .opening__link-sp {
     display: none;
@@ -688,7 +719,6 @@ button {
   /* 180% */
 }
 .event__parts--button {
-  background-color: #ff7f3e;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -928,7 +958,6 @@ button {
   margin-inline: auto;
   content: "News";
   width: 100%;
-  margin-top: 1rem;
   font-size: 15px;
   color: #ff7f3e;
 }
@@ -973,7 +1002,6 @@ button {
   text-align: center;
 }
 .latestInfo__parts--button {
-  background-color: #ff7f3e;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1012,6 +1040,8 @@ button {
 }
 .about {
   padding-bottom: 6.5rem;
+  padding-top: 6.5rem;
+  background-color: #cee8f7;
 }
 .about__imagebox {
   width: 88%;
@@ -1028,15 +1058,15 @@ button {
   line-height: 2.5rem;
   text-align: center;
   margin-bottom: 3rem;
+  color: #5d4a3a;
 }
 .about__title::before {
   display: block;
   margin-inline: auto;
   content: "About";
   width: 100%;
-  margin-top: 1rem;
   font-size: 15px;
-  color: #ff7f3e;
+  color: #30a3e0;
 }
 .about__text {
   font-family: "BIZ UDPGothic";
@@ -1045,7 +1075,6 @@ button {
   font-weight: 700;
   line-height: 3.75rem;
   /* 300% */
-  color: #5d4a3a;
   margin-bottom: 2.5rem;
   width: 83%;
   margin-left: auto;
@@ -1053,7 +1082,6 @@ button {
   text-align: center;
 }
 .about__parts--button {
-  background-color: #ff7f3e;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1063,6 +1091,7 @@ button {
   margin-right: auto;
   color: #ffffff;
   margin-bottom: 3.12rem;
+  background-color: #1795d9;
 }
 .about__parts--button---text {
   font-family: "BIZ UDPGothic";
@@ -1213,7 +1242,7 @@ button {
 }
 .access {
   padding-top: 6.5rem;
-  padding-bottom: 3.5rem;
+  padding-bottom: 6.5rem;
   background-color: #ffffff;
 }
 .access__title {
@@ -1230,7 +1259,6 @@ button {
   margin-inline: auto;
   content: "Shop";
   width: 100%;
-  margin-top: 1rem;
   font-size: 15px;
   color: #ff7f3e;
 }
@@ -1334,6 +1362,20 @@ button {
   }
 }
 .scroll-infinity {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 1000px) {
+  .scroll-infinity {
+    margin-bottom: 1rem;
+  }
+}
+
+.br__sp {
+  display: block;
+}
+@media screen and (min-width: 1000px) {
+  .br__sp {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
