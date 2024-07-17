@@ -1167,17 +1167,20 @@ button {
 .about {
   padding-bottom: 6.5rem;
   padding-top: 6.5rem;
-  background-color: rgba($color: $color-main, $alpha: 0.1);
-  // border-radius: 4rem 4rem 0 0;
+  // background-color: rgba($color: $color-main, $alpha: 0.1);
+  position: relative;
 
   &__imagebox {
     width: 70%;
     margin-bottom: 2rem;
     margin-top: 6rem;
+    display: inline;
 
     img {
       border-radius: 0rem 1.5rem 1.5rem 0rem;
     }
+
+
   }
 
   &__title {
@@ -1248,11 +1251,35 @@ button {
     border-radius: 0.5rem 0 0 0.5rem;
   }
 
+
   .image__area {
     display: flex;
     flex-direction: row-reverse;
     column-gap: 5%;
     align-items: flex-start;
+    width: 100%;
+
+    &--top {
+
+      img {
+        &:nth-child(1) {
+          width: 53%;
+          aspect-ratio: 3/2;
+          object-fit: contain;
+          border-radius: 0rem 1rem 1rem 0;
+        }
+
+        &:nth-child(2) {
+          width: 30%;
+          aspect-ratio: 3/2;
+          object-fit: cover;
+          position: relative;
+          border-radius: 1rem;
+          left: 10rem;
+          top: -12rem;
+        }
+      }
+    }
 
     img {
       border-radius: 0.5rem;
@@ -1261,12 +1288,13 @@ button {
         width: 53%;
         aspect-ratio: 3/2;
         object-fit: contain;
+        border-radius: 1rem 0 0 1rem;
       }
 
       &:nth-child(2) {
-        margin-top: 20%;
+        margin-top: 30%;
         width: 30%;
-        aspect-ratio: 1/1.124;
+        aspect-ratio: 3/2;
         object-fit: cover;
       }
     }
@@ -1348,12 +1376,13 @@ button {
   .about {
     &__imagebox {
       margin-bottom: 6.5rem;
-      width: 70%;
+      width: 30%;
 
       img {
-        border-radius: 0;
+        // border-radius: 1rem;
         aspect-ratio: 2/1;
         object-fit: cover;
+        height: 20rem;
       }
 
       .image__area {
@@ -1364,7 +1393,13 @@ button {
         align-items: flex-start;
         margin-bottom: 12.75rem;
 
+        @include media(md) {
+          display: none;
+        }
+
+
         img {
+
           &:nth-child(1) {
             width: 53%;
             aspect-ratio: 3/2;
@@ -1380,7 +1415,7 @@ button {
         }
 
         :nth-child(1) {
-          border-radius: 1.5rem;
+          border-radius: 1rem;
         }
       }
     }

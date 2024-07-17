@@ -1041,12 +1041,13 @@ button {
 .about {
   padding-bottom: 6.5rem;
   padding-top: 6.5rem;
-  background-color: rgba(255, 127, 62, 0.1);
+  position: relative;
 }
 .about__imagebox {
   width: 70%;
   margin-bottom: 2rem;
   margin-top: 6rem;
+  display: inline;
 }
 .about__imagebox img {
   border-radius: 0rem 1.5rem 1.5rem 0rem;
@@ -1118,6 +1119,24 @@ button {
   -moz-column-gap: 5%;
        column-gap: 5%;
   align-items: flex-start;
+  width: 100%;
+}
+.about .image__area--top img:nth-child(1) {
+  width: 53%;
+  aspect-ratio: 3/2;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 0rem 1rem 1rem 0;
+}
+.about .image__area--top img:nth-child(2) {
+  width: 30%;
+  aspect-ratio: 3/2;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  border-radius: 1rem;
+  left: 10rem;
+  top: -12rem;
 }
 .about .image__area img {
   border-radius: 0.5rem;
@@ -1127,11 +1146,12 @@ button {
   aspect-ratio: 3/2;
   -o-object-fit: contain;
      object-fit: contain;
+  border-radius: 1rem 0 0 1rem;
 }
 .about .image__area img:nth-child(2) {
-  margin-top: 20%;
+  margin-top: 30%;
   width: 30%;
-  aspect-ratio: 1/1.124;
+  aspect-ratio: 3/2;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1205,13 +1225,13 @@ button {
 @media screen and (min-width: 1000px) {
   .about__imagebox {
     margin-bottom: 6.5rem;
-    width: 70%;
+    width: 30%;
   }
   .about__imagebox img {
-    border-radius: 0;
     aspect-ratio: 2/1;
     -o-object-fit: cover;
        object-fit: cover;
+    height: 20rem;
   }
   .about__imagebox .image__area {
     display: flex;
@@ -1222,6 +1242,13 @@ button {
     align-items: flex-start;
     margin-bottom: 12.75rem;
   }
+}
+@media screen and (min-width: 1000px) and (min-width: 1000px) {
+  .about__imagebox .image__area {
+    display: none;
+  }
+}
+@media screen and (min-width: 1000px) {
   .about__imagebox .image__area img:nth-child(1) {
     width: 53%;
     aspect-ratio: 3/2;
@@ -1235,8 +1262,10 @@ button {
     -o-object-fit: cover;
        object-fit: cover;
   }
+}
+@media screen and (min-width: 1000px) {
   .about__imagebox .image__area :nth-child(1) {
-    border-radius: 1.5rem;
+    border-radius: 1rem;
   }
 }
 .access {
