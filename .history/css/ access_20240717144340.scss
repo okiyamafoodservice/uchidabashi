@@ -41,16 +41,13 @@ $breakpoints: (
     }
 
     &__text {
+        color: $color-brown;
         font-family: "BIZ UDPGothic";
         font-size: 1rem;
         font-style: normal;
         font-weight: 700;
         line-height: 1.8rem;
         text-decoration-line: underline;
-
-        a {
-            color: $color-brown;
-        }
     }
 
     &__tel {

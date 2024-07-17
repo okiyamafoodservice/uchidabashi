@@ -16,6 +16,9 @@
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
+.address__text a {
+  color: #5d4a3a;
+}
 .address__tel {
   font-family: "BIZ UDPGothic";
   font-size: 1.25rem;
@@ -43,6 +46,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 1.8rem;
+  gap: 0.5rem;
 }
 .time__bus {
   font-family: "BIZ UDPGothic";
@@ -57,5 +61,6 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 1.5rem;
 }
 /*# sourceMappingURL= access.css.map */
