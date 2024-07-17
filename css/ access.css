@@ -1,6 +1,24 @@
 .address__head {
+  color: #5d4a3a;
   font-size: 1.25rem;
   font-family: "BIZ UDPGothic";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+  /* 200% */
+}
+.address__text {
+  font-family: "BIZ UDPGothic";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.8rem;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+.address__tel {
+  font-family: "BIZ UDPGothic";
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 700;
   line-height: 2.5rem;
