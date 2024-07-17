@@ -1,9 +1,52 @@
-.head__text {
+.address__head {
   color: #5d4a3a;
-  font-size: 2rem;
+  font-size: 1.25rem;
+  font-family: "BIZ UDPGothic";
   font-style: normal;
   font-weight: 700;
-  line-height: 2rem;
-  /* 100% */
+  line-height: 2.5rem;
+  /* 200% */
+}
+.address__text {
+  font-family: "BIZ UDPGothic";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.8rem;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+.address__tel {
+  font-family: "BIZ UDPGothic";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+  /* 200% */
+}
+
+.time__head {
+  font-family: "BIZ UDPGothic";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.8rem;
+  /* 180% */
+}
+.time__text {
+  color: #ff7f3e;
+  font-family: "BIZ UDPGothic";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.8rem;
+}
+.time__bus {
+  font-family: "BIZ UDPGothic";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.8rem;
+  /* 180% */
 }
 /*# sourceMappingURL= access.css.map */

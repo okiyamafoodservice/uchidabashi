@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+
+$color-black: #212121;
+$color-gray: #e9e9e9;
+$color-main: #ff7f3e;
+$color-base2: #fcf9ed;
+$color-white: #ffffff;
+$color-brown: #5d4a3a;
+$color-skyblue: #80c4e9;
+
+$breakpoints: (
+    "sm": "screen and (min-width: 430px)",
+    "md": "screen and (min-width: 768px)",
+    "lg": "screen and (min-width: 992px)",
+    "xl": "screen and (min-width: 1200px)",
+    ) !default;
+
+@mixin mx {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin media($breakpoint) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+.head {
+    &__text {
+        color: $color-brown;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2rem;
+        /* 100% */
+    }
+}
+
+.main-section {
+    &__address__head {
+        font-size: 1.25rem;
+    }
+}

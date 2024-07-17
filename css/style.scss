@@ -30,7 +30,6 @@ $breakpoints: (
 
 @import url(./footer.css);
 
-
 html,
 body {
   color: $color-brown;
@@ -100,7 +99,6 @@ ul {
   padding-left: 2em;
 }
 
-
 iframe {
   max-width: 100%;
 }
@@ -150,7 +148,7 @@ button {
   height: 100%;
   overflow: auto;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   background-color: $color-main;
 
   &.show {
@@ -201,8 +199,7 @@ button {
   // }
 }
 
-
-.shape {
+HEAD .shape {
   &--blue {
     position: absolute;
     right: 5rem;
@@ -234,6 +231,7 @@ button {
   }
 }
 
+
 .firstView {
   position: relative;
 
@@ -244,7 +242,7 @@ button {
 
     &--subtext {
       display: none;
-      white-space: nowrap
+      white-space: nowrap;
     }
 
     &--image {
@@ -296,8 +294,7 @@ button {
       &--subtext {
         color: rgba($color: $color-main, $alpha: 0.5
         );
-      font-family: "Zen Maru Gothic",
-        sans-serif;
+      font-family: "Zen Maru Gothic", sans-serif;
       font-weight: 500;
       display: block;
     }
@@ -321,7 +318,6 @@ button {
       .horizontalCatch {
         display: none;
       }
-
 
       &--title {
         font-size: 2.5rem;
@@ -1156,7 +1152,6 @@ button {
     margin-bottom: 6rem;
 
     &__instagram {
-
       margin-bottom: 3.75rem;
       width: (716/1220) * 100%;
       @include mx();
@@ -1287,7 +1282,6 @@ button {
     @include mx;
     border-radius: 1.5rem;
 
-
     &__title {
       text-align: center;
       font-family: "Zen Maru Gothic";
@@ -1300,7 +1294,6 @@ button {
       width: fit-content;
       position: relative;
       color: $color-brown;
-
 
       &::before {
         content: "Opening a store";
@@ -1393,7 +1386,6 @@ button {
         }
       }
     }
-
   }
 }
 

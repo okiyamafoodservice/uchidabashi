@@ -116,7 +116,7 @@ button {
   height: 100%;
   overflow: auto;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   background-color: #ff7f3e;
 }
 .modal.show {
@@ -155,26 +155,26 @@ button {
   background-color: #ff7f3e;
 }
 
-.shape--blue {
+HEAD .shape--blue {
   position: absolute;
   right: 5rem;
   top: 5rem;
   opacity: 0.4;
 }
-.shape--orange {
+HEAD .shape--orange {
   position: absolute;
   right: -7rem;
   top: -10rem;
   opacity: 0.5;
 }
 @media screen and (min-width: 1000px) {
-  .shape--blue {
+  HEAD .shape--blue {
     position: absolute;
     right: 13rem;
     top: 5rem;
     opacity: 0.4;
   }
-  .shape--orange {
+  HEAD .shape--orange {
     position: absolute;
     right: 1rem;
     top: -10rem;
