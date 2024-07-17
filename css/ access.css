@@ -1,9 +1,9 @@
-.main-section__text {
-  color: #5d4a3a;
-  font-size: 2rem;
+.address__head {
+  font-size: 1.25rem;
+  font-family: "BIZ UDPGothic";
   font-style: normal;
   font-weight: 700;
-  line-height: 2rem;
-  /* 100% */
+  line-height: 2.5rem;
+  /* 200% */
 }
 /*# sourceMappingURL= access.css.map */
