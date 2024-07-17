@@ -3,10 +3,6 @@ body {
   background-color: #fcf9ed;
 }
 
-img {
-  max-width: 100%;
-}
-
 /*イベントタイトル*/
 .event__content {
   display: flex;
