@@ -1121,22 +1121,27 @@ button {
   align-items: flex-start;
   width: 100%;
 }
-.about .image__area--top img:nth-child(1) {
+.about .image__area--top {
+  margin-bottom: 3rem;
+}
+.about .image__area--top figure:nth-child(1) {
   width: 53%;
   aspect-ratio: 3/2;
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 0rem 1rem 1rem 0;
 }
-.about .image__area--top img:nth-child(2) {
-  width: 30%;
+.about .image__area--top figure:nth-child(2) {
+  width: 35%;
   aspect-ratio: 3/2;
   -o-object-fit: cover;
      object-fit: cover;
-  position: relative;
+  position: absolute;
+  left: 30%;
+  top: 5rem;
+}
+.about .image__area--top figure:nth-child(2) img {
   border-radius: 1rem;
-  left: 10rem;
-  top: -12rem;
 }
 .about .image__area img {
   border-radius: 0.5rem;
@@ -1250,7 +1255,7 @@ button {
 }
 @media screen and (min-width: 1000px) {
   .about__imagebox .image__area img:nth-child(1) {
-    width: 53%;
+    width: 30%;
     aspect-ratio: 3/2;
     -o-object-fit: contain;
        object-fit: contain;

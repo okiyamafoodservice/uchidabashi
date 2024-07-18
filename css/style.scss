@@ -1260,8 +1260,9 @@ button {
     width: 100%;
 
     &--top {
+      margin-bottom: 3rem;
 
-      img {
+      figure {
         &:nth-child(1) {
           width: 53%;
           aspect-ratio: 3/2;
@@ -1270,13 +1271,16 @@ button {
         }
 
         &:nth-child(2) {
-          width: 30%;
+          width: 35%;
           aspect-ratio: 3/2;
           object-fit: cover;
-          position: relative;
-          border-radius: 1rem;
-          left: 10rem;
-          top: -12rem;
+          position: absolute;
+          left: 30%;
+          top: 5rem;
+
+          img {
+            border-radius: 1rem;
+          }
         }
       }
     }
@@ -1401,7 +1405,7 @@ button {
         img {
 
           &:nth-child(1) {
-            width: 53%;
+            width: 30%;
             aspect-ratio: 3/2;
             object-fit: contain;
           }
