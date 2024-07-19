@@ -281,14 +281,14 @@ button {
   }
 }
 
-@include media("md") {
+@include media("sm") {
   .firstView {
     &__content {
       display: flex;
       justify-content: space-between;
 
       &--image {
-        height: 800px;
+        height: 45rem;
         border-radius: 0rem 18.96875rem 1.5rem 0rem;
         background: url(../images/makiwaradammy.png) lightgray 50% / cover no-repeat;
         width: 79%;
@@ -591,15 +591,21 @@ button {
       width: 80%;
     }
 
-    @include media(md) {
+    @include media(sm) {
       &-pc {
         display: inline-block;
         border: rgba($color: $color-brown, $alpha: 0.2) solid 1px;
-        width: 50%;
+        width: 80%;
       }
 
       &-sp {
         display: none;
+      }
+    }
+
+    @include media(md) {
+      &-pc {
+        width: 50%;
       }
     }
   }
@@ -1272,6 +1278,10 @@ button {
           aspect-ratio: 3/2;
           object-fit: contain;
           border-radius: 0rem 1rem 1rem 0;
+
+          @include media(sm) {
+            width: 43%;
+          }
         }
 
         &:nth-child(2) {
@@ -1281,6 +1291,10 @@ button {
           position: absolute;
           left: 30%;
           top: 5rem;
+
+          @include media(sm) {
+            width: 25%;
+          }
 
           img {
             border-radius: 1rem;
@@ -1297,6 +1311,10 @@ button {
         aspect-ratio: 3/2;
         object-fit: contain;
         border-radius: 1rem 0 0 1rem;
+
+        @include media(sm) {
+          width: 43%;
+        }
       }
 
       &:nth-child(2) {
@@ -1304,6 +1322,10 @@ button {
         width: 30%;
         aspect-ratio: 3/2;
         object-fit: cover;
+
+        @include media(sm) {
+          width: 25%;
+        }
       }
     }
 

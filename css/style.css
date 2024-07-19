@@ -231,13 +231,13 @@ button {
   margin-right: auto;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 430px) {
   .firstView__content {
     display: flex;
     justify-content: space-between;
   }
   .firstView__content--image {
-    height: 800px;
+    height: 45rem;
     border-radius: 0rem 18.96875rem 1.5rem 0rem;
     background: url(../images/makiwaradammy.png) lightgray 50%/cover no-repeat;
     width: 79%;
@@ -511,14 +511,19 @@ button {
   border: rgba(93, 74, 58, 0.2) solid 1px;
   width: 80%;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 430px) {
   .opening__link-pc {
     display: inline-block;
     border: rgba(93, 74, 58, 0.2) solid 1px;
-    width: 50%;
+    width: 80%;
   }
   .opening__link-sp {
     display: none;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .opening__link-pc {
+    width: 50%;
   }
 }
 .opening__parts {
@@ -1140,6 +1145,11 @@ button {
      object-fit: contain;
   border-radius: 0rem 1rem 1rem 0;
 }
+@media screen and (min-width: 430px) {
+  .about .image__area--top figure:nth-child(1) {
+    width: 43%;
+  }
+}
 .about .image__area--top figure:nth-child(2) {
   width: 35%;
   aspect-ratio: 3/2;
@@ -1148,6 +1158,11 @@ button {
   position: absolute;
   left: 30%;
   top: 5rem;
+}
+@media screen and (min-width: 430px) {
+  .about .image__area--top figure:nth-child(2) {
+    width: 25%;
+  }
 }
 .about .image__area--top figure:nth-child(2) img {
   border-radius: 1rem;
@@ -1162,12 +1177,22 @@ button {
      object-fit: contain;
   border-radius: 1rem 0 0 1rem;
 }
+@media screen and (min-width: 430px) {
+  .about .image__area img:nth-child(1) {
+    width: 43%;
+  }
+}
 .about .image__area img:nth-child(2) {
   margin-top: 30%;
   width: 30%;
   aspect-ratio: 3/2;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (min-width: 430px) {
+  .about .image__area img:nth-child(2) {
+    width: 25%;
+  }
 }
 .about__opening {
   width: 83%;
