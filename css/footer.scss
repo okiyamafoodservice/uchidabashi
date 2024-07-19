@@ -171,6 +171,15 @@ $breakpoints: (
   }
 }
 
+@include media(sm) {
+  .footer {
+    &__link {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
 @include media("md") {
   .footer {
     &__inner {

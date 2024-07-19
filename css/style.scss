@@ -1024,7 +1024,7 @@ button {
   }
 }
 
-@include media("md") {
+@include media(sm) {
   .storeInfo {
     .imageScroll {
       margin-bottom: 3.75rem;
@@ -1051,7 +1051,7 @@ button {
 
     .scroll-infinity__item {
       width: calc(100vw / 3);
-      margin-right: 4rem;
+      margin-right: 3rem;
       max-width: 22rem;
     }
 
@@ -1275,6 +1275,10 @@ button {
 
     &--top {
       margin-bottom: 3rem;
+
+      @include media(sm) {
+        margin-bottom: 0;
+      }
 
       figure {
         &:nth-child(1) {
@@ -1500,7 +1504,7 @@ button {
     &::before {
       display: block;
       margin-inline: auto;
-      content: "Shop";
+      content: "Access";
       width: 100%;
       font-size: 15px;
       color: $color-main;

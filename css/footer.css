@@ -130,6 +130,12 @@
   color: #ffffff;
 }
 
+@media screen and (min-width: 430px) {
+  .footer__link {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer__inner {
     width: 85%;

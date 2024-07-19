@@ -917,7 +917,7 @@ button {
   border-radius: 1.25rem;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 430px) {
   .storeInfo .imageScroll {
     margin-bottom: 3.75rem;
   }
@@ -940,7 +940,7 @@ button {
   }
   .storeInfo .scroll-infinity__item {
     width: 33.3333333333vw;
-    margin-right: 4rem;
+    margin-right: 3rem;
     max-width: 22rem;
   }
   .storeInfo .scroll-infinity__item > img {
@@ -1141,6 +1141,11 @@ button {
 }
 .about .image__area--top {
   margin-bottom: 3rem;
+}
+@media screen and (min-width: 430px) {
+  .about .image__area--top {
+    margin-bottom: 0;
+  }
 }
 .about .image__area--top figure:nth-child(1) {
   width: 53%;
@@ -1352,7 +1357,7 @@ button {
 .access__title::before {
   display: block;
   margin-inline: auto;
-  content: "Shop";
+  content: "Access";
   width: 100%;
   font-size: 15px;
   color: #ff7f3e;
