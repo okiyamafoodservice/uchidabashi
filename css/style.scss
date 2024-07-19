@@ -290,7 +290,7 @@ button {
       &--image {
         height: 45rem;
         border-radius: 0rem 18.96875rem 1.5rem 0rem;
-        background: url(../images/makiwaradammy.png) lightgray 50% / cover no-repeat;
+        background: url(../images/firstView.jpg) lightgray 50% / cover no-repeat;
         width: 79%;
         margin-bottom: 0;
       }
@@ -1058,6 +1058,8 @@ button {
     .scroll-infinity__item>img {
       width: 100%;
       border-radius: 1.25rem;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
     }
   }
 }
