@@ -1191,14 +1191,12 @@ button {
   padding-top: 6.5rem;
   // background-color: rgba($color: $color-main, $alpha: 0.1);
   position: relative;
-  background-image: url(/images/dammy07.jpg);
+  background-image: url(/images/aboutimg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 4rem;
-  width: 85%;
+  border-radius: 4rem 4rem 0 0;
+
   @include mx();
-  margin-top: 6.5rem;
-  margin-bottom: 6.5rem;
 
 
   &__imagebox {
@@ -1230,7 +1228,7 @@ button {
       content: "About";
       width: 100%;
       font-size: 15px;
-      color: $color-main;
+      color: $color-white;
     }
   }
 

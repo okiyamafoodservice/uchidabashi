@@ -1065,15 +1065,12 @@ button {
   padding-bottom: 6.5rem;
   padding-top: 6.5rem;
   position: relative;
-  background-image: url(/images/dammy07.jpg);
+  background-image: url(/images/aboutimg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 4rem;
-  width: 85%;
+  border-radius: 4rem 4rem 0 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 6.5rem;
-  margin-bottom: 6.5rem;
 }
 .about__imagebox {
   width: 70%;
@@ -1100,7 +1097,7 @@ button {
   content: "About";
   width: 100%;
   font-size: 15px;
-  color: #ff7f3e;
+  color: #ffffff;
 }
 .about__text {
   font-family: "BIZ UDPGothic";
