@@ -1038,9 +1038,6 @@ button {
 }
 
 @media screen and (min-width: 1000px) {
-  .latestInfo {
-    margin-bottom: 6rem;
-  }
   .latestInfo__instagram {
     margin-bottom: 3.75rem;
     width: 58.6885245902%;
@@ -1134,6 +1131,13 @@ button {
        column-gap: 5%;
   align-items: flex-start;
   width: 100%;
+  position: relative;
+}
+@media screen and (min-width: 1000px) {
+  .about .image__area {
+    -moz-column-gap: 3%;
+         column-gap: 3%;
+  }
 }
 .about .image__area--top {
   margin-bottom: 3rem;
@@ -1150,6 +1154,11 @@ button {
     width: 43%;
   }
 }
+@media screen and (min-width: 1000px) {
+  .about .image__area--top figure:nth-child(1) {
+    width: 33%;
+  }
+}
 .about .image__area--top figure:nth-child(2) {
   width: 35%;
   aspect-ratio: 3/2;
@@ -1162,6 +1171,12 @@ button {
 @media screen and (min-width: 430px) {
   .about .image__area--top figure:nth-child(2) {
     width: 25%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .about .image__area--top figure:nth-child(2) {
+    width: 20%;
+    left: 25%;
   }
 }
 .about .image__area--top figure:nth-child(2) img {
@@ -1182,6 +1197,12 @@ button {
     width: 43%;
   }
 }
+@media screen and (min-width: 1000px) {
+  .about .image__area img:nth-child(1) {
+    width: 33%;
+    margin-top: -15rem;
+  }
+}
 .about .image__area img:nth-child(2) {
   margin-top: 30%;
   width: 30%;
@@ -1192,6 +1213,13 @@ button {
 @media screen and (min-width: 430px) {
   .about .image__area img:nth-child(2) {
     width: 25%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .about .image__area img:nth-child(2) {
+    width: 15%;
+    margin-top: 15%;
+    margin-top: 5rem;
   }
 }
 .about__opening {

@@ -1159,7 +1159,6 @@ button {
 
 @include media("md") {
   .latestInfo {
-    margin-bottom: 6rem;
 
     &__instagram {
       margin-bottom: 3.75rem;
@@ -1268,6 +1267,11 @@ button {
     column-gap: 5%;
     align-items: flex-start;
     width: 100%;
+    position: relative;
+
+    @include media(md) {
+      column-gap: 3%;
+    }
 
     &--top {
       margin-bottom: 3rem;
@@ -1281,6 +1285,10 @@ button {
 
           @include media(sm) {
             width: 43%;
+          }
+
+          @include media(md) {
+            width: 33%;
           }
         }
 
@@ -1296,6 +1304,11 @@ button {
             width: 25%;
           }
 
+          @include media(md) {
+            width: 20%;
+            left: 25%;
+          }
+
           img {
             border-radius: 1rem;
           }
@@ -1306,14 +1319,23 @@ button {
     img {
       border-radius: 0.5rem;
 
+
       &:nth-child(1) {
         width: 53%;
         aspect-ratio: 3/2;
         object-fit: contain;
         border-radius: 1rem 0 0 1rem;
+        // position: absolute;
+        // right: 0;
+        // top: 0;
 
         @include media(sm) {
           width: 43%;
+        }
+
+        @include media(md) {
+          width: 33%;
+          margin-top: -15rem;
         }
       }
 
@@ -1322,9 +1344,18 @@ button {
         width: 30%;
         aspect-ratio: 3/2;
         object-fit: cover;
+        // position: absolute;
+        // right: 35%;
+        // top: 2rem;
 
         @include media(sm) {
           width: 25%;
+        }
+
+        @include media(md) {
+          width: 15%;
+          margin-top: 15%;
+          margin-top: 5rem;
         }
       }
     }
