@@ -159,13 +159,22 @@ button {
   position: absolute;
   right: 5rem;
   top: 5rem;
-  opacity: 0.4;
+  -webkit-animation: 1.3s fadeInAnime01;
+          animation: 1.3s fadeInAnime01;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  opacity: 0;
 }
 .shape--orange {
   position: absolute;
   right: -7rem;
   top: -10rem;
-  opacity: 0.5;
+  -webkit-animation: 1.3s fadeInAnime01;
+          animation: 1.3s fadeInAnime01;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 @media screen and (min-width: 1000px) {
   .shape--blue {
@@ -1409,6 +1418,24 @@ button {
 @media screen and (min-width: 1000px) {
   .br__sp {
     display: none;
+  }
+}
+
+@-webkit-keyframes fadeInAnime01 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes fadeInAnime01 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.3;
   }
 }
 /*# sourceMappingURL=style.css.map */

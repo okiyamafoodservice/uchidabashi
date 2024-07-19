@@ -204,14 +204,18 @@ button {
     position: absolute;
     right: 5rem;
     top: 5rem;
-    opacity: 0.4;
+    animation: 1.3s fadeInAnime01;
+    animation-fill-mode: both;
+    animation-delay: .3s;
+    opacity: 0;
   }
 
   &--orange {
     position: absolute;
     right: -7rem;
     top: -10rem;
-    opacity: 0.5;
+    animation: 1.3s fadeInAnime01;
+    animation-fill-mode: forwards;
   }
 
   @include media(md) {
@@ -1574,5 +1578,15 @@ button {
 
   @include media(md) {
     display: none;
+  }
+}
+
+@keyframes fadeInAnime01 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.3;
   }
 }
