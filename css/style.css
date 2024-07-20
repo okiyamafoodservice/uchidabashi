@@ -784,6 +784,7 @@ button {
   }
   .event__image--box img {
     border-radius: 0rem 1rem 1rem 0;
+    aspect-ratio: 16/9;
   }
   .event__name {
     font-family: "BIZ UDPGothic";
@@ -1063,14 +1064,18 @@ button {
 }
 .about {
   padding-bottom: 6.5rem;
-  padding-top: 6.5rem;
   position: relative;
   background-image: url(/images/aboutimg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 4rem 4rem 0 0;
   margin-left: auto;
   margin-right: auto;
+}
+.about::before {
+  content: url(/images/SVG/about_archi.svg);
+  top: 0;
+  left: 50%;
+  width: 100%;
 }
 .about__imagebox {
   width: 70%;
@@ -1090,6 +1095,7 @@ button {
   text-align: center;
   margin-bottom: 3rem;
   color: #ffffff;
+  padding-top: 3rem;
 }
 .about__title::before {
   display: block;

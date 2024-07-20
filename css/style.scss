@@ -885,6 +885,7 @@ button {
 
       img {
         border-radius: 0rem 1rem 1rem 0;
+        aspect-ratio: 16/9;
       }
     }
 
@@ -1188,15 +1189,22 @@ button {
 
 .about {
   padding-bottom: 6.5rem;
-  padding-top: 6.5rem;
+  // padding-top: 6.5rem;
   // background-color: rgba($color: $color-main, $alpha: 0.1);
   position: relative;
   background-image: url(/images/aboutimg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 4rem 4rem 0 0;
+  // border-radius: 4rem 4rem 0 0;
 
   @include mx();
+
+  &::before {
+    content: url(/images/SVG/about_archi.svg);
+    top: 0;
+    left: 50%;
+    width: 100%;
+  }
 
 
   &__imagebox {
@@ -1221,6 +1229,7 @@ button {
     text-align: center;
     margin-bottom: 3rem;
     color: $color-white;
+    padding-top: 3rem;
 
     &::before {
       display: block;
