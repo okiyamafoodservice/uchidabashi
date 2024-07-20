@@ -770,6 +770,10 @@ button {
   padding-bottom: 6.5rem;
   border-radius: 2.5rem 2.5rem 0rem 0rem;
 
+  &__content {
+    margin-bottom: 6rem;
+  }
+
   &__title {
     font-family: "Zen Maru Gothic";
     font-size: 2rem;
@@ -777,7 +781,7 @@ button {
     font-weight: 700;
     line-height: 2.5rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 
     &::before {
       display: block;
@@ -794,6 +798,7 @@ button {
     margin-bottom: 2.5rem;
   }
 
+
   &__image {
     margin-bottom: 0.5rem;
   }
@@ -801,6 +806,7 @@ button {
   &__name {
     text-align: right;
     font-size: 0.9375rem;
+    margin-right: 1rem;
   }
 
   &__detail {
@@ -854,17 +860,43 @@ button {
   }
 
   &__info {
-    padding: 1px;
-    border: 1px solid $color-main;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 2px solid $color-main;
     width: fit-content;
     @include mx;
+    position: relative;
+    transform: rotate(-5deg);
+
+    &::before {
+      content: url(/images/tabler_pin-filled.svg);
+      top: -2.5rem;
+      left: 45%;
+      position: absolute;
+    }
 
     &--title {
       text-align: center;
+      font-family: "Zen Maru Gothic";
+      font-weight: 600;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
     }
 
     &--content {
       text-align: center;
+      display: flex;
+      border-top: $color-main dashed 2px;
+      border-bottom: $color-main dashed 2px;
+      padding: 1rem 0;
+      font-size: 1.1rem;
+      color: $color-main;
+      font-weight: 600;
+      font-family: "Zen Maru Gothic";
+    }
+
+    time {
+      margin-right: 3rem;
     }
   }
 }
@@ -874,20 +906,24 @@ button {
     &__content {
       display: flex;
       justify-content: space-between;
-      column-gap: 6.5rem;
+      column-gap: 5rem;
       align-items: center;
+      margin-bottom: 6rem;
     }
 
     &__image--box {
       width: 50%;
       border-radius: 0rem 1rem;
       padding: 0;
+      margin-bottom: 0;
 
       img {
         border-radius: 0rem 1rem 1rem 0;
         aspect-ratio: 16/9;
       }
     }
+
+
 
     &__name {
       font-family: "BIZ UDPGothic";
@@ -899,9 +935,9 @@ button {
     }
 
     &__expl {
-      padding-right: 6.5rem;
+      padding-right: 10%;
       text-align: left;
-      width: 40%;
+      width: 45%;
     }
 
     &__detail {
@@ -925,6 +961,7 @@ button {
     font-style: normal;
     font-weight: 700;
     line-height: 2.5rem;
+    margin-bottom: 4rem;
 
     &::before {
       display: block;
@@ -1083,7 +1120,7 @@ button {
     font-weight: 700;
     line-height: 2.5rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 
     &::before {
       display: block;
@@ -1227,7 +1264,7 @@ button {
     font-weight: 700;
     line-height: 2.5rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     color: $color-white;
     padding-top: 3rem;
 
@@ -1528,7 +1565,7 @@ button {
     font-weight: 700;
     line-height: 2.5rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 
     &::before {
       display: block;

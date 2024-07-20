@@ -679,6 +679,9 @@ button {
   padding-bottom: 6.5rem;
   border-radius: 2.5rem 2.5rem 0rem 0rem;
 }
+.event__content {
+  margin-bottom: 6rem;
+}
 .event__title {
   font-family: "Zen Maru Gothic";
   font-size: 2rem;
@@ -686,7 +689,7 @@ button {
   font-weight: 700;
   line-height: 2.5rem;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 .event__title::before {
   display: block;
@@ -706,6 +709,7 @@ button {
 .event__name {
   text-align: right;
   font-size: 0.9375rem;
+  margin-right: 1rem;
 }
 .event__detail {
   margin-bottom: 2.5rem;
@@ -754,33 +758,59 @@ button {
   margin-left: 0.5rem;
 }
 .event__info {
-  padding: 1px;
-  border: 1px solid #ff7f3e;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 2px solid #ff7f3e;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  transform: rotate(-5deg);
+}
+.event__info::before {
+  content: url(/images/tabler_pin-filled.svg);
+  top: -2.5rem;
+  left: 45%;
+  position: absolute;
 }
 .event__info--title {
   text-align: center;
+  font-family: "Zen Maru Gothic";
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 .event__info--content {
   text-align: center;
+  display: flex;
+  border-top: #ff7f3e dashed 2px;
+  border-bottom: #ff7f3e dashed 2px;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  color: #ff7f3e;
+  font-weight: 600;
+  font-family: "Zen Maru Gothic";
+}
+.event__info time {
+  margin-right: 3rem;
 }
 
 @media screen and (min-width: 1000px) {
   .event__content {
     display: flex;
     justify-content: space-between;
-    -moz-column-gap: 6.5rem;
-         column-gap: 6.5rem;
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
     align-items: center;
+    margin-bottom: 6rem;
   }
   .event__image--box {
     width: 50%;
     border-radius: 0rem 1rem;
     padding: 0;
+    margin-bottom: 0;
   }
   .event__image--box img {
     border-radius: 0rem 1rem 1rem 0;
@@ -795,9 +825,9 @@ button {
     /* 200% */
   }
   .event__expl {
-    padding-right: 6.5rem;
+    padding-right: 10%;
     text-align: left;
-    width: 40%;
+    width: 45%;
   }
   .event__detail {
     width: 100%;
@@ -817,6 +847,7 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: 2.5rem;
+  margin-bottom: 4rem;
 }
 .storeInfo__title::before {
   display: block;
@@ -970,7 +1001,7 @@ button {
   font-weight: 700;
   line-height: 2.5rem;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 .latestInfo__title::before {
   display: block;
@@ -1093,7 +1124,7 @@ button {
   font-weight: 700;
   line-height: 2.5rem;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   color: #ffffff;
   padding-top: 3rem;
 }
@@ -1369,7 +1400,7 @@ button {
   font-weight: 700;
   line-height: 2.5rem;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 .access__title::before {
   display: block;
