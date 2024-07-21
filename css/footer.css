@@ -34,24 +34,26 @@
   margin-bottom: 2.5rem;
 }
 .contact__parts--button {
-  background-color: #ffffff !important;
+  margin-left: auto;
+  margin-right: auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  border-radius: 6.25rem;
-  padding: 1rem 2.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  color: #ff7f3e !important;
-}
-.contact__parts--button---text {
+  color: #ff7f3e;
   font-family: "BIZ UDPGothic";
   font-size: 1rem;
   font-style: normal;
+  background-color: #ffffff;
   font-weight: 700;
   line-height: 2rem;
-  /* 200% */
+  letter-spacing: 0.07rem;
+}
+.contact__parts--button-text {
+  border-radius: 6.25rem;
+  display: block;
+  padding: 1rem 2.5rem;
   color: #ff7f3e;
+  background-color: #ffffff;
 }
 .contact__parts--button i {
   margin-left: 0.5rem;

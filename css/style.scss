@@ -79,6 +79,7 @@ h4 {
 
 a {
   text-decoration: none;
+  color: $color-white;
 }
 
 pre {
@@ -838,20 +839,23 @@ button {
   }
 
   &__parts {
+
+
     &--button {
+      @include mx();
       width: fit-content;
       border-radius: 6.25rem;
-      padding: 1rem 2.5rem;
-      @include mx;
       color: $color-white;
+      font-family: "BIZ UDPGothic";
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 2rem;
+      letter-spacing: 0.07rem;
 
-      &---text {
-        font-family: "BIZ UDPGothic";
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 2rem;
-        /* 200% */
+      &-text {
+        display: block;
+        padding: 1rem 2.5rem;
       }
 
       i {
@@ -1190,19 +1194,20 @@ button {
 
   &__parts {
     &--button {
+      @include mx();
       width: fit-content;
       border-radius: 6.25rem;
-      padding: 1rem 2.5rem;
-      @include mx;
       color: $color-white;
+      font-family: "BIZ UDPGothic";
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 2rem;
+      letter-spacing: 0.07rem;
 
-      &---text {
-        font-family: "BIZ UDPGothic";
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 2rem;
-        /* 200% */
+      &-text {
+        display: block;
+        padding: 1rem 2.5rem;
       }
 
       i {
@@ -1299,21 +1304,20 @@ button {
 
   &__parts {
     &--button {
+      @include mx();
       width: fit-content;
       border-radius: 6.25rem;
-      padding: 1rem 2.5rem;
-      @include mx;
       color: $color-white;
-      margin-bottom: 3.12rem;
-      background-color: $color-main;
+      font-family: "BIZ UDPGothic";
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 2rem;
+      letter-spacing: 0.07rem;
 
-      &---text {
-        font-family: "BIZ UDPGothic";
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 2rem;
-        /* 200% */
+      &-text {
+        display: block;
+        padding: 1rem 2.5rem;
       }
 
       i {

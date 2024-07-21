@@ -49,6 +49,7 @@ h4 {
 
 a {
   text-decoration: none;
+  color: #ffffff;
 }
 
 pre {
@@ -738,22 +739,23 @@ button {
   /* 180% */
 }
 .event__parts--button {
+  margin-left: auto;
+  margin-right: auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 6.25rem;
-  padding: 1rem 2.5rem;
-  margin-left: auto;
-  margin-right: auto;
   color: #ffffff;
-}
-.event__parts--button---text {
   font-family: "BIZ UDPGothic";
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
   line-height: 2rem;
-  /* 200% */
+  letter-spacing: 0.07rem;
+}
+.event__parts--button-text {
+  display: block;
+  padding: 1rem 2.5rem;
 }
 .event__parts--button i {
   margin-left: 0.5rem;
@@ -1064,22 +1066,23 @@ button {
   text-align: center;
 }
 .latestInfo__parts--button {
+  margin-left: auto;
+  margin-right: auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 6.25rem;
-  padding: 1rem 2.5rem;
-  margin-left: auto;
-  margin-right: auto;
   color: #ffffff;
-}
-.latestInfo__parts--button---text {
   font-family: "BIZ UDPGothic";
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
   line-height: 2rem;
-  /* 200% */
+  letter-spacing: 0.07rem;
+}
+.latestInfo__parts--button-text {
+  display: block;
+  padding: 1rem 2.5rem;
 }
 .latestInfo__parts--button i {
   margin-left: 0.5rem;
@@ -1155,24 +1158,23 @@ button {
   text-align: center;
 }
 .about__parts--button {
+  margin-left: auto;
+  margin-right: auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 6.25rem;
-  padding: 1rem 2.5rem;
-  margin-left: auto;
-  margin-right: auto;
   color: #ffffff;
-  margin-bottom: 3.12rem;
-  background-color: #ff7f3e;
-}
-.about__parts--button---text {
   font-family: "BIZ UDPGothic";
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
   line-height: 2rem;
-  /* 200% */
+  letter-spacing: 0.07rem;
+}
+.about__parts--button-text {
+  display: block;
+  padding: 1rem 2.5rem;
 }
 .about__parts--button i {
   margin-left: 0.5rem;
