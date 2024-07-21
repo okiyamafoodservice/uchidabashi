@@ -52,6 +52,9 @@ a {
   font-size: 1rem;
   color: #76604e;
 }
+.header__gnav--link i {
+  padding-left: 0.5rem;
+}
 .header__gnav--link:hover {
   color: #ff7f3e;
   transition: 0.3s;
