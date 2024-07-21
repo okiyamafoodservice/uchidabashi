@@ -38,27 +38,26 @@
 
 <body>
   <header class="header">
+    <div class="header__menu"></div>
     <div class="header__inner">
       <div class="header__top">
         <div class="header__top--image">
-          <a href="./index.html">
-            <img src="./images/uchidabashiLogo.svg" alt="内田橋商店街ロゴ" />
-          </a>
+          <img src="./images/uchidabashiLogo.svg" alt="内田橋商店街ロゴ" />
         </div>
         <div class="header__gnav">
-          <a href="/event.html" class="header__gnav--link">イベント情報</a>
-          <a href="" class="header__gnav--link">店舗情報</a>
-          <a href="/about.html" class="header__gnav--link">商店街について</a>
-          <a href="" class="header__gnav--link">出店について</a>
-          <a href="" class="header__gnav--link">アクセス</a>
-          <a href="/faq.html" class="header__gnav--link">お問い合わせ</a>
+          <a href="event.html" class="header__gnav--link">イベント情報</a>
+          <a href="store.html" class="header__gnav--link">店舗情報</a>
+          <a href="about.html" class="header__gnav--link">商店街について</a>
+          <a href="openstore.html" class="header__gnav--link">出店について</a>
+          <a href="access.html" class="header__gnav--link">アクセス</a>
+          <a href="faq.html" class="header__gnav--link">FAQ</a>
+          <a href="index.html#contact" class="header__gnav--link">お問い合わせ</a>
           <a href="" class="header__gnav--link"><i class="fa-brands fa-instagram"></i></a>
         </div>
-        <button id="menuButton">
-          <img id="menuIcon" src="./images/menu_button.svg" alt="Menu Button" />
-        </button>
+        <div class="header__menuButton">
+          <img src="./images/menu_button.svg" alt="" class="header__menuButton--image" />
+        </div>
       </div>
-    </div>
     </div>
   </header>
 
@@ -134,7 +133,7 @@
             </dd>
           </dl>
           <div class="event__parts--button button">
-            <a class="event__parts--button-text" href="#">詳しく見る<i class="fa-solid fa-circle-arrow-right"></i>
+            <a class="event__parts--button-text" href="/event.html">詳しく見る<i class="fa-solid fa-circle-arrow-right"></i>
             </a>
           </div>
         </div>
@@ -245,7 +244,7 @@
         内田橋商店街には様々なジャンルのお店があります！<span>詳しいお店の情報はこちらをご覧ください。</span>
       </p>
       <div class="event__parts--button button">
-        <a class="event__parts--button-text" href="#">詳しく見る<i class="fa-solid fa-circle-arrow-right"></i>
+        <a class="event__parts--button-text" href="/store.html">詳しく見る<i class="fa-solid fa-circle-arrow-right"></i>
         </a>
       </div>
     </section>
@@ -293,7 +292,8 @@
           懐かしい風景と温かな人々との<br>触れ合いを楽しめる<br class="br__sp">癒しの空間です。<br />
         </p>
         <div class="about__parts--button button">
-          <a class="about__parts--button-text" href="">詳しく見る<i class="fa-solid fa-circle-arrow-right"></i></a>
+          <a class="about__parts--button-text" href="/about.html">詳しく見る<i
+              class="fa-solid fa-circle-arrow-right"></i></a>
         </div>
 
         <!-- <div class="about__imagebox">
@@ -372,7 +372,7 @@
   <!-- ここ以上を作成 -->
 
   <footer class="footer">
-    <div class="contact">
+    <div class="contact" id="contact">
       <h2 class="contact__title">お問い合わせは<span>こちらまで</span></h2>
       <p class="contact__text">
         出店やイベントに関することなど、
@@ -392,13 +392,13 @@
       </p>
       <a href="tel:090-1742-2091" class="footer__tel"><i class="fa-solid fa-phone"></i>090-1742-2091</a>
       <ul class="footer__link">
-        <li class="footer__link--list"><a href="#">イベント</a></li>
-        <li class="footer__link--list"><a href="#">店舗情報</a></li>
-        <li class="footer__link--list"><a href="#">商店街について</a></li>
-        <li class="footer__link--list"><a href="#">出店について</a></li>
-        <li class="footer__link--list"><a href="#">アクセス</a></li>
-        <li class="footer__link--list"><a href="#">FAQ</a></li>
-        <li class="footer__link--list"><a href="#">お問い合わせ</a></li>
+        <li class="footer__link--list"><a href="/event.html">イベント</a></li>
+        <li class="footer__link--list"><a href="/store.html">店舗情報</a></li>
+        <li class="footer__link--list"><a href="/about.html">商店街について</a></li>
+        <li class="footer__link--list"><a href="/openstore.html">出店について</a></li>
+        <li class="footer__link--list"><a href="/access.html">アクセス</a></li>
+        <li class="footer__link--list"><a href="/faq.html">FAQ</a></li>
+        <li class="footer__link--list"><a href="/index.html#contact">お問い合わせ</a></li>
         <li class="footer__link--list">
           <a href="" class="instagramLink">
             <i class="fa-brands fa-instagram"></i>
