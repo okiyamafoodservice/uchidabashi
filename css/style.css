@@ -678,6 +678,7 @@ button {
   padding-top: 6.5rem;
   padding-bottom: 6.5rem;
   border-radius: 2.5rem 2.5rem 0rem 0rem;
+  position: relative;
 }
 .event__content {
   margin-bottom: 6rem;
@@ -758,7 +759,7 @@ button {
   margin-left: 0.5rem;
 }
 .event__info {
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 0.5rem;
   border: 2px solid #ff7f3e;
   width: -webkit-fit-content;
@@ -766,8 +767,11 @@ button {
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
-  transform: rotate(-5deg);
+  position: absolute;
+  top: 3vw;
+  right: 5%;
+  transform: rotate(5deg);
+  background-color: #ffffff;
 }
 .event__info::before {
   content: url(/images/tabler_pin-filled.svg);
@@ -779,7 +783,7 @@ button {
   text-align: center;
   font-family: "Zen Maru Gothic";
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 .event__info--content {
@@ -788,7 +792,7 @@ button {
   border-top: #ff7f3e dashed 2px;
   border-bottom: #ff7f3e dashed 2px;
   padding: 1rem 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #ff7f3e;
   font-weight: 600;
   font-family: "Zen Maru Gothic";
