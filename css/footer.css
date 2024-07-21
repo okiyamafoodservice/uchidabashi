@@ -83,7 +83,6 @@
   font-weight: 700;
   line-height: 1.6rem;
   /* 160% */
-  color: #5d4a3a;
 }
 .footer__text span {
   display: inline-block;
@@ -122,6 +121,9 @@
   line-height: 2rem;
   /* 200% */
   list-style: none;
+}
+.footer__link--list a {
+  color: #5d4a3a;
 }
 .footer__link .instagramLink {
   background-color: #ff7f3e;

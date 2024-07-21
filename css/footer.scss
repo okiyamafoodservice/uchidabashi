@@ -115,7 +115,7 @@ $breakpoints: (
     font-weight: 700;
     line-height: 1.6rem;
     /* 160% */
-    color: $color-brown;
+
 
     span {
       display: inline-block;
@@ -158,6 +158,10 @@ $breakpoints: (
       line-height: 2rem;
       /* 200% */
       list-style: none;
+
+      a {
+        color: $color-brown;
+      }
     }
 
     .instagramLink {
