@@ -29,8 +29,10 @@
 }
 .card--flex__head {
   font-weight: 500;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   font-size: 1.4rem;
+  line-height: 1.5;
+  font-family: "Zen Maru Gothic";
 }
 .card--flex__img {
   width: 25%;
@@ -104,6 +106,8 @@
   font-size: 1.35rem;
   font-weight: 500;
   margin-bottom: 0.8rem;
+  line-height: 1.5;
+  font-family: "Zen Maru Gothic";
 }
 @media screen and (min-width: 768px) {
   .flow-card__head {

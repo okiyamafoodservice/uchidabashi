@@ -26,8 +26,12 @@ $breakpoints: (
   }
 }
 
+main {
+  padding-top: 10rem;
+}
+
 .firstView-sub {
-  margin-top: 6rem;
+  // margin-top: 6rem;
   margin-bottom: 3rem;
   width: 92%;
   display: flex;
