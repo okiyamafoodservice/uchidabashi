@@ -30,7 +30,7 @@ a {
   width: 93%;
 }
 .header__top--image {
-  width: 35%;
+  width: 15%;
   min-width: 70px;
   height: auto;
   border-radius: 50%;
@@ -51,6 +51,9 @@ a {
   font-weight: bold;
   font-size: 1rem;
   color: #76604e;
+}
+.header__gnav--link i {
+  padding-left: 0.5rem;
 }
 .header__gnav--link:hover {
   color: #ff7f3e;

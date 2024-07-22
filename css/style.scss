@@ -79,6 +79,7 @@ h4 {
 
 a {
   text-decoration: none;
+  color: $color-white;
 }
 
 pre {
@@ -204,14 +205,18 @@ button {
     position: absolute;
     right: 5rem;
     top: 5rem;
-    opacity: 0.4;
+    animation: 1.3s fadeInAnime01;
+    animation-fill-mode: both;
+    animation-delay: .3s;
+    opacity: 0;
   }
 
   &--orange {
     position: absolute;
     right: -7rem;
     top: -10rem;
-    opacity: 0.5;
+    animation: 1.3s fadeInAnime01;
+    animation-fill-mode: forwards;
   }
 
   @include media(md) {
@@ -277,16 +282,16 @@ button {
   }
 }
 
-@include media("md") {
+@include media("sm") {
   .firstView {
     &__content {
       display: flex;
       justify-content: space-between;
 
       &--image {
-        height: 800px;
+        height: 45rem;
         border-radius: 0rem 18.96875rem 1.5rem 0rem;
-        background: url(../images/makiwaradammy.png) lightgray 50% / cover no-repeat;
+        background: url(../images/firstView.jpg) lightgray 50% / cover no-repeat;
         width: 79%;
         margin-bottom: 0;
       }
@@ -587,15 +592,21 @@ button {
       width: 80%;
     }
 
-    @include media(md) {
+    @include media(sm) {
       &-pc {
         display: inline-block;
         border: rgba($color: $color-brown, $alpha: 0.2) solid 1px;
-        width: 50%;
+        width: 80%;
       }
 
       &-sp {
         display: none;
+      }
+    }
+
+    @include media(md) {
+      &-pc {
+        width: 50%;
       }
     }
   }
@@ -759,6 +770,11 @@ button {
   padding-top: 6.5rem;
   padding-bottom: 6.5rem;
   border-radius: 2.5rem 2.5rem 0rem 0rem;
+  position: relative;
+
+  &__content {
+    margin-bottom: 6rem;
+  }
 
   &__title {
     font-family: "Zen Maru Gothic";
@@ -767,7 +783,7 @@ button {
     font-weight: 700;
     line-height: 2.5rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 
     &::before {
       display: block;
@@ -784,6 +800,7 @@ button {
     margin-bottom: 2.5rem;
   }
 
+
   &__image {
     margin-bottom: 0.5rem;
   }
@@ -791,6 +808,7 @@ button {
   &__name {
     text-align: right;
     font-size: 0.9375rem;
+    margin-right: 1rem;
   }
 
   &__detail {
@@ -821,20 +839,23 @@ button {
   }
 
   &__parts {
+
+
     &--button {
+      @include mx();
       width: fit-content;
       border-radius: 6.25rem;
-      padding: 1rem 2.5rem;
-      @include mx;
       color: $color-white;
+      font-family: "BIZ UDPGothic";
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 2rem;
+      letter-spacing: 0.07rem;
 
-      &---text {
-        font-family: "BIZ UDPGothic";
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 2rem;
-        /* 200% */
+      &-text {
+        display: block;
+        padding: 1rem 2.5rem;
       }
 
       i {
@@ -844,17 +865,46 @@ button {
   }
 
   &__info {
-    padding: 1px;
-    border: 1px solid $color-main;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid $color-main;
     width: fit-content;
     @include mx;
+    position: absolute;
+    top: 3vw;
+    right: 3%;
+    transform: rotate(5deg);
+    background-color: $color-white;
+
+    &::before {
+      content: url(/images/tabler_pin-filled.svg);
+      top: -2.5rem;
+      left: 45%;
+      position: absolute;
+    }
 
     &--title {
       text-align: center;
+      font-family: "Zen Maru Gothic";
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
     }
 
     &--content {
       text-align: center;
+      display: flex;
+      border-top: $color-main dashed 2px;
+      border-bottom: $color-main dashed 2px;
+      padding: 1rem 0;
+      font-size: 1rem;
+      color: $color-main;
+      font-weight: 600;
+      font-family: "Zen Maru Gothic";
+    }
+
+    time {
+      margin-right: 3rem;
     }
   }
 }
@@ -864,19 +914,24 @@ button {
     &__content {
       display: flex;
       justify-content: space-between;
-      column-gap: 6.5rem;
+      column-gap: 5rem;
       align-items: center;
+      margin-bottom: 6rem;
     }
 
     &__image--box {
       width: 50%;
       border-radius: 0rem 1rem;
       padding: 0;
+      margin-bottom: 0;
 
       img {
         border-radius: 0rem 1rem 1rem 0;
+        aspect-ratio: 16/9;
       }
     }
+
+
 
     &__name {
       font-family: "BIZ UDPGothic";
@@ -888,9 +943,9 @@ button {
     }
 
     &__expl {
-      padding-right: 6.5rem;
+      padding-right: 10%;
       text-align: left;
-      width: 40%;
+      width: 44%;
     }
 
     &__detail {
@@ -914,6 +969,7 @@ button {
     font-style: normal;
     font-weight: 700;
     line-height: 2.5rem;
+    margin-bottom: 4rem;
 
     &::before {
       display: block;
@@ -1004,17 +1060,19 @@ button {
   }
 
   .scroll-infinity__item {
-    width: calc(100vw / 1.5);
+    width: calc(100vw / 2.5);
     margin-right: 1.5rem;
   }
 
   .scroll-infinity__item>img {
     width: 100%;
-    border-radius: 1.25rem;
+    border-radius: 1rem;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
   }
 }
 
-@include media("md") {
+@include media(sm) {
   .storeInfo {
     .imageScroll {
       margin-bottom: 3.75rem;
@@ -1041,13 +1099,14 @@ button {
 
     .scroll-infinity__item {
       width: calc(100vw / 3);
-      margin-right: 4rem;
+      margin-right: 2rem;
       max-width: 22rem;
     }
 
     .scroll-infinity__item>img {
       width: 100%;
       border-radius: 1.25rem;
+      aspect-ratio: 16 / 9;
     }
   }
 }
@@ -1069,7 +1128,7 @@ button {
     font-weight: 700;
     line-height: 2.5rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 
     &::before {
       display: block;
@@ -1093,8 +1152,18 @@ button {
     li {
       width: 30%;
       aspect-ratio: 1/1;
-      background-color: #212121;
+      background-image: url(/images/dammy04.jpg);
       border-radius: 0.5rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      &:nth-child(2) {
+        background-image: url(/images/dammy03.jpg);
+      }
+
+      &:nth-child(3) {
+        background-image: url(/images/dammy02.jpg);
+      }
     }
 
     &--post {
@@ -1125,19 +1194,20 @@ button {
 
   &__parts {
     &--button {
+      @include mx();
       width: fit-content;
       border-radius: 6.25rem;
-      padding: 1rem 2.5rem;
-      @include mx;
       color: $color-white;
+      font-family: "BIZ UDPGothic";
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 2rem;
+      letter-spacing: 0.07rem;
 
-      &---text {
-        font-family: "BIZ UDPGothic";
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 2rem;
-        /* 200% */
+      &-text {
+        display: block;
+        padding: 1rem 2.5rem;
       }
 
       i {
@@ -1149,7 +1219,6 @@ button {
 
 @include media("md") {
   .latestInfo {
-    margin-bottom: 6rem;
 
     &__instagram {
       margin-bottom: 3.75rem;
@@ -1166,9 +1235,23 @@ button {
 
 .about {
   padding-bottom: 6.5rem;
-  padding-top: 6.5rem;
+  // padding-top: 6.5rem;
   // background-color: rgba($color: $color-main, $alpha: 0.1);
   position: relative;
+  background-image: url(/images/aboutimg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  // border-radius: 4rem 4rem 0 0;
+
+  @include mx();
+
+  &::before {
+    content: url(/images/SVG/about_archi.svg);
+    top: 0;
+    left: 50%;
+    width: 100%;
+  }
+
 
   &__imagebox {
     width: 70%;
@@ -1190,8 +1273,9 @@ button {
     font-weight: 700;
     line-height: 2.5rem;
     text-align: center;
-    margin-bottom: 3rem;
-    color: $color-brown;
+    margin-bottom: 4rem;
+    color: $color-white;
+    padding-top: 3rem;
 
     &::before {
       display: block;
@@ -1199,7 +1283,7 @@ button {
       content: "About";
       width: 100%;
       font-size: 15px;
-      color: $color-main;
+      color: $color-white;
     }
   }
 
@@ -1209,6 +1293,7 @@ button {
     font-style: normal;
     font-weight: 700;
     line-height: 3.75rem;
+    color: $color-white;
     /* 300% */
     margin-bottom: 2.5rem;
     width: 83%;
@@ -1219,21 +1304,20 @@ button {
 
   &__parts {
     &--button {
+      @include mx();
       width: fit-content;
       border-radius: 6.25rem;
-      padding: 1rem 2.5rem;
-      @include mx;
       color: $color-white;
-      margin-bottom: 3.12rem;
-      background-color: $color-main;
+      font-family: "BIZ UDPGothic";
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 2rem;
+      letter-spacing: 0.07rem;
 
-      &---text {
-        font-family: "BIZ UDPGothic";
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 2rem;
-        /* 200% */
+      &-text {
+        display: block;
+        padding: 1rem 2.5rem;
       }
 
       i {
@@ -1258,44 +1342,109 @@ button {
     column-gap: 5%;
     align-items: flex-start;
     width: 100%;
+    position: relative;
+
+    @include media(md) {
+      column-gap: 3%;
+    }
 
     &--top {
+      margin-bottom: 3rem;
 
-      img {
+      @include media(sm) {
+        margin-bottom: 0;
+      }
+
+      figure {
+
         &:nth-child(1) {
           width: 53%;
-          aspect-ratio: 3/2;
-          object-fit: contain;
-          border-radius: 0rem 1rem 1rem 0;
+
+          img {
+            border-radius: 0 1rem 1rem 0;
+          }
+
+          @include media(sm) {
+            width: 43%;
+          }
+
+          @include media(md) {
+            width: 33%;
+          }
         }
 
         &:nth-child(2) {
-          width: 30%;
-          aspect-ratio: 3/2;
-          object-fit: cover;
-          position: relative;
-          border-radius: 1rem;
-          left: 10rem;
-          top: -12rem;
+          width: 35%;
+          position: absolute;
+          left: 30%;
+          top: 5rem;
+
+          img {
+            aspect-ratio: 16/9;
+            object-fit: cover;
+          }
+
+          @include media(sm) {
+            width: 25%;
+          }
+
+          @include media(md) {
+            width: 20%;
+            left: 25%;
+          }
+
+          img {
+            border-radius: 1rem;
+          }
         }
       }
     }
 
     img {
-      border-radius: 0.5rem;
+      border-radius: 1rem 0 0 1rem;
+
 
       &:nth-child(1) {
-        width: 53%;
-        aspect-ratio: 3/2;
-        object-fit: contain;
-        border-radius: 1rem 0 0 1rem;
+        width: 40%;
+        aspect-ratio: 2/3;
+        object-fit: cover;
+        // position: absolute;
+        // right: 0;
+        // top: 0;
+
+        img {
+          border-radius: 1rem;
+        }
+
+        @include media(sm) {
+          width: 30%;
+        }
+
+        @include media(md) {
+          width: 25%;
+          margin-top: -15rem;
+        }
       }
 
       &:nth-child(2) {
-        margin-top: 30%;
-        width: 30%;
+        margin-top: 60%;
+        width: 40%;
         aspect-ratio: 3/2;
         object-fit: cover;
+        // position: absolute;
+        // right: 35%;
+        // top: 2rem;
+        border-radius: 1rem;
+
+        @include media(sm) {
+          width: 30%;
+          margin-top: 35%;
+        }
+
+        @include media(md) {
+          width: 20%;
+          margin-top: 15rem;
+        }
       }
     }
 
@@ -1378,12 +1527,6 @@ button {
       margin-bottom: 6.5rem;
       width: 30%;
 
-      img {
-        // border-radius: 1rem;
-        aspect-ratio: 2/1;
-        object-fit: cover;
-        height: 20rem;
-      }
 
       .image__area {
         display: flex;
@@ -1401,16 +1544,12 @@ button {
         img {
 
           &:nth-child(1) {
-            width: 53%;
-            aspect-ratio: 3/2;
-            object-fit: contain;
+            width: 30%;
           }
 
           &:nth-child(2) {
             margin-top: 20%;
             width: 30%;
-            aspect-ratio: 1/1.124;
-            object-fit: cover;
           }
         }
 
@@ -1434,12 +1573,12 @@ button {
     font-weight: 700;
     line-height: 2.5rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 
     &::before {
       display: block;
       margin-inline: auto;
-      content: "Shop";
+      content: "Access";
       width: 100%;
       font-size: 15px;
       color: $color-main;
@@ -1570,5 +1709,15 @@ button {
 
   @include media(md) {
     display: none;
+  }
+}
+
+@keyframes fadeInAnime01 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.3;
   }
 }

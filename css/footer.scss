@@ -65,30 +65,31 @@ $breakpoints: (
 
   &__parts {
     &--button {
-      background-color: $color-white !important;
-      width: fit-content;
+      @include mx(
+    );
+    width: fit-content;
+    color: $color-main;
+    font-family: "BIZ UDPGothic";
+    font-size: 1rem;
+    font-style: normal;
+    background-color: $color-white;
+    font-weight: 700;
+    line-height: 2rem;
+    letter-spacing: 0.07rem;
+
+    &-text {
       border-radius: 6.25rem;
+      display: block;
       padding: 1rem 2.5rem;
-      @include mx;
-      color: $color-main !important;
+      color: $color-main;
+      background-color: $color-white;
+    }
 
-
-      &---text {
-        font-family: "BIZ UDPGothic";
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 2rem;
-        /* 200% */
-        color: $color-main;
-
-      }
-
-      i {
-        margin-left: 0.5rem;
-      }
+    i {
+      margin-left: 0.5rem;
     }
   }
+}
 }
 
 .footer {
@@ -114,7 +115,7 @@ $breakpoints: (
     font-weight: 700;
     line-height: 1.6rem;
     /* 160% */
-    color: $color-brown;
+
 
     span {
       display: inline-block;
@@ -157,6 +158,10 @@ $breakpoints: (
       line-height: 2rem;
       /* 200% */
       list-style: none;
+
+      a {
+        color: $color-brown;
+      }
     }
 
     .instagramLink {
@@ -167,6 +172,15 @@ $breakpoints: (
       i {
         color: $color-white;
       }
+    }
+  }
+}
+
+@include media(sm) {
+  .footer {
+    &__link {
+      display: flex;
+      flex-wrap: wrap;
     }
   }
 }

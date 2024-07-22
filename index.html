@@ -38,38 +38,37 @@
 
 <body>
   <header class="header">
+    <div class="header__menu"></div>
     <div class="header__inner">
       <div class="header__top">
         <div class="header__top--image">
-          <a href="./index.html">
-            <img src="./images/uchidabashiLogo.svg" alt="内田橋商店街ロゴ" />
-          </a>
+          <img src="./images/uchidabashiLogo.svg" alt="内田橋商店街ロゴ" />
         </div>
         <div class="header__gnav">
-          <a href="/event.html" class="header__gnav--link">イベント情報</a>
-          <a href="" class="header__gnav--link">店舗情報</a>
-          <a href="/about.html" class="header__gnav--link">商店街について</a>
-          <a href="" class="header__gnav--link">出店について</a>
-          <a href="" class="header__gnav--link">アクセス</a>
-          <a href="/faq.html" class="header__gnav--link">お問い合わせ</a>
+          <a href="event.html" class="header__gnav--link">イベント情報</a>
+          <a href="store.html" class="header__gnav--link">店舗情報</a>
+          <a href="about.html" class="header__gnav--link">商店街について</a>
+          <a href="openstore.html" class="header__gnav--link">出店について</a>
+          <a href="access.html" class="header__gnav--link">アクセス</a>
+          <a href="faq.html" class="header__gnav--link">FAQ</a>
+          <a href="#" class="header__gnav--link">お問い合わせ<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           <a href="" class="header__gnav--link"><i class="fa-brands fa-instagram"></i></a>
         </div>
-        <button id="menuButton">
-          <img id="menuIcon" src="./images/menu_button.svg" alt="Menu Button" />
-        </button>
+        <div class="header__menuButton">
+          <img src="./images/menu_button.svg" alt="" class="header__menuButton--image" />
+        </div>
       </div>
-    </div>
     </div>
   </header>
 
   <!-- モーダルウィンドウ -->
   <div class="modal" id="menuModal">
     <div class="modal__content">
-      <a href="" class="modal__link">イベント情報</a>
-      <a href="" class="modal__link">店舗情報</a>
-      <a href="" class="modal__link">商店街について</a>
-      <a href="" class="modal__link">出店について</a>
-      <a href="" class="modal__link">アクセス</a>
+      <a href="event.html" class="modal__link">イベント情報</a>
+      <a href="store.html" class="modal__link">店舗情報</a>
+      <a href="about.html" class="modal__link">商店街について</a>
+      <a href="openstore.html" class="modal__link">出店について</a>
+      <a href="access.html" class="modal__link">アクセス</a>
       <a href="" class="modal__link">お問い合わせ</a>
       <a href="" class="modal__link"><i class="fa-brands fa-instagram"></i></a>
     </div>
@@ -79,8 +78,8 @@
   <!-- CSSはheader/footerはインポートファイルで作成しているので、新たに作成したページもheader/footer同様新規にファイルを作成してください -->
 
   <main>
-    <img src="./images/blue_shape.svg" alt="" class="shape--blue">
-    <img src="./images/orange_shape.svg" alt="" class="shape--orange">
+    <!-- <img src="./images/blue_shape.svg" alt="" class="shape--blue">
+    <img src="./images/orange_shape.svg" alt="" class="shape--orange"> -->
 
     <section class="firstView">
 
@@ -134,15 +133,17 @@
             </dd>
           </dl>
           <div class="event__parts--button button">
-            <a class="event__parts--button---text" href="./event.html">詳しく見る<i class="fa-solid fa-circle-arrow-right"></i></a>
+            <a class="event__parts--button-text" href="/event.html">詳しく見る<i class="fa-solid fa-circle-arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>
       <div class="event__info">
         <h3 class="event__info--title">もうすぐ開催！</h3>
-        <p class="event__info--content">
+        <div class="event__info--content">
           <time datetime="2024-06-05">2024年6月5日(土)</time>
-        </p>
+          <p class="event__info--event-name">まきわら祭</p>
+        </div>
       </div>
     </section>
     <section class="storeInfo">
@@ -156,39 +157,39 @@
                 <img src="./images/makiwaradammy.png" />
               </li>
               <li class="scroll-infinity__item">
-                <img src="./images/makiwaradammy.png" />
+                <img src="./images/dammy04.jpg" />
               </li>
               <li class="scroll-infinity__item">
-                <img src="./images/makiwaradammy.png" />
+                <img src="./images/dammy02.jpg" />
               </li>
               <li class="scroll-infinity__item">
-                <img src="./images/makiwaradammy.png" />
+                <img src="./images/dammy05.jpg" />
               </li>
               <li class="scroll-infinity__item">
-                <img src="./images/makiwaradammy.png" />
+                <img src="./images/dammy03.jpg" />
               </li>
               <li class="scroll-infinity__item">
-                <img src="./images/makiwaradammy.png" />
+                <img src="./images/dammy05.jpg" />
               </li>
             </ul>
             <ul class="scroll-infinity__list scroll-infinity__list--left">
               <li class="scroll-infinity__item">
-                <img src="./images/makiwaradammy.png" />
+                <img src="./images/dammy03.jpg" />
+              </li>
+              <li class="scroll-infinity__item">
+                <img src="./images/dammy02.jpg" />
+              </li>
+              <li class="scroll-infinity__item">
+                <img src="./images/dammy04.jpg" />
               </li>
               <li class="scroll-infinity__item">
                 <img src="./images/makiwaradammy.png" />
               </li>
               <li class="scroll-infinity__item">
-                <img src="./images/makiwaradammy.png" />
+                <img src="./images/dammy03.jpg" />
               </li>
               <li class="scroll-infinity__item">
-                <img src="./images/makiwaradammy.png" />
-              </li>
-              <li class="scroll-infinity__item">
-                <img src="./images/makiwaradammy.png" />
-              </li>
-              <li class="scroll-infinity__item">
-                <img src="./images/makiwaradammy.png" />
+                <img src="./images/dammy05.jpg" />
               </li>
             </ul>
           </div>
@@ -198,39 +199,39 @@
           <div class="scroll-infinity__wrap">
             <ul class="scroll-infinity__list scroll-infinity__list--right">
               <li class="scroll-infinity__item">
-                <img src="./images/makiwaradammy.png" />
+                <img src="./images/dammy04.jpg" />
               </li>
               <li class="scroll-infinity__item">
                 <img src="./images/makiwaradammy.png" />
               </li>
               <li class="scroll-infinity__item">
-                <img src="./images/makiwaradammy.png" />
+                <img src="./images/dammy02.jpg" />
+              </li>
+              <li class="scroll-infinity__item">
+                <img src="./images/dammy03.jpg" />
               </li>
               <li class="scroll-infinity__item">
                 <img src="./images/makiwaradammy.png" />
               </li>
               <li class="scroll-infinity__item">
-                <img src="./images/makiwaradammy.png" />
-              </li>
-              <li class="scroll-infinity__item">
-                <img src="./images/makiwaradammy.png" />
+                <img src="./images/dammy05.jpg" />
               </li>
             </ul>
             <ul class="scroll-infinity__list scroll-infinity__list--right">
               <li class="scroll-infinity__item">
-                <img src="./images/makiwaradammy.png" />
+                <img src="./images/dammy04.jpg" />
+              </li>
+              <li class="scroll-infinity__item">
+                <img src="./images/dammy02.jpg" />
+              </li>
+              <li class="scroll-infinity__item">
+                <img src="./images/dammy03.jpg" />
               </li>
               <li class="scroll-infinity__item">
                 <img src="./images/makiwaradammy.png" />
               </li>
               <li class="scroll-infinity__item">
-                <img src="./images/makiwaradammy.png" />
-              </li>
-              <li class="scroll-infinity__item">
-                <img src="./images/makiwaradammy.png" />
-              </li>
-              <li class="scroll-infinity__item">
-                <img src="./images/makiwaradammy.png" />
+                <img src="./images/dammy05.jpg" />
               </li>
               <li class="scroll-infinity__item">
                 <img src="./images/makiwaradammy.png" />
@@ -243,7 +244,8 @@
         内田橋商店街には様々なジャンルのお店があります！<span>詳しいお店の情報はこちらをご覧ください。</span>
       </p>
       <div class="event__parts--button button">
-        <a class="event__parts--button---text">詳しく見る<i class="fa-solid fa-circle-arrow-right"></i></a>
+        <a class="event__parts--button-text" href="/store.html">詳しく見る<i class="fa-solid fa-circle-arrow-right"></i>
+        </a>
       </div>
     </section>
     <div class="bg-main">
@@ -258,43 +260,50 @@
 
         <p class="latestInfo__text">最新情報はインスタグラムで発信中です。</p>
         <div class="latestInfo__parts--button button">
-          <a class="latestInfo__parts--button---text">Instagramへ<i
+          <a class="latestInfo__parts--button-text" href="#">Instagramへ<i
               class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
+
       </section>
 
       <section class="about">
 
-        <div class="image__area--top">
-          <img src="./images/makiwaradammy.png" alt="" />
-          <img src="./images/makiwaradammy.png" alt="" />
-        </div>
+        <!-- <div class="image__area--top">
+          <figure>
+            <img src="./images/dammy04.jpg" alt="" />
+          </figure>
+
+          <figure>
+            <img src="./images/dammy02.jpg" alt="" />
+          </figure>
+        </div> -->
 
         <h2 class="about__title">商店街について</h2>
         <p class="about__text">
-          昭和の風情が漂う昔ながらの商店街。
+          昭和の風情が漂う<br class="br__sp">昔ながらの商店街。
           <br />
-          個人経営の小さな店舗が軒を連ね、
+          個人経営の小さな店舗が<br class="br__sp">軒を連ね、
           <br />
           肉屋や八百屋、喫茶店などが<br class="br__sp">並んでいます。 <br /><br>
           店主たちは人情味に溢れ、<br />
           訪れるたびに心温まる交流を<br class="br__sp">楽しむことができます。<br /><br>
           四季折々のイベントや<br class="br__sp">お祭りも開催され、<br />
           地域の交流の場としても<br class="br__sp">活用されています。 <br><br>都会の喧騒を忘れ、<br />
-          懐かしい風景と温かな人々との<br>触れ合いを楽しめる癒しの空間です。<br />
+          懐かしい風景と温かな人々との<br>触れ合いを楽しめる<br class="br__sp">癒しの空間です。<br />
         </p>
         <div class="about__parts--button button">
-          <a class="about__parts--button---text">詳しく見る<i class="fa-solid fa-circle-arrow-right"></i></a>
+          <a class="about__parts--button-text" href="/about.html">詳しく見る<i
+              class="fa-solid fa-circle-arrow-right"></i></a>
         </div>
 
         <!-- <div class="about__imagebox">
           <img src="./images/makiwaramatsuri.jpeg" alt="" />
         </div> -->
 
-        <div class="image__area">
-          <img src="./images/makiwaradammy.png" alt="" />
-          <img src="./images/makiwaradammy.png" alt="" />
-        </div>
+        <!-- <div class="image__area">
+          <img src="./images/dammy06.jpg" alt="" />
+          <img src="./images/dammy04.jpg" alt="" />
+        </div> -->
 
 
         <!-- <div class="about__opening">
@@ -363,14 +372,14 @@
   <!-- ここ以上を作成 -->
 
   <footer class="footer">
-    <div class="contact">
+    <div class="contact" id="contact">
       <h2 class="contact__title">お問い合わせは<span>こちらまで</span></h2>
       <p class="contact__text">
         出店やイベントに関することなど、
         なんでもお気軽にお問い合わせください。
       </p>
       <div class="contact__parts--button button">
-        <a class="contact__parts--button---text">お問い合わせはこちら<i class="fa-solid fa-circle-arrow-right"></i></a>
+        <a class="contact__parts--button-text" href="">お問い合わせはこちら<i class="fa-solid fa-circle-arrow-right"></i></a>
       </div>
     </div>
 
@@ -383,13 +392,13 @@
       </p>
       <a href="tel:090-1742-2091" class="footer__tel"><i class="fa-solid fa-phone"></i>090-1742-2091</a>
       <ul class="footer__link">
-        <li class="footer__link--list">イベント</li>
-        <li class="footer__link--list">店舗情報</li>
-        <li class="footer__link--list">商店街について</li>
-        <li class="footer__link--list">出店について</li>
-        <li class="footer__link--list">アクセス</li>
-        <li class="footer__link--list">FAQ</li>
-        <li class="footer__link--list">お問い合わせ</li>
+        <li class="footer__link--list"><a href="/event.html">イベント</a></li>
+        <li class="footer__link--list"><a href="/store.html">店舗情報</a></li>
+        <li class="footer__link--list"><a href="/about.html">商店街について</a></li>
+        <li class="footer__link--list"><a href="/openstore.html">出店について</a></li>
+        <li class="footer__link--list"><a href="/access.html">アクセス</a></li>
+        <li class="footer__link--list"><a href="/faq.html">FAQ</a></li>
+        <li class="footer__link--list"><a href="/index.html#contact">お問い合わせ</a></li>
         <li class="footer__link--list">
           <a href="" class="instagramLink">
             <i class="fa-brands fa-instagram"></i>
