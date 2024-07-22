@@ -63,4 +63,8 @@
   align-items: flex-start;
   gap: 1.5rem;
 }
+
+.train {
+  display: flex;
+}
 /*# sourceMappingURL= access.css.map */
