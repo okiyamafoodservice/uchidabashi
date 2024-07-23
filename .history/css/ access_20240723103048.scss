@@ -27,8 +27,6 @@ $breakpoints: (
     }
 }
 
-
-
 .address {
 
 
@@ -109,8 +107,6 @@ $breakpoints: (
     }
 }
 
-
-
 .detail {
     display: flex;
     justify-content: space-between;
@@ -130,7 +126,6 @@ $breakpoints: (
     display: flex;
     align-items: flex-start;
     gap: 1.5rem;
-    align-items: center;
 
     &__text {
         font-family: "BIZ UDPGothic";

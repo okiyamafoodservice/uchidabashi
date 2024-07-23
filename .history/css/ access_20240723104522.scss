@@ -109,7 +109,14 @@ $breakpoints: (
     }
 }
 
-
+.sub {
+    font-family: "Zen Maru Gothic";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem;
+    /* 100% */
+}
 
 .detail {
     display: flex;
@@ -130,7 +137,6 @@ $breakpoints: (
     display: flex;
     align-items: flex-start;
     gap: 1.5rem;
-    align-items: center;
 
     &__text {
         font-family: "BIZ UDPGothic";

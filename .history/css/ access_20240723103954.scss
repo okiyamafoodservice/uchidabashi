@@ -27,7 +27,19 @@ $breakpoints: (
     }
 }
 
-
+h2 {
+    &__text h1 {
+        width: 2rem;
+        color: $color-brown;
+        font-family: "Zen Kaku Gothic New",
+            sans-serif;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2rem;
+        /* 100% */
+    }
+}
 
 .address {
 
@@ -109,8 +121,6 @@ $breakpoints: (
     }
 }
 
-
-
 .detail {
     display: flex;
     justify-content: space-between;
@@ -130,7 +140,6 @@ $breakpoints: (
     display: flex;
     align-items: flex-start;
     gap: 1.5rem;
-    align-items: center;
 
     &__text {
         font-family: "BIZ UDPGothic";

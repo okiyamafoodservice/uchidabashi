@@ -27,8 +27,6 @@ $breakpoints: (
     }
 }
 
-
-
 .address {
 
 
@@ -72,7 +70,7 @@ $breakpoints: (
 
 .time {
 
-    display: flex;
+    Frame 75 display: flex;
     width: 28.625rem;
     flex-direction: column;
     align-items: flex-start;
@@ -109,8 +107,6 @@ $breakpoints: (
     }
 }
 
-
-
 .detail {
     display: flex;
     justify-content: space-between;
@@ -123,14 +119,12 @@ $breakpoints: (
     display: flex;
     align-items: flex-start;
     gap: 1.5rem;
-    margin-bottom: 1.5rem;
 }
 
 .bus {
     display: flex;
     align-items: flex-start;
     gap: 1.5rem;
-    align-items: center;
 
     &__text {
         font-family: "BIZ UDPGothic";
