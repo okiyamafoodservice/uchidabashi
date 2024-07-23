@@ -50,7 +50,8 @@ body {
   &__text h1 {
     width: 2rem;
     color: $color-brown;
-    font-family: "Zen Maru Gothic";
+    font-family: "Zen Kaku Gothic New",
+      sans-serif;
     font-size: 2rem;
     font-style: normal;
     font-weight: 700;
@@ -80,7 +81,8 @@ body {
   &__header {
     margin-bottom: 4rem;
     color: $color-brown;
-    font-family: "Zen Maru Gothic";
+    font-family: "Zen Kaku Gothic New",
+      sans-serif;
     font-size: 2rem;
     font-style: normal;
     font-weight: 700;
@@ -144,7 +146,8 @@ body {
     }
 
     &__title {
-      font-family: "Zen Maru Gothic";
+      font-family: "Zen Kaku Gothic New",
+        sans-serif;
       font-size: 1.625rem;
       font-style: normal;
       font-weight: 700;
@@ -251,7 +254,8 @@ body {
     &--list {
       margin-bottom: 2rem;
       color: $color-brown;
-      font-family: "Zen Maru Gothic";
+      font-family: "Zen Kaku Gothic New",
+        sans-serif;
       font-size: 1rem;
       font-style: normal;
       font-weight: 700;

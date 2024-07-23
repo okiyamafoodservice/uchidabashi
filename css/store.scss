@@ -13,7 +13,7 @@ $breakpoints: (
   "md": "screen and (min-width: 1000px)",
   "lg": "screen and (min-width: 992px)",
   "xl": "screen and (min-width: 1200px)",
-) !default;
+  ) !default;
 
 @mixin mx {
   margin-left: auto;
@@ -52,15 +52,18 @@ $breakpoints: (
 }
 
 .tab {
-  width: calc(100% / 6);
-  padding: 8px;
-  border-bottom: none;
-  border-radius: 25px;
-  font-family: "Zen Maru Gothic", sans-serif;
-  font-weight: 700;
-  &-button {
-    margin-bottom: 2.4rem;
-  }
+  width: calc(100% / 6
+  );
+padding: 8px;
+border-bottom: none;
+border-radius: 25px;
+font-family: "Zen Kaku Gothic New",
+  sans-serif;
+font-weight: 700;
+
+&-button {
+  margin-bottom: 2.4rem;
+}
 }
 
 .tab-contents {
@@ -98,9 +101,11 @@ $breakpoints: (
       object-fit: cover;
     }
   }
+
   &--title {
     text-align: left;
-    font-family: "Zen Maru Gothic";
+    font-family: "Zen Kaku Gothic New",
+      sans-serif;
     font-weight: 700;
     font-size: 1rem;
   }
