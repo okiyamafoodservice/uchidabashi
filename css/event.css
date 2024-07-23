@@ -42,7 +42,6 @@ body {
 .content {
   margin-left: auto;
   margin-right: auto;
-  width: 63%;
   /* 100% */
 }
 .content__header {
@@ -76,7 +75,7 @@ body {
   justify-content: space-between;
   line-height: 1rem;
   row-gap: 6.5rem;
-  padding-bottom: 12.5rem;
+  padding-bottom: 6rem;
 }
 .card__wapper .card__wapper {
   display: flex;
@@ -99,14 +98,14 @@ body {
   border-radius: 1.5rem;
   -o-object-fit: cover;
      object-fit: cover;
-  aspect-ratio: 4/3;
+  aspect-ratio: 16/9;
 }
 .card__wapper .card__title {
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 1.625rem;
   font-style: normal;
-  font-weight: 700;
-  line-height: 1.5rem;
+  font-weight: 500;
+  line-height: 2rem;
   margin-bottom: 1rem;
   /* 92.308% */
 }
@@ -214,23 +213,5 @@ body {
 }
 .footer__link .instagramLink i {
   color: #ffffff;
-}
-
-@media screen and (min-width: 768px) {
-  .footer__inner {
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .footer__link {
-    display: flex;
-    width: 100%;
-    -moz-column-gap: 2.5rem;
-         column-gap: 2.5rem;
-    padding-left: 0;
-  }
-  .footer__link--list {
-    font-size: 1rem;
-  }
 }
 /*# sourceMappingURL=event.css.map */
