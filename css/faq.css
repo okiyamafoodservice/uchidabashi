@@ -4,12 +4,6 @@
 @import url(./firstview_sub.css);
 .faq {
   width: 100%;
-  margin-top: 3rem;
-}
-@media screen and (min-width: 768px) {
-  .faq {
-    margin-top: 6.5rem;
-  }
 }
 .faq__main {
   padding: 3rem 0;
@@ -95,7 +89,8 @@
   }
 }
 .answer.open {
-  padding: 3.5rem 0 2.5rem; /* コンテンツの高さに応じて調整 */
+  padding: 3.5rem 0 2.5rem;
+  /* コンテンツの高さに応じて調整 */
   display: flex;
   align-items: center;
 }
@@ -107,7 +102,8 @@
 }
 
 .question__plus.open {
-  transform: rotate(360deg); /* 回転アニメーションの例 */
+  transform: rotate(360deg);
+  /* 回転アニメーションの例 */
 }
 
 /* open属性が付与された場合のスタイルを追加 */
