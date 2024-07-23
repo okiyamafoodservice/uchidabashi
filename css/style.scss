@@ -253,7 +253,7 @@ button {
     &--image {
       height: 60vh;
       border-radius: 0rem 12rem 1.5rem 0rem;
-      background: url(../images/makiwaradammy.png) lightgray 50% / cover no-repeat;
+      background: url(../images/dammy08.jpg) lightgray 50% / cover no-repeat;
       width: 75%;
       margin-bottom: 3.8rem;
     }
@@ -291,7 +291,7 @@ button {
       &--image {
         height: 45rem;
         border-radius: 0rem 18.96875rem 1.5rem 0rem;
-        background: url(../images/firstView.jpg) lightgray 50% / cover no-repeat;
+        background: url(../images/dammy08.jpg) lightgray 50% / cover no-repeat;
         width: 79%;
         margin-bottom: 0;
       }
@@ -870,16 +870,20 @@ button {
     border: 2px solid $color-main;
     width: fit-content;
     @include mx;
-    position: absolute;
-    top: 3vw;
-    right: 3%;
-    transform: rotate(5deg);
+    // position: absolute;
+    // top: 3vw;
+    // right: 3%;
+    // transform: rotate(5deg);
     background-color: $color-white;
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    z-index: 2;
 
     &::before {
       content: url(/images/tabler_pin-filled.svg);
       top: -2.5rem;
-      left: 45%;
+      left: 40%;
       position: absolute;
     }
 
@@ -1718,6 +1722,6 @@ button {
   }
 
   100% {
-    opacity: 0.3;
+    opacity: 0.5;
   }
 }
