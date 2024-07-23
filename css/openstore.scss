@@ -64,7 +64,8 @@ $breakpoints: (
         margin-bottom: 1rem;
         font-size: 1.4rem;
         line-height: 1.5;
-        font-family: "Zen Maru Gothic";
+        font-family: "Zen Kaku Gothic New",
+            sans-serif;
     }
 
     &__img {
@@ -149,7 +150,8 @@ $breakpoints: (
         font-weight: 500;
         margin-bottom: 0.8rem;
         line-height: 1.5;
-        font-family: "Zen Maru Gothic";
+        font-family: "Zen Kaku Gothic New",
+            sans-serif;
 
         @include media(md) {
             margin-bottom: 1rem;

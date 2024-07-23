@@ -13,7 +13,7 @@ $breakpoints: (
   "md": "screen and (min-width: 768px)",
   "lg": "screen and (min-width: 992px)",
   "xl": "screen and (min-width: 1200px)",
-) !default;
+  ) !default;
 
 @mixin mx {
   margin-left: auto;
@@ -35,10 +35,10 @@ $breakpoints: (
 
 .faq {
   width: 100%;
-  margin-top: 3rem;
+  // margin-top: 3rem;
 
   @include media(md) {
-    margin-top: 6.5rem;
+    // margin-top: 6.5rem;
   }
 
   &__main {
@@ -62,35 +62,37 @@ $breakpoints: (
 
 .question {
   padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(93, 74, 58, 0.2);
+  border-bottom: 1px solid rgba(93, 74, 58, 0.2
+  );
+
+@include media(md) {
+  display: flex;
+  align-items: center;
+
+  &__plus {
+    margin-left: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+}
+
+&__img {
+  width: 1.5rem;
+  margin-bottom: 1rem;
 
   @include media(md) {
-    display: flex;
-    align-items: center;
-    &__plus {
-      margin-left: auto;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
+    margin-bottom: 0;
   }
+}
 
-  &__img {
-    width: 1.5rem;
-    margin-bottom: 1rem;
+&__text {
+  font-weight: bold;
+  font-size: 1.3rem;
 
-    @include media(md) {
-      margin-bottom: 0;
-    }
+  @include media(md) {
+    padding-left: 1rem;
   }
-
-  &__text {
-    font-weight: bold;
-    font-size: 1.3rem;
-
-    @include media(md) {
-      padding-left: 1rem;
-    }
-  }
+}
 }
 
 .answer {
@@ -123,7 +125,8 @@ $breakpoints: (
   }
 
   &.open {
-    padding: 3.5rem 0 2.5rem; /* コンテンツの高さに応じて調整 */
+    padding: 3.5rem 0 2.5rem;
+    /* コンテンツの高さに応じて調整 */
     display: flex;
     align-items: center;
   }
@@ -136,7 +139,8 @@ $breakpoints: (
 }
 
 .question__plus.open {
-  transform: rotate(360deg); /* 回転アニメーションの例 */
+  transform: rotate(360deg);
+  /* 回転アニメーションの例 */
 }
 
 /* open属性が付与された場合のスタイルを追加 */

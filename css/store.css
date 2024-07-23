@@ -25,7 +25,7 @@
   padding: 8px;
   border-bottom: none;
   border-radius: 25px;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 700;
 }
 .tab-button {
@@ -68,7 +68,7 @@
 }
 .store__info--title {
   text-align: left;
-  font-family: "Zen Maru Gothic";
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 700;
   font-size: 1rem;
 }

@@ -180,7 +180,7 @@ button {
     font-weight: 700;
     line-height: 2.5rem;
     margin-bottom: 2.5rem;
-    font-family: "Zen Maru Gothic",
+    font-family: "Zen Kaku Gothic New",
       sans-serif;
     /* フォント名をクォートで囲む */
 
@@ -253,7 +253,7 @@ button {
     &--image {
       height: 60vh;
       border-radius: 0rem 12rem 1.5rem 0rem;
-      background: url(../images/makiwaradammy.png) lightgray 50% / cover no-repeat;
+      background: url(../images/dammy08.jpg) lightgray 50% / cover no-repeat;
       width: 75%;
       margin-bottom: 3.8rem;
     }
@@ -291,7 +291,7 @@ button {
       &--image {
         height: 45rem;
         border-radius: 0rem 18.96875rem 1.5rem 0rem;
-        background: url(../images/firstView.jpg) lightgray 50% / cover no-repeat;
+        background: url(../images/dammy08.jpg) lightgray 50% / cover no-repeat;
         width: 79%;
         margin-bottom: 0;
       }
@@ -299,7 +299,8 @@ button {
       &--subtext {
         color: rgba($color: $color-main, $alpha: 0.5
         );
-      font-family: "Zen Maru Gothic", sans-serif;
+      font-family: "Zen Kaku Gothic New",
+        sans-serif;
       font-weight: 500;
       display: block;
     }
@@ -354,7 +355,8 @@ button {
     display: inline-block;
     white-space: nowrap;
     font-weight: 500;
-    font-family: "Zen Maru Gothic";
+    font-family: "Zen Kaku Gothic New",
+      sans-serif;
   }
 
   hr {
@@ -551,7 +553,8 @@ button {
     display: inline-block;
     white-space: nowrap;
     font-weight: 500;
-    font-family: "Zen Maru Gothic";
+    font-family: "Zen Kaku Gothic New",
+      sans-serif;
   }
 
   hr {
@@ -624,7 +627,8 @@ button {
       text-align: center;
       color: #fff;
       margin-bottom: 1.5rem;
-      font-family: "Zen Maru Gothic";
+      font-family: "Zen Kaku Gothic New",
+        sans-serif;
       font-weight: 500;
       font-size: 1.8rem;
     }
@@ -687,7 +691,8 @@ button {
         font-style: normal;
         font-weight: 500;
         line-height: 2rem;
-        font-family: "Zen Maru Gothic";
+        font-family: "Zen Kaku Gothic New",
+          sans-serif;
         /* 100% */
       }
 
@@ -718,7 +723,8 @@ button {
   margin-inline: auto;
   width: fit-content;
   position: relative;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "Zen Kaku Gothic New",
+    sans-serif;
 
   &::before {
     display: block;
@@ -777,7 +783,8 @@ button {
   }
 
   &__title {
-    font-family: "Zen Maru Gothic";
+    font-family: "Zen Kaku Gothic New",
+      sans-serif;
     font-size: 2rem;
     font-style: normal;
     font-weight: 700;
@@ -818,7 +825,8 @@ button {
     color: $color-brown;
 
     &--copy {
-      font-family: "Zen Maru Gothic";
+      font-family: "Zen Kaku Gothic New",
+        sans-serif;
       font-size: 2rem;
       font-style: normal;
       font-weight: 500;
@@ -870,22 +878,27 @@ button {
     border: 2px solid $color-main;
     width: fit-content;
     @include mx;
-    position: absolute;
-    top: 3vw;
-    right: 3%;
-    transform: rotate(5deg);
+    // position: absolute;
+    // top: 3vw;
+    // right: 3%;
+    // transform: rotate(5deg);
     background-color: $color-white;
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    z-index: 2;
 
     &::before {
       content: url(/images/tabler_pin-filled.svg);
       top: -2.5rem;
-      left: 45%;
+      left: 40%;
       position: absolute;
     }
 
     &--title {
       text-align: center;
-      font-family: "Zen Maru Gothic";
+      font-family: "Zen Kaku Gothic New",
+        sans-serif;
       font-weight: 600;
       font-size: 1.2rem;
       margin-bottom: 1rem;
@@ -900,7 +913,8 @@ button {
       font-size: 1rem;
       color: $color-main;
       font-weight: 600;
-      font-family: "Zen Maru Gothic";
+      font-family: "Zen Kaku Gothic New",
+        sans-serif;
     }
 
     time {
@@ -964,7 +978,8 @@ button {
   padding-bottom: 6.5rem;
 
   &__title {
-    font-family: "Zen Maru Gothic";
+    font-family: "Zen Kaku Gothic New",
+      sans-serif;
     font-size: 2rem;
     font-style: normal;
     font-weight: 700;
@@ -1118,11 +1133,13 @@ button {
 .latestInfo {
   padding-top: 6.5rem;
   padding-bottom: 6.5rem;
-  font-family: "Zen Maru Gothic";
+  font-family: "Zen Kaku Gothic New",
+    sans-serif;
   text-align: center;
 
   &__title {
-    font-family: "Zen Maru Gothic";
+    font-family: "Zen Kaku Gothic New",
+      sans-serif;
     font-size: 2rem;
     font-style: normal;
     font-weight: 700;
@@ -1267,7 +1284,8 @@ button {
   }
 
   &__title {
-    font-family: "Zen Maru Gothic";
+    font-family: "Zen Kaku Gothic New",
+      sans-serif;
     font-size: 2rem;
     font-style: normal;
     font-weight: 700;
@@ -1459,7 +1477,8 @@ button {
 
     &__title {
       text-align: center;
-      font-family: "Zen Maru Gothic";
+      font-family: "Zen Kaku Gothic New",
+        sans-serif;
       font-size: 2rem;
       font-style: normal;
       font-weight: 700;
@@ -1567,7 +1586,8 @@ button {
   background-color: $color-white;
 
   &__title {
-    font-family: "Zen Maru Gothic";
+    font-family: "Zen Kaku Gothic New",
+      sans-serif;
     font-size: 2rem;
     font-style: normal;
     font-weight: 700;
@@ -1718,6 +1738,6 @@ button {
   }
 
   100% {
-    opacity: 0.3;
+    opacity: 0.5;
   }
 }

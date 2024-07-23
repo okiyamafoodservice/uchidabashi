@@ -20,7 +20,7 @@ body {
 .event__content__text h1 {
   width: 2rem;
   color: #5d4a3a;
-  font-family: "Zen Maru Gothic";
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
@@ -48,7 +48,7 @@ body {
 .content__header {
   margin-bottom: 4rem;
   color: #5d4a3a;
-  font-family: "Zen Maru Gothic";
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
@@ -102,7 +102,7 @@ body {
   aspect-ratio: 4/3;
 }
 .card__wapper .card__title {
-  font-family: "Zen Maru Gothic";
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 1.625rem;
   font-style: normal;
   font-weight: 700;
@@ -199,7 +199,7 @@ body {
 .footer__link--list {
   margin-bottom: 2rem;
   color: #5d4a3a;
-  font-family: "Zen Maru Gothic";
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
