@@ -15,6 +15,7 @@
   line-height: 1.8rem;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+  inline-size: 450px;
 }
 .address__text a {
   color: #5d4a3a;
@@ -45,6 +46,7 @@
   font-weight: 700;
   line-height: 1.8rem;
   /* 180% */
+  inline-size: 350px;
 }
 .time__text {
   color: #ff7f3e;
@@ -69,6 +71,7 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 1.5rem;
+  margin-top: 4rem;
 }
 
 .train {

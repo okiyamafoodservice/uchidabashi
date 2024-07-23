@@ -29,7 +29,6 @@ $breakpoints: (
 
 
 
-
 .address {
 
 
@@ -50,7 +49,6 @@ $breakpoints: (
         font-weight: 700;
         line-height: 1.8rem;
         text-decoration-line: underline;
-        inline-size: 450px;
 
         a {
             color: $color-brown;
@@ -88,7 +86,8 @@ $breakpoints: (
         font-weight: 700;
         line-height: 1.8rem;
         /* 180% */
-        inline-size: 350px;
+
+        inline-size: 300px;
 
     }
 
@@ -121,7 +120,6 @@ $breakpoints: (
     justify-content: space-between;
     align-items: flex-start;
     gap: 1.5rem;
-    margin-top: 4rem;
 }
 
 .train {
