@@ -66,5 +66,7 @@
 
 .train {
   display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
 }
 /*# sourceMappingURL= access.css.map */
