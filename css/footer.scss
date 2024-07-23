@@ -34,7 +34,8 @@ $breakpoints: (
     width: 85%;
     text-align: center;
     @include mx;
-    font-family: "Zen Maru Gothic";
+    font-family: "Zen Kaku Gothic New",
+      sans-serif;
     font-size: 2rem;
     font-style: normal;
     font-weight: 700;
@@ -151,7 +152,8 @@ $breakpoints: (
     &--list {
       margin-bottom: 2rem;
       color: $color-brown;
-      font-family: "Zen Maru Gothic";
+      font-family: "Zen Kaku Gothic New",
+        sans-serif;
       font-size: 1rem;
       font-style: normal;
       font-weight: 700;
