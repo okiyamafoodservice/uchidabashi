@@ -238,10 +238,10 @@ button {
     justify-content: space-between;
   }
   .firstView__content--image {
-    height: 45rem;
+    height: 90vh;
     border-radius: 0rem 18.96875rem 1.5rem 0rem;
     background: url(../images/dammy08.jpg) lightgray 50%/cover no-repeat;
-    width: 79%;
+    width: 70%;
     margin-bottom: 0;
   }
   .firstView__content--subtext {
@@ -276,6 +276,11 @@ button {
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.5rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .firstView__content--image {
+    width: 80%;
   }
 }
 .sub-head {
