@@ -117,12 +117,12 @@
       </a>
 
     </section>
-    <section  class="event">
-      <h2 class="event__title section__title">イベント</h2>
+    <section class="event">
+      <h2 class="event__title section__title">イベント情報</h2>
       <div class="event__content">
         <div class="event__image--box">
           <img src="./images/makiwaramatsuri.jpeg" alt="" class="event__image" />
-          <p class="event__name">まきわら祭り</p>
+          <p class="event__name">まきわら祭</p>
         </div>
         <div class="event__expl">
           <dl class="event__detail">
@@ -139,7 +139,7 @@
           </div>
         </div>
       </div>
-      <div  class="event__info" >
+      <div class="event__info">
         <h3 class="event__info--title">もうすぐ開催！</h3>
         <div class="event__info--content">
           <time datetime="2024-06-05">2024年6月5日(土)</time>
@@ -401,14 +401,14 @@
 
   <script src="js/main.js"></script>
   <script>
-       document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
       gsap.registerPlugin(ScrollTrigger);
 
       ScrollTrigger.create({
         trigger: ".event__title",
         start: "bottom bottom",
         onEnter: () => gsap.to(".event__info", { opacity: 1, x: 0, duration: 0.7 }),
-        onLeave: () => gsap.to(".event__info", { opacity: 0, x: 100, duration:0.7 }),
+        onLeave: () => gsap.to(".event__info", { opacity: 0, x: 100, duration: 0.7 }),
         onEnterBack: () => gsap.to(".event__info", { opacity: 1, x: 0, duration: 0.7 }),
         onLeaveBack: () => gsap.to(".event__info", { opacity: 0, x: 100, duration: 0.7 })
       });
@@ -420,7 +420,7 @@
       });
     });
 
-</script>script>
+  </script>
 </body>
 
 </html>

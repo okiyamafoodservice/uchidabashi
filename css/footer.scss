@@ -28,7 +28,7 @@ $breakpoints: (
 
 .contact {
   background: url("/images/contect_bg.png") no-repeat center/cover;
-  padding: 6.5rem 0;
+  padding: 5.5rem 0;
 
   &__title {
     width: 85%;
@@ -77,6 +77,7 @@ $breakpoints: (
     font-weight: 700;
     line-height: 2rem;
     letter-spacing: 0.07rem;
+    border-radius: 6.25rem;
 
     &-text {
       border-radius: 6.25rem;
@@ -100,6 +101,7 @@ $breakpoints: (
   &__inner {
     width: 85%;
     @include mx;
+    padding-top: 4rem;
   }
 
   &__head {
