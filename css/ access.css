@@ -80,6 +80,7 @@
 
 .detail {
   display: block;
+  justify-content: space-between;
   align-items: flex-start;
   gap: 5%;
   margin-top: 4rem;
