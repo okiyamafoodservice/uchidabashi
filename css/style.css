@@ -4,7 +4,7 @@
 html,
 body {
   color: #5d4a3a;
-  font-family: "UDPGothic", sans-serif;
+  font-family: "BIZ UDPGothic", sans-serif;
   font-size: 16px;
   letter-spacing: 0.05em;
   line-height: 1.75;
@@ -91,7 +91,12 @@ img {
 }
 
 main {
-  padding-top: 10rem;
+  padding-top: 3rem;
+}
+@media screen and (min-width: 1000px) {
+  main {
+    padding-top: 10rem;
+  }
 }
 
 /* ボタンのデフォルトスタイルをリセット */
@@ -206,7 +211,7 @@ button {
   white-space: nowrap;
 }
 .firstView__content--image {
-  height: 60vh;
+  height: 30rem;
   border-radius: 0rem 12rem 1.5rem 0rem;
   background: url(../images/firstviewdammy.jpg) lightgray 50%/cover no-repeat;
   width: 75%;
@@ -765,7 +770,7 @@ button {
   margin-left: 0.5rem;
 }
 .event__info {
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 0.5rem;
   border: 2px solid #ff7f3e;
   width: -webkit-fit-content;
@@ -776,32 +781,54 @@ button {
   background-color: #ffffff;
   position: fixed;
   bottom: 3%;
-  right: 2%;
+  right: 0;
   z-index: 2;
 }
-.event__info::before {
-  content: url(/images/tabler_pin-filled.svg);
-  top: -2.5rem;
-  left: 40%;
-  position: absolute;
+@media screen and (min-width: 1000px) {
+  .event__info {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid #ff7f3e;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    z-index: 2;
+  }
 }
 .event__info--title {
   text-align: center;
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 600;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 1000px) {
+  .event__info--title {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
 }
 .event__info--content {
   text-align: center;
   display: flex;
   border-top: #ff7f3e dashed 2px;
   border-bottom: #ff7f3e dashed 2px;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   font-size: 1rem;
   color: #ff7f3e;
   font-weight: 600;
   font-family: "Zen Kaku Gothic New", sans-serif;
+}
+@media screen and (min-width: 1000px) {
+  .event__info--content {
+    padding: 1rem 0;
+  }
 }
 .event__info time {
   margin-right: 3rem;
@@ -944,6 +971,8 @@ button {
   display: flex;
   list-style: none;
   padding: 0;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
 }
 .storeInfo .scroll-infinity__list--right {
   -webkit-animation: infinity-scroll-right 80s infinite linear 0.5s both;
@@ -955,7 +984,7 @@ button {
 }
 .storeInfo .scroll-infinity__item > img {
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   aspect-ratio: 16/9;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1033,16 +1062,16 @@ button {
 .latestInfo__instagram li {
   width: 30%;
   aspect-ratio: 1/1;
-  background-image: url(/images/dammy04.jpg);
+  background-image: url(../images/dammy01.jpg);
   border-radius: 0.5rem;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .latestInfo__instagram li:nth-child(2) {
-  background-image: url(/images/dammy03.jpg);
+  background-image: url(../images/dammy02.jpg);
 }
 .latestInfo__instagram li:nth-child(3) {
-  background-image: url(/images/dammy02.jpg);
+  background-image: url(../images/dammy03.jpg);
 }
 .latestInfo__instagram--post {
   width: 7rem;
@@ -1106,14 +1135,14 @@ button {
 .about {
   padding-bottom: 6.5rem;
   position: relative;
-  background-image: url(/images/aboutimg.jpg);
+  background-image: url(../images/aboutimg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
 }
 .about::before {
-  content: url(/images/SVG/about_archi.svg);
+  content: url(../images/SVG/about_archi.svg);
   top: 0;
   left: 50%;
   width: 100%;
