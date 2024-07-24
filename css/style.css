@@ -153,7 +153,10 @@ button {
   font-family: "Zen Kaku Gothic New", sans-serif;
   /* フォント名をクォートで囲む */
 }
-.modal__link i {
+.modal__link .fa-arrow-up-right-from-square {
+  margin-left: 0.5rem;
+}
+.modal__link .fa-instagram {
   font-size: 3rem;
 }
 
