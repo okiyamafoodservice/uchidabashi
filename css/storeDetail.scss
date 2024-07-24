@@ -40,15 +40,16 @@ a {
 }
 
 .shop {
-  width: 80%;
+  width: 90%;
   @include mx;
   display: flex;
   justify-content: space-between;
   margin-bottom: 12.5rem;
+  flex-direction: column-reverse;
 
   &__list {
     margin-bottom: 2.5rem;
-    width: (264 / 1014) * 100%;
+    width: 100%;
     &--title {
       font-size: 1.5rem;
       font-weight: bold;
@@ -79,7 +80,7 @@ a {
     }
   }
   &__detail {
-    width: (674 / 1014) * 100%;
+    width: 100%;
 
     &--text {
       margin-top: 3.5rem;
@@ -89,8 +90,10 @@ a {
     &--image {
       display: flex;
       justify-content: space-between;
+      flex-direction: column;
+      gap: 1.31rem;
       img {
-        width: 48%;
+        width: 100%;
         aspect-ratio: 5/3;
         object-fit: cover;
         border-radius: 1.5rem;
@@ -118,8 +121,41 @@ a {
     width: fit-content;
     padding: 1rem 2rem;
     border-radius: 2.5rem;
+    margin-bottom: 6.5rem;
     i {
       margin-left: 0.5rem;
+    }
+  }
+}
+
+@include media("md") {
+  .shop {
+    width: 80%;
+    @include mx;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12.5rem;
+    flex-direction: row;
+    &__list {
+      margin-bottom: 2.5rem;
+      width: (264 / 1014) * 100%;
+    }
+    &__detail {
+      width: (674 / 1014) * 100%;
+      &--image {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        img {
+          width: 48%;
+          aspect-ratio: 5/3;
+          object-fit: cover;
+          border-radius: 1.5rem;
+        }
+      }
+    }
+    .gMapLink {
+      margin-bottom: 0;
     }
   }
 }
