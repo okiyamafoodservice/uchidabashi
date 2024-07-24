@@ -39,35 +39,6 @@ a {
   text-decoration: none;
 }
 
-.sub-head {
-  margin-bottom: 1rem;
-
-  @include media(md) {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-  }
-
-  &__text {
-    display: inline-block;
-    white-space: nowrap;
-    font-weight: 500;
-    font-family: "Zen Kaku Gothic New", sans-serif;
-  }
-
-  hr {
-    height: 2px;
-    width: 100%;
-    border: none;
-    display: inline-block;
-    border-top: dashed 2px $color-main;
-
-    @include media(md) {
-      margin-left: 1rem;
-    }
-  }
-}
-
 .shop {
   width: 80%;
   @include mx;
@@ -103,10 +74,6 @@ a {
   }
   &__detail {
     width: (674 / 1014) * 100%;
-    h3 {
-      font-size: 2rem;
-      font-weight: 700;
-    }
 
     &--text {
       margin-top: 3.5rem;
