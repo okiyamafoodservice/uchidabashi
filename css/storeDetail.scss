@@ -26,31 +26,72 @@ $breakpoints: (
   }
 }
 
-.sub-head {
-  margin-bottom: 1rem;
+@import url(./style.css);
 
-  @include media(md) {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
+ul {
+  padding-left: 0;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.shop {
+  width: 80%;
+  @include mx;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12.5rem;
+
+  &__list {
+    margin-bottom: 2.5rem;
+    width: (264 / 1014) * 100%;
+    &--title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      &--sub {
+        font-size: 0.875rem;
+        color: $color-main;
+      }
+    }
+    &--main {
+      &--item {
+        background-color: $color-white;
+        border-radius: 0.5rem;
+        margin-bottom: 0.5rem;
+        width: fit-content;
+        &--link {
+          color: $color-brown;
+          padding: 1rem 1.5rem;
+          display: block;
+          width: 100%;
+        }
+      }
+    }
   }
+  &__detail {
+    width: (674 / 1014) * 100%;
 
-  &__text {
-    display: inline-block;
-    white-space: nowrap;
-    font-weight: 500;
-    font-family: "Zen Kaku Gothic New", sans-serif;
-  }
+    &--text {
+      margin-top: 3.5rem;
+      margin-bottom: 2rem;
+    }
 
-  hr {
-    height: 2px;
-    width: 100%;
-    border: none;
-    display: inline-block;
-    border-top: dashed 2px $color-main;
-
-    @include media(md) {
-      margin-left: 1rem;
+    &--image {
+      display: flex;
+      justify-content: space-between;
+      img {
+        width: 48%;
+        aspect-ratio: 5/3;
+        object-fit: cover;
+        border-radius: 1.5rem;
+      }
+    }
+    &--top {
+      margin-bottom: 6.5rem;
     }
   }
 }
