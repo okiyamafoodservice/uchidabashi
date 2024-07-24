@@ -13,7 +13,7 @@ main {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
   }
 }
 .firstView-sub__img {
@@ -56,6 +56,11 @@ main {
   writing-mode: vertical-rl;
   margin-bottom: 3rem;
   font-family: "Zen Kaku Gothic New", sans-serif;
+}
+@media screen and (min-width: 430px) {
+  .firstView-sub__title {
+    margin-left: 4%;
+  }
 }
 .firstView-sub__main-title {
   margin: 0;

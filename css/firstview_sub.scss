@@ -41,7 +41,7 @@ main {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
   }
 
   &__img {
@@ -85,6 +85,10 @@ main {
     margin-bottom: 3rem;
     font-family: "Zen Kaku Gothic New",
       sans-serif;
+
+    @include media(sm) {
+      margin-left: 4%;
+    }
   }
 
   &__main-title {

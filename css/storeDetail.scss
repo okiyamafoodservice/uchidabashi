@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 $color-black: #212121;
 $color-gray: #e9e9e9;
 $color-main: #ff7f3e;
@@ -10,19 +9,48 @@ $color-brown: #5d4a3a;
 $color-skyblue: #80c4e9;
 
 $breakpoints: (
-    "sm": "screen and (min-width: 430px)",
-    "md": "screen and (min-width: 768px)",
-    "lg": "screen and (min-width: 992px)",
-    "xl": "screen and (min-width: 1200px)",
-    ) !default;
+  "sm": "screen and (min-width: 430px)",
+  "md": "screen and (min-width: 768px)",
+  "lg": "screen and (min-width: 992px)",
+  "xl": "screen and (min-width: 1200px)",
+) !default;
 
 @mixin mx {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @mixin media($breakpoint) {
-    @media #{map-get($breakpoints, $breakpoint)} {
-        @content;
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+.sub-head {
+  margin-bottom: 1rem;
+
+  @include media(md) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    display: inline-block;
+    white-space: nowrap;
+    font-weight: 500;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+  }
+
+  hr {
+    height: 2px;
+    width: 100%;
+    border: none;
+    display: inline-block;
+    border-top: dashed 2px $color-main;
+
+    @include media(md) {
+      margin-left: 1rem;
     }
+  }
 }
