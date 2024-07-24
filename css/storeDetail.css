@@ -30,6 +30,7 @@ a {
 .shop__list--title--sub {
   font-size: 0.875rem;
   color: #ff7f3e;
+  margin-bottom: 2.5rem;
 }
 .shop__list--main--item {
   background-color: #ffffff;
@@ -44,6 +45,11 @@ a {
   padding: 1rem 1.5rem;
   display: block;
   width: 100%;
+  font-weight: 700;
+}
+.shop__list--main--item--link i {
+  color: #ff7f3e;
+  margin-left: 1.5rem;
 }
 .shop__detail {
   width: 66.4694280079%;
@@ -65,5 +71,25 @@ a {
 }
 .shop__detail--top {
   margin-bottom: 6.5rem;
+}
+.shop__Info .shopAddress__text {
+  color: #5d4a3a;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.shop__Info .shopAddress__text i {
+  color: #ff7f3e;
+}
+.shop .gMapLink {
+  margin-top: 3.5rem;
+  background-color: #5d4a3a;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 2rem;
+  border-radius: 2.5rem;
+}
+.shop .gMapLink i {
+  margin-left: 0.5rem;
 }
 /*# sourceMappingURL=storeDetail.css.map */

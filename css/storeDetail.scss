@@ -55,6 +55,7 @@ a {
       &--sub {
         font-size: 0.875rem;
         color: $color-main;
+        margin-bottom: 2.5rem;
       }
     }
     &--main {
@@ -68,6 +69,11 @@ a {
           padding: 1rem 1.5rem;
           display: block;
           width: 100%;
+          font-weight: 700;
+          i {
+            color: $color-main;
+            margin-left: 1.5rem;
+          }
         }
       }
     }
@@ -92,6 +98,28 @@ a {
     }
     &--top {
       margin-bottom: 6.5rem;
+    }
+  }
+  &__Info {
+    .shopAddress {
+      &__text {
+        color: $color-brown;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        i {
+          color: $color-main;
+        }
+      }
+    }
+  }
+  .gMapLink {
+    margin-top: 3.5rem;
+    background-color: $color-brown;
+    width: fit-content;
+    padding: 1rem 2rem;
+    border-radius: 2.5rem;
+    i {
+      margin-left: 0.5rem;
     }
   }
 }
