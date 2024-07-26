@@ -68,6 +68,7 @@
   font-weight: 700;
   line-height: 1.8rem;
   gap: 0.5rem;
+  inline-size: 500px;
 }
 .time__bus {
   font-family: "BIZ UDPGothic";
