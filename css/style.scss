@@ -577,6 +577,7 @@ button {
     border: none;
     display: inline-block;
     border-top: dashed 2px $color-main;
+    margin: 0;
 
     @include media(md) {
       margin-left: 1rem;
