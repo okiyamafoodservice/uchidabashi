@@ -900,6 +900,7 @@ button {
   }
 
   &__info {
+    opacity: 0;
     padding: 1rem;
     border-radius: 0.5rem;
     border: 2px solid $color-main;
@@ -910,6 +911,7 @@ button {
     bottom: 3%;
     right: 0;
     z-index: 2;
+    transform: translateX(100px);
 
     @include media(md) {
       padding: 1.5rem;
@@ -1178,6 +1180,7 @@ button {
   font-family: "Zen Kaku Gothic New", sans-serif;
   text-align: center;
 
+
   &__title {
     font-family: "Zen Kaku Gothic New", sans-serif;
     font-size: 2rem;
@@ -1206,6 +1209,7 @@ button {
     @include mx();
     list-style: none;
 
+
     li {
       width: 30%;
       aspect-ratio: 1/1;
@@ -1222,6 +1226,7 @@ button {
         background-image: url(../images/dammy03.jpg);
       }
     }
+
 
     &--post {
       width: 7rem;

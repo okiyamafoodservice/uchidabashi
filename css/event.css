@@ -149,4 +149,66 @@ body {
   line-height: 1.8rem;
   /* 180% */
 }
+
+.latestInfo {
+  padding-top: 0 !important;
+  width: 100%;
+}
+.latestInfo__instagramsub {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 0px !important;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+}
+.latestInfo__instagramsub li {
+  width: 30%;
+  aspect-ratio: 1/1;
+  background-image: url(../images/dammy10.jpg);
+  border-radius: 0.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
+}
+.latestInfo__instagramsub li:nth-child(2) {
+  background-image: url(../images/dammy02.jpg);
+}
+.latestInfo__instagramsub li:nth-child(3) {
+  background-image: url(../images/dammy03.jpg);
+}
+.latestInfo__instagramsub li:nth-child(4) {
+  display: none;
+}
+.latestInfo__instagramsub li:nth-child(5) {
+  display: none;
+}
+
+@media screen and (min-width: 430px) {
+  .latestInfo__instagram {
+    margin-bottom: 3.75rem;
+    width: 58.6885245902%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 716px;
+  }
+  .latestInfo__instagram--post {
+    width: 13rem;
+  }
+  .latestInfo__instagramSub {
+    width: 100%;
+    max-width: none;
+  }
+  .latestInfo__instagramSub li {
+    width: 18%;
+  }
+  .latestInfo__instagramSub li:nth-child(4) {
+    display: block;
+  }
+  .latestInfo__instagramSub li:nth-child(5) {
+    display: block;
+  }
+}
 /*# sourceMappingURL=event.css.map */

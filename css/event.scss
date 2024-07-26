@@ -307,3 +307,79 @@ body {
 //     }
 //   }
 // }
+
+.latestInfo {
+  padding-top: 0 !important;
+  width: 100%;
+
+  &__instagramsub {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 0px !important;
+    width: 100%;
+    @include mx();
+    list-style: none;
+
+
+    li {
+
+      width: 30%;
+      aspect-ratio: 1/1;
+      background-image: url(../images/dammy10.jpg);
+      border-radius: 0.5rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-bottom: 1rem;
+
+      &:nth-child(2) {
+        background-image: url(../images/dammy02.jpg);
+      }
+
+      &:nth-child(3) {
+        background-image: url(../images/dammy03.jpg);
+      }
+
+      &:nth-child(4) {
+        display: none;
+      }
+
+      &:nth-child(5) {
+        display: none;
+      }
+
+    }
+  }
+}
+
+@include media(sm) {
+  .latestInfo {
+    &__instagram {
+      margin-bottom: 3.75rem;
+      width: (716/1220) * 100%;
+      @include mx();
+      max-width: 716px;
+
+      &--post {
+        width: 13rem;
+      }
+    }
+
+    &__instagramSub {
+      width: 100%;
+      max-width: none;
+
+      li {
+        width: 18%;
+
+        &:nth-child(4) {
+          display: block;
+        }
+
+        &:nth-child(5) {
+          display: block;
+        }
+      }
+    }
+  }
+}
