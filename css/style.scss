@@ -33,7 +33,7 @@ $breakpoints: (
 html,
 body {
   color: $color-brown;
-  font-family: "UDPGothic",
+  font-family: "BIZ UDPGothic",
     sans-serif;
   font-size: 16px;
   letter-spacing: 0.05em;
@@ -121,7 +121,11 @@ img {
 }
 
 main {
-  padding-top: 10rem;
+  padding-top: 3rem;
+
+  @include media(md) {
+    padding-top: 10rem;
+  }
 }
 
 /* ボタンのデフォルトスタイルをリセット */
@@ -184,7 +188,11 @@ button {
       sans-serif;
     /* フォント名をクォートで囲む */
 
-    i {
+    .fa-arrow-up-right-from-square {
+      margin-left: 0.5rem;
+    }
+
+    .fa-instagram {
       font-size: 3rem;
     }
   }
@@ -250,7 +258,7 @@ button {
     }
 
     &--image {
-      height: 60vh;
+      height: 30rem;
       border-radius: 0rem 12rem 1.5rem 0rem;
       background: url(../images/firstviewdammy.jpg) lightgray 50% / cover no-repeat;
       width: 75%;
@@ -382,7 +390,7 @@ button {
 .main {
   &-section {
     @include mx();
-    width: 80%;
+    width: 80% !important;
     max-width: 1280px;
     padding: 3rem 0;
 
@@ -869,34 +877,48 @@ button {
   }
 
   &__info {
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 0.5rem;
     border: 2px solid $color-main;
     width: fit-content;
     @include mx;
-    // position: absolute;
-    // top: 3vw;
-    // right: 3%;
-    // transform: rotate(5deg);
     background-color: $color-white;
     position: fixed;
     bottom: 3%;
-    right: 2%;
+    right: 0;
     z-index: 2;
 
-    &::before {
-      content: url(/images/tabler_pin-filled.svg);
-      top: -2.5rem;
-      left: 40%;
-      position: absolute;
+    @include media(md) {
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      border: 2px solid $color-main;
+      width: fit-content;
+      @include mx;
+      background-color: $color-white;
+      position: fixed;
+      bottom: 3%;
+      right: 2%;
+      z-index: 2;
     }
+
+    // &::before {
+    //   content: url(/images/tabler_pin-filled.svg);
+    //   top: -2.5rem;
+    //   left: 40%;
+    //   position: absolute;
+    // }
 
     &--title {
       text-align: center;
       font-family: "Zen Kaku Gothic New", sans-serif;
       font-weight: 600;
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+
+      @include media(md) {
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+      }
     }
 
     &--content {
@@ -904,11 +926,15 @@ button {
       display: flex;
       border-top: $color-main dashed 2px;
       border-bottom: $color-main dashed 2px;
-      padding: 1rem 0;
+      padding: 0.5rem 0;
       font-size: 1rem;
       color: $color-main;
       font-weight: 600;
       font-family: "Zen Kaku Gothic New", sans-serif;
+
+      @include media(md) {
+        padding: 1rem 0;
+      }
     }
 
     time {
@@ -1059,6 +1085,8 @@ button {
     display: flex;
     list-style: none;
     padding: 0;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
   }
 
   .scroll-infinity__list--right {
@@ -1072,7 +1100,7 @@ button {
 
   .scroll-infinity__item>img {
     width: 100%;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     aspect-ratio: 16 / 9;
     object-fit: cover;
   }
@@ -1158,17 +1186,17 @@ button {
     li {
       width: 30%;
       aspect-ratio: 1/1;
-      background-image: url(/images/dammy04.jpg);
+      background-image: url(../images/dammy01.jpg);
       border-radius: 0.5rem;
       background-size: cover;
       background-repeat: no-repeat;
 
       &:nth-child(2) {
-        background-image: url(/images/dammy03.jpg);
+        background-image: url(../images/dammy02.jpg);
       }
 
       &:nth-child(3) {
-        background-image: url(/images/dammy02.jpg);
+        background-image: url(../images/dammy03.jpg);
       }
     }
 
@@ -1243,7 +1271,7 @@ button {
   // padding-top: 6.5rem;
   // background-color: rgba($color: $color-main, $alpha: 0.1);
   position: relative;
-  background-image: url(/images/aboutimg.jpg);
+  background-image: url(../images/aboutimg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   // border-radius: 4rem 4rem 0 0;
@@ -1251,7 +1279,7 @@ button {
   @include mx();
 
   &::before {
-    content: url(/images/SVG/about_archi.svg);
+    content: url(../images/SVG/about_archi.svg);
     top: 0;
     left: 50%;
     width: 100%;
