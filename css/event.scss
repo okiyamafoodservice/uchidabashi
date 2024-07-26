@@ -118,10 +118,11 @@ body {
   row-gap: 6.5rem;
   padding-bottom: 6rem;
 
-
   @include media(sm) {
     display: flex;
   }
+
+
 
 
   .card {
@@ -130,6 +131,7 @@ body {
     position: relative;
     margin-bottom: 6rem;
 
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -137,6 +139,8 @@ body {
     @include media(sm) {
       width: 45%;
       margin-bottom: 0;
+
+
     }
 
 
