@@ -368,9 +368,12 @@ body {
     &__instagramSub {
       width: 100%;
       max-width: none;
+      margin-top: 0;
+      margin-bottom: 2.5rem;
 
       li {
         width: 18%;
+        margin-bottom: 0;
 
         &:nth-child(4) {
           display: block;

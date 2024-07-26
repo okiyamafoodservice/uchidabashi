@@ -200,9 +200,12 @@ body {
   .latestInfo__instagramSub {
     width: 100%;
     max-width: none;
+    margin-top: 0;
+    margin-bottom: 2.5rem;
   }
   .latestInfo__instagramSub li {
     width: 18%;
+    margin-bottom: 0;
   }
   .latestInfo__instagramSub li:nth-child(4) {
     display: block;
