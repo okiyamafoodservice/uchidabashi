@@ -13,7 +13,7 @@ $breakpoints: (
   "md": "screen and (min-width: 768px)",
   "lg": "screen and (min-width: 992px)",
   "xl": "screen and (min-width: 1200px)",
-) !default;
+  ) !default;
 
 @mixin mx {
   margin-left: auto;
@@ -31,6 +31,7 @@ $breakpoints: (
 ul {
   padding-left: 0;
 }
+
 li {
   list-style: none;
 }
@@ -44,33 +45,42 @@ a {
   @include mx;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12.5rem;
   flex-direction: column-reverse;
 
   &__list {
-    margin-bottom: 2.5rem;
     width: 100%;
+
     &--title {
       font-size: 1.5rem;
       font-weight: bold;
+
       &--sub {
         font-size: 0.875rem;
         color: $color-main;
         margin-bottom: 2.5rem;
+        font-weight: 700;
       }
     }
+
     &--main {
       &--item {
         background-color: $color-white;
         border-radius: 0.5rem;
         margin-bottom: 0.5rem;
         width: fit-content;
+        width: 100%;
+
+
         &--link {
           color: $color-brown;
           padding: 1rem 1.5rem;
-          display: block;
-          width: 100%;
           font-weight: 700;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          @include media(sm) {}
+
           i {
             color: $color-main;
             margin-left: 1.5rem;
@@ -79,12 +89,12 @@ a {
       }
     }
   }
+
   &__detail {
     width: 100%;
 
     &--text {
-      margin-top: 3.5rem;
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
     }
 
     &--image {
@@ -92,6 +102,7 @@ a {
       justify-content: space-between;
       flex-direction: column;
       gap: 1.31rem;
+
       img {
         width: 100%;
         aspect-ratio: 5/3;
@@ -99,22 +110,26 @@ a {
         border-radius: 1.5rem;
       }
     }
+
     &--top {
       margin-bottom: 6.5rem;
     }
   }
+
   &__Info {
     .shopAddress {
       &__text {
         color: $color-brown;
         font-weight: 700;
         margin-bottom: 1rem;
+
         i {
           color: $color-main;
         }
       }
     }
   }
+
   .gMapLink {
     margin-top: 3.5rem;
     background-color: $color-brown;
@@ -122,30 +137,34 @@ a {
     padding: 1rem 2rem;
     border-radius: 2.5rem;
     margin-bottom: 6.5rem;
+
     i {
       margin-left: 0.5rem;
     }
   }
 }
 
-@include media("md") {
+@include media(lg) {
   .shop {
     width: 80%;
     @include mx;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 12.5rem;
     flex-direction: row;
+
     &__list {
       margin-bottom: 2.5rem;
       width: (264 / 1014) * 100%;
     }
+
     &__detail {
       width: (674 / 1014) * 100%;
+
       &--image {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
+
         img {
           width: 48%;
           aspect-ratio: 5/3;
@@ -154,6 +173,7 @@ a {
         }
       }
     }
+
     .gMapLink {
       margin-bottom: 0;
     }
