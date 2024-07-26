@@ -216,7 +216,7 @@ button {
 .firstView__content--image {
   height: 30rem;
   border-radius: 0rem 12rem 1.5rem 0rem;
-  background: url(../images/firstviewdammy.jpg) lightgray 50%/cover no-repeat;
+  background: url(../images/dammy08.jpg) lightgray 50%/cover no-repeat;
   width: 75%;
   margin-bottom: 3.8rem;
 }
@@ -248,7 +248,7 @@ button {
   .firstView__content--image {
     height: 90vh;
     border-radius: 0rem 18.96875rem 1.5rem 0rem;
-    background: url(../images/firstviewdammy.jpg) lightgray 50%/cover no-repeat;
+    background: url(../images/dammy08.jpg) lightgray 50%/cover no-repeat;
     width: 70%;
     margin-bottom: 0;
   }
