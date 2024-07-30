@@ -1,3 +1,5 @@
+@import url(./header.css);
+@import url(./footer.css);
 .uchidabashi__map iframe {
   border-radius: 0.5rem;
 }
