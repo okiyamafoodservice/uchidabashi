@@ -1,28 +1,41 @@
 <html class="no-js" lang="ja">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>内田橋商店街</title>
-    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
-    <link rel="stylesheet" href="css/event.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="/css/firstview_sub.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+    />
+    <link rel="stylesheet" href="/css/event.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/firstview_sub.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Zen Kaku Goshic New-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- UDP Gothic -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/8067db763b.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/8067db763b.js"
+      crossorigin="anonymous"
+    ></script>
 
     <meta name="description" content="" />
     <meta property="og:title" content="" />
@@ -35,235 +48,214 @@
     <link rel="apple-touch-icon" href="icon.png" />
     <link rel="manifest" href="site.webmanifest" />
     <meta name="theme-color" content="#fafafa" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="header__menu"></div>
-        <div class="header__inner">
-            <div class="header__top">
-                <a class="header__top--image" href="index.html">
-                    <img src="./images/uchidabashiLogo.svg" alt="内田橋商店街ロゴ" />
-                </a>
-                <div class="header__gnav">
-                    <a href="event.html" class="header__gnav--link">イベント情報</a>
-                    <a href="store.html" class="header__gnav--link">店舗情報</a>
-                    <a href="about.html" class="header__gnav--link">商店街について</a>
-                    <a href="openstore.html" class="header__gnav--link">出店について</a>
-                    <a href="access.html" class="header__gnav--link">アクセス</a>
-                    <a href="faq.html" class="header__gnav--link">FAQ</a>
-                    <a href="#" class="header__gnav--link">お問い合わせ<i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <a href="" class="header__gnav--link"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                <div class="header__menuButton" id="menuButton">
-                    <img src="./images/menu_button.svg" alt="" class="header__menuButton--image" />
-                </div>
-            </div>
+      <div class="header__menu"></div>
+      <div class="header__inner">
+        <div class="header__top">
+          <a class="header__top--image" href="index.html">
+            <img src="./images/uchidabashiLogo.svg" alt="内田橋商店街ロゴ" />
+          </a>
+          <div class="header__gnav">
+            <a href="event.html" class="header__gnav--link">イベント情報</a>
+            <a href="store.html" class="header__gnav--link">店舗情報</a>
+            <a href="about.html" class="header__gnav--link">商店街について</a>
+            <a href="openstore.html" class="header__gnav--link">出店について</a>
+            <a href="access.html" class="header__gnav--link">アクセス</a>
+            <a href="faq.html" class="header__gnav--link">FAQ</a>
+            <a href="#" class="header__gnav--link"
+              >お問い合わせ<i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+            <a href="" class="header__gnav--link"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <div class="header__menuButton" id="menuButton">
+            <img
+              src="./images/menu_button.svg"
+              alt=""
+              class="header__menuButton--image"
+            />
+          </div>
         </div>
+      </div>
     </header>
     <!-- モーダルウィンドウ -->
     <div class="modal" id="menuModal">
-        <div class="modal__content">
-            <a href="event.html" class="modal__link">イベント情報</a>
-            <a href="store.html" class="modal__link">店舗情報</a>
-            <a href="about.html" class="modal__link">商店街について</a>
-            <a href="openstore.html" class="modal__link">出店について</a>
-            <a href="access.html" class="modal__link">アクセス</a>
-            <a href="" class="modal__link">お問い合わせ<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            <a href="" class="modal__link"><i class="fa-brands fa-instagram"></i></a>
-        </div>
+      <div class="modal__content">
+        <a href="event.html" class="modal__link">イベント情報</a>
+        <a href="store.html" class="modal__link">店舗情報</a>
+        <a href="about.html" class="modal__link">商店街について</a>
+        <a href="openstore.html" class="modal__link">出店について</a>
+        <a href="access.html" class="modal__link">アクセス</a>
+        <a href="" class="modal__link"
+          >お問い合わせ<i class="fa-solid fa-arrow-up-right-from-square"></i
+        ></a>
+        <a href="" class="modal__link"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
     </div>
     <main class="main">
-        <section class="firstView-sub">
-            <img src="./images/makiwaradammy.png" class="firstView-sub__img" alt="">
+      <section class="firstView-sub">
+        <img
+          src="./images/makiwaradammy.png"
+          class="firstView-sub__img"
+          alt=""
+        />
 
-            <div class="firstView-sub__title">
-                <h2 class="firstView-sub__main-title">イベント情報</h2>
-                <p class="firstView-sub__sub-title">Event</p>
+        <div class="firstView-sub__title">
+          <h2 class="firstView-sub__main-title">イベント情報</h2>
+          <p class="firstView-sub__sub-title">Event</p>
+        </div>
+      </section>
+
+      <section class="content main-section">
+        <div class="content__inner">
+          <div class="sub-head">
+            <h3 class="sub-head__text">イベント一覧</h3>
+            <hr />
+          </div>
+          <div class="card__wapper">
+            <div class="content__card card">
+              <div class="card__image">
+                <img src="./images/makiwara.png" alt="まきわら祭り" />
+              </div>
+              <h3 class="card__title">まきわら祭(半纏祭り)</h3>
+              <time datetime="6月5日" class="card__date">6月5日</time>
+              <p class="card__join">参加無料</p>
+              <p class="card__text">
+                30年前に一度途絶えてしまったお祭りを2021年に復興しました。無病息災を願う「まきわら提灯」を神輿の上に365個飾り付け、熱田神宮に奉納する伝統行事は圧巻です。
+              </p>
             </div>
+            <div class="content__card card">
+              <div class="card__image">
+                <img src="./images/makiwaradammy.png" alt="まきわら祭り" />
+              </div>
+              <h3 class="card__title">内田橋まつり(生誕祭)</h3>
+              <time datetime="6月5日" class="card__date"> 11月3日 </time>
+              <p class="card__join">参加無料</p>
+              <p class="card__text">
+                11月3日に、内田橋の町名は制定されました。その日を記念するお祭りを2021年に立ち上げました。テーマは未来志向。内田橋商店街の新しい魅力に気づくお祭りになります。
+              </p>
+            </div>
+            <div class="content__card card">
+              <div class="card__image">
+                <img src="./images/makiwaradammy.png" alt="まきわら祭り" />
+              </div>
+              <h3 class="card__title">内田橋スプリングマルシェ</h3>
+              <time datetime="" class="card__date"> 4月第一日曜日 </time>
+              <p class="card__join">参加無料</p>
+              <p class="card__text">
+                内田橋マルシェは、新鮮な地元産の野菜や果物を提供する市場です。生産者と直接触れ合いながら、お買い物を楽しめます。毎週末開催され、家族連れにも人気です。
+              </p>
+            </div>
+            <div class="content__card card">
+              <div class="card__image">
+                <img src="./images/makiwaradammy.png" alt="まきわら祭り" />
+              </div>
+              <h3 class="card__title">内田橋夜市</h3>
+              <time datetime="" class="card__date"> 8月最終土曜日 </time>
+              <p class="card__join">参加無料</p>
+              <p class="card__text">
+                学生主体で始めた「内田橋とつげき見守り隊」は、現在も続けています。おじいちゃん、おばあちゃんの家を訪問し、何かお手伝いをする代わりに服をもらうという活動です。
+              </p>
+            </div>
+          </div>
+
+          <div class="sub-head4">
+            <h4 class="sub-head4__text">その他のイベント</h4>
+          </div>
+
+          <div class="card__wapper">
+            <div class="content__card card">
+              <!-- <div class="card__image">
+                                                                    <img src="./images/makiwaradammy.png" alt="まきわら祭り">
+                                                                </div> -->
+              <h3 class="card__title">クリーンアップ大作戦</h3>
+              <time datetime="6月5日" class="card__date"> 毎月第一土曜日 </time>
+              <p class="card__join">参加無料</p>
+              <p class="card__text">
+                数名から始めた活動は今では20名近くになりました。<br />
+                毎月第一土曜日は内田橋クリーンアップ大作戦の日。
+                <br />8:30から9時まで実施。商店街復興を願うクリーンアップ大作戦。
+              </p>
+            </div>
+            <div class="content__card card">
+              <!-- <div class="card__image">
+                                                                    <img src="./images/makiwaradammy.png" alt="まきわら祭り">
+                                                                </div> -->
+              <h3 class="card__title">とつげき見守り隊</h3>
+              <time datetime="6月5日" class="card__date"> 6月5日 </time>
+              <p class="card__join">参加無料</p>
+              <p class="card__text">
+                学生主体で始めた「内田橋とつげき見守り隊」は、現在も続けています。おじいちゃん、おばあちゃんの家を訪問し、何かお手伝いをする代わりに服をもらうという活動です。
+              </p>
+            </div>
+            <div class="content__card card">
+              <!-- <div class="card__image">
+                                                                    <img src="./images/makiwaradammy.png" alt="まきわら祭り">
+                                                                </div> -->
+              <h3 class="card__title">モクダバシ</h3>
+              <time datetime="" class="card__date"> 毎週木曜日 </time>
+              <p class="card__join">参加無料</p>
+              <p class="card__text">
+                学生主体で始めた「内田橋とつげき見守り隊」は、現在も続けています。おじいちゃん、おばあちゃんの家を訪問し、何かお手伝いをする代わりに服をもらうという活動です。
+              </p>
+            </div>
+            <div class="content__card card">
+              <!-- <div class="card__image">
+                                                                    <img src="./images/makiwaradammy.png" alt="まきわら祭り">
+                                                                </div> -->
+              <h3 class="card__title">KAKEダバシ</h3>
+              <time datetime="" class="card__date"> 毎週木曜日 </time>
+              <p class="card__join">参加無料</p>
+              <p class="card__text">
+                Calm植物店さん内レンタルスペースでナッツやコーヒーの販売をはじめ、毎週入れ替わりで洋菓子屋さんや雑貨店が登場
+              </p>
+            </div>
+            <div class="content__card card">
+              <!-- <div class="card__image">
+                                                                    <img src="./images/makiwaradammy.png" alt="まきわら祭り">
+                                                                </div> -->
+              <h3 class="card__title">駄菓子屋「スナックかくれんぼ」</h3>
+              <time datetime="" class="card__date"> 毎週木曜日 </time>
+              <p class="card__join">参加無料</p>
+              <p class="card__text">
+                学生主体で始めた「内田橋とつげき見守り隊」は、現在も続けています。おじいちゃん、おばあちゃんの家を訪問し、何かお手伝いをする代わりに服をもらうという活動です。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-head">
+          <h3 class="sub-head__text">最新イベント情報</h3>
+          <hr />
+        </div>
+
+        <section class="latestInfo">
+          <ul class="latestInfo__instagramSub">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+
+          <p class="latestInfo__text">
+            最新イベント情報はインスタグラムで発信中です。
+          </p>
+          <div class="latestInfo__parts--button button">
+            <a class="latestInfo__parts--button-text" href="#"
+              >Instagramへ<i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
         </section>
+      </section>
 
-        <section class="content main-section">
-            <div class="content__inner">
-                <div class="sub-head">
-                    <h3 class="sub-head__text">イベント一覧</h3>
-                    <hr />
-                </div>
-                <div class="card__wapper">
-                    <div class="content__card card">
-                        <div class="card__image">
-                            <img src="./images/makiwara.png" alt="まきわら祭り">
-                        </div>
-                        <h3 class="card__title">
-                            まきわら祭(半纏祭り)
-                        </h3>
-                        <time datetime="6月5日" class="card__date">6月5日</time>
-                        <p class="card__join">参加無料</p>
-                        <p class="card__text">
-                            30年前に一度途絶えてしまったお祭りを2021年に復興しました。無病息災を願う「まきわら提灯」を神輿の上に365個飾り付け、熱田神宮に奉納する伝統行事は圧巻です。</p>
-                    </div>
-                    <div class="content__card card">
-                        <div class="card__image">
-                            <img src="./images/makiwaradammy.png" alt="まきわら祭り">
-                        </div>
-                        <h3 class="card__title">
-                            内田橋まつり(生誕祭)
-                        </h3>
-                        <time datetime="6月5日" class="card__date">
-                            11月3日
-                        </time>
-                        <p class="card__join">参加無料</p>
-                        <p class="card__text">
-                            11月3日に、内田橋の町名は制定されました。その日を記念するお祭りを2021年に立ち上げました。テーマは未来志向。内田橋商店街の新しい魅力に気づくお祭りになります。
-                        </p>
-                    </div>
-                    <div class="content__card card">
-                        <div class="card__image">
-                            <img src="./images/makiwaradammy.png" alt="まきわら祭り">
-                        </div>
-                        <h3 class="card__title">
-                            内田橋スプリングマルシェ
-                        </h3>
-                        <time datetime="" class="card__date">
-                            4月第一日曜日
-                        </time>
-                        <p class="card__join">参加無料</p>
-                        <p class="card__text">
-                            内田橋マルシェは、新鮮な地元産の野菜や果物を提供する市場です。生産者と直接触れ合いながら、お買い物を楽しめます。毎週末開催され、家族連れにも人気です。
-                        </p>
-                    </div>
-                    <div class="content__card card">
-                        <div class="card__image">
-                            <img src="./images/makiwaradammy.png" alt="まきわら祭り">
-                        </div>
-                        <h3 class="card__title">
-                            内田橋夜市
-                        </h3>
-                        <time datetime="" class="card__date">
-                            8月最終土曜日
-                        </time>
-                        <p class="card__join">参加無料</p>
-                        <p class="card__text">
-                            学生主体で始めた「内田橋とつげき見守り隊」は、現在も続けています。おじいちゃん、おばあちゃんの家を訪問し、何かお手伝いをする代わりに服をもらうという活動です。
-                        </p>
-                    </div>
-
-                </div>
-
-                <div class="sub-head4">
-                    <h4 class="sub-head4__text">その他のイベント</h4>
-                </div>
-
-                <div class="card__wapper">
-                    <div class="content__card card">
-                        <!-- <div class="card__image">
-                                                                    <img src="./images/makiwaradammy.png" alt="まきわら祭り">
-                                                                </div> -->
-                        <h3 class="card__title">
-                            クリーンアップ大作戦
-                        </h3>
-                        <time datetime="6月5日" class="card__date">
-                            毎月第一土曜日
-                        </time>
-                        <p class="card__join">参加無料</p>
-                        <p class="card__text">
-                            数名から始めた活動は今では20名近くになりました。<br>
-                            毎月第一土曜日は内田橋クリーンアップ大作戦の日。
-                            <br>8:30から9時まで実施。商店街復興を願うクリーンアップ大作戦。
-                        </p>
-                    </div>
-                    <div class="content__card card">
-                        <!-- <div class="card__image">
-                                                                    <img src="./images/makiwaradammy.png" alt="まきわら祭り">
-                                                                </div> -->
-                        <h3 class="card__title">
-                            とつげき見守り隊
-                        </h3>
-                        <time datetime="6月5日" class="card__date">
-                            6月5日
-                        </time>
-                        <p class="card__join">参加無料</p>
-                        <p class="card__text">
-                            学生主体で始めた「内田橋とつげき見守り隊」は、現在も続けています。おじいちゃん、おばあちゃんの家を訪問し、何かお手伝いをする代わりに服をもらうという活動です。
-                        </p>
-                    </div>
-                    <div class="content__card card">
-                        <!-- <div class="card__image">
-                                                                    <img src="./images/makiwaradammy.png" alt="まきわら祭り">
-                                                                </div> -->
-                        <h3 class="card__title">
-                            モクダバシ
-                        </h3>
-                        <time datetime="" class="card__date">
-                            毎週木曜日
-                        </time>
-                        <p class="card__join">参加無料</p>
-                        <p class="card__text">
-                            学生主体で始めた「内田橋とつげき見守り隊」は、現在も続けています。おじいちゃん、おばあちゃんの家を訪問し、何かお手伝いをする代わりに服をもらうという活動です。
-                        </p>
-                    </div>
-                    <div class="content__card card">
-                        <!-- <div class="card__image">
-                                                                    <img src="./images/makiwaradammy.png" alt="まきわら祭り">
-                                                                </div> -->
-                        <h3 class="card__title">
-                            KAKEダバシ
-                        </h3>
-                        <time datetime="" class="card__date">
-                            毎週木曜日
-                        </time>
-                        <p class="card__join">参加無料</p>
-                        <p class="card__text">
-                            Calm植物店さん内レンタルスペースでナッツやコーヒーの販売をはじめ、毎週入れ替わりで洋菓子屋さんや雑貨店が登場
-                        </p>
-                    </div>
-                    <div class="content__card card">
-                        <!-- <div class="card__image">
-                                                                    <img src="./images/makiwaradammy.png" alt="まきわら祭り">
-                                                                </div> -->
-                        <h3 class="card__title">
-                            駄菓子屋「スナックかくれんぼ」
-                        </h3>
-                        <time datetime="" class="card__date">
-                            毎週木曜日
-                        </time>
-                        <p class="card__join">参加無料</p>
-                        <p class="card__text">
-                            学生主体で始めた「内田橋とつげき見守り隊」は、現在も続けています。おじいちゃん、おばあちゃんの家を訪問し、何かお手伝いをする代わりに服をもらうという活動です。
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="sub-head">
-                <h3 class="sub-head__text">最新イベント情報</h3>
-                <hr />
-            </div>
-
-            <section class="latestInfo">
-
-                <ul class="latestInfo__instagramSub">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-
-                <p class="latestInfo__text">最新イベント情報はインスタグラムで発信中です。</p>
-                <div class="latestInfo__parts--button button">
-                    <a class="latestInfo__parts--button-text" href="#">Instagramへ<i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-
-            </section>
-
-        </section>
-
-
-        <!-- <section class="content main-section">
+      <!-- <section class="content main-section">
             <div class="sub-head">
                 <h3 class="sub-head__text">年間スケジュール</h3>
                 <hr />
@@ -271,45 +263,55 @@
         </section> -->
     </main>
     <footer class="footer">
-        <div class="contact" id="contact">
-            <h2 class="contact__title">お問い合わせは<span>こちらまで</span></h2>
-            <p class="contact__text">
-                出店やイベントに関することなど、
-                なんでもお気軽にお問い合わせください。
-            </p>
-            <div class="contact__parts--button button">
-                <a class="contact__parts--button-text" href="">お問い合わせはこちら<i
-                        class="fa-solid fa-circle-arrow-right"></i></a>
-            </div>
+      <div class="contact" id="contact">
+        <h2 class="contact__title">お問い合わせは<span>こちらまで</span></h2>
+        <p class="contact__text">
+          出店やイベントに関することなど、
+          なんでもお気軽にお問い合わせください。
+        </p>
+        <div class="contact__parts--button button">
+          <a class="contact__parts--button-text" href=""
+            >お問い合わせはこちら<i class="fa-solid fa-circle-arrow-right"></i
+          ></a>
         </div>
+      </div>
 
-        <div class="footer__inner">
-            <h2 class="footer__head">
-                <img src="./images/uchidabashiLogo.svg" alt="" />
-            </h2>
-            <p class="footer__text">
-                〒457-0862 愛知県名古屋市南区<span>内田橋１丁目</span>
-            </p>
-            <a href="tel:090-1742-2091" class="footer__tel"><i class="fa-solid fa-phone"></i>090-1742-2091</a>
-            <ul class="footer__link">
-                <li class="footer__link--list"><a href="/event.html">イベント情報</a></li>
-                <li class="footer__link--list"><a href="/store.html">店舗情報</a></li>
-                <li class="footer__link--list"><a href="/about.html">商店街について</a></li>
-                <li class="footer__link--list"><a href="/openstore.html">出店について</a></li>
-                <li class="footer__link--list"><a href="/access.html">アクセス</a></li>
-                <li class="footer__link--list"><a href="/faq.html">FAQ</a></li>
-                <li class="footer__link--list"><a href="/index.html#contact">お問い合わせ</a></li>
-                <li class="footer__link--list">
-                    <a href="" class="instagramLink">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+      <div class="footer__inner">
+        <h2 class="footer__head">
+          <img src="./images/uchidabashiLogo.svg" alt="" />
+        </h2>
+        <p class="footer__text">
+          〒457-0862 愛知県名古屋市南区<span>内田橋１丁目</span>
+        </p>
+        <a href="tel:090-1742-2091" class="footer__tel"
+          ><i class="fa-solid fa-phone"></i>090-1742-2091</a
+        >
+        <ul class="footer__link">
+          <li class="footer__link--list">
+            <a href="/event.html">イベント情報</a>
+          </li>
+          <li class="footer__link--list"><a href="/store.html">店舗情報</a></li>
+          <li class="footer__link--list">
+            <a href="/about.html">商店街について</a>
+          </li>
+          <li class="footer__link--list">
+            <a href="/openstore.html">出店について</a>
+          </li>
+          <li class="footer__link--list">
+            <a href="/access.html">アクセス</a>
+          </li>
+          <li class="footer__link--list"><a href="/faq.html">FAQ</a></li>
+          <li class="footer__link--list">
+            <a href="/index.html#contact">お問い合わせ</a>
+          </li>
+          <li class="footer__link--list">
+            <a href="" class="instagramLink">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
     <script src="js/main.js"></script>
-
-</body>
-
-
+  </body>
 </html>
