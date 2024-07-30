@@ -13,7 +13,7 @@ $breakpoints: (
   "md": "screen and (min-width: 768px)",
   "lg": "screen and (min-width: 992px)",
   "xl": "screen and (min-width: 1200px)",
-) !default;
+  ) !default;
 
 @mixin mx {
   margin-left: auto;
