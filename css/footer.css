@@ -64,6 +64,12 @@
   padding-bottom: 3rem;
   background-color: #ffffff;
 }
+.footer__copy {
+  color: #aaa;
+  font-size: 0.7rem;
+  display: block;
+  text-align: right;
+}
 .footer__inner {
   width: 85%;
   margin-left: auto;

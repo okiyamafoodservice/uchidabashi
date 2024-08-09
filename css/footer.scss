@@ -98,6 +98,13 @@ $breakpoints: (
   padding-bottom: 3rem;
   background-color: $color-white;
 
+  &__copy {
+    color: #aaa;
+    font-size: 0.7rem;
+    display: block;
+    text-align: right;
+  }
+
   &__inner {
     width: 85%;
     @include mx;
