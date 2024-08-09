@@ -82,6 +82,7 @@ a {
 }
 .shop__Info .shopAddress__text i {
   color: #ff7f3e;
+  margin-right: 0.3rem;
 }
 .shop .gMapLink {
   margin-top: 3.5rem;

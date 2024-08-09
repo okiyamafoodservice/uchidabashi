@@ -1594,6 +1594,11 @@ button {
 .br__sp {
   display: block;
 }
+@media screen and (min-width: 550px) {
+  .br__sp {
+    display: none;
+  }
+}
 @media screen and (min-width: 1000px) {
   .br__sp {
     display: none;

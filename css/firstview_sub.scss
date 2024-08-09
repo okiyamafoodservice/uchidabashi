@@ -9,8 +9,8 @@ $color-brown: #5d4a3a;
 $color-skyblue: #80c4e9;
 
 $breakpoints: (
-  "sm": "screen and (min-width: 430px)",
-  "md": "screen and (min-width: 768px)",
+  "sm": "screen and (min-width: 550px)",
+  "md": "screen and (min-width: 1000px)",
   "lg": "screen and (min-width: 992px)",
   "xl": "screen and (min-width: 1200px)",
   ) !default;
@@ -46,13 +46,17 @@ main {
 
   &__img {
     width: 100%;
-    border-radius: 0 100px 24px 0;
-    height: 500px;
+    border-radius: 0 18.96875rem 24px 0;
+    height: 120vw;
     object-fit: cover;
+
+    @include media(sm) {
+      height: 70vh;
+    }
 
     @include media(md) {
       width: 78%;
-      height: 600px;
+      height: 85vh;
     }
   }
 

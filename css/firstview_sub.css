@@ -8,7 +8,7 @@ main {
   display: flex;
   flex-direction: column-reverse;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .firstView-sub {
     width: 100%;
     flex-direction: row;
@@ -18,15 +18,20 @@ main {
 }
 .firstView-sub__img {
   width: 100%;
-  border-radius: 0 100px 24px 0;
-  height: 500px;
+  border-radius: 0 18.96875rem 24px 0;
+  height: 120vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 550px) {
+  .firstView-sub__img {
+    height: 70vh;
+  }
+}
+@media screen and (min-width: 1000px) {
   .firstView-sub__img {
     width: 78%;
-    height: 600px;
+    height: 85vh;
   }
 }
 .firstView-sub__title {
@@ -36,7 +41,7 @@ main {
   writing-mode: vertical-rl;
   margin-bottom: 3rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .firstView-sub__title {
     margin-left: 0rem;
     text-align: left;
@@ -57,7 +62,7 @@ main {
   margin-bottom: 3rem;
   font-family: "Zen Kaku Gothic New", sans-serif;
 }
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 550px) {
   .firstView-sub__title {
     margin-left: 4%;
   }
