@@ -93,6 +93,11 @@ img {
 main {
   padding-top: 3rem;
 }
+@media screen and (min-width: 550px) {
+  main {
+    padding-top: 8rem;
+  }
+}
 @media screen and (min-width: 1000px) {
   main {
     padding-top: 10rem;
@@ -209,16 +214,19 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
+.firstView__content--text-group {
+  margin-top: -7rem;
+}
 .firstView__content--subtext {
   display: none;
   white-space: nowrap;
 }
 .firstView__content--image {
-  height: 30rem;
-  border-radius: 0rem 12rem 1.5rem 0rem;
+  height: 120vw;
+  border-radius: 0rem 8rem 1rem 0rem;
   background: url(../images/dammy08.jpg) lightgray 50%/cover no-repeat;
-  width: 75%;
-  margin-bottom: 3.8rem;
+  width: 88%;
+  margin-bottom: 3.5rem;
 }
 .firstView__content--text {
   margin-left: auto;
@@ -240,13 +248,13 @@ button {
   margin-right: auto;
 }
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 550px) {
   .firstView__content {
     display: flex;
     justify-content: space-between;
   }
   .firstView__content--image {
-    height: 90vh;
+    height: 70vh;
     border-radius: 0rem 18.96875rem 1.5rem 0rem;
     background: url(../images/dammy08.jpg) lightgray 50%/cover no-repeat;
     width: 70%;
@@ -259,7 +267,7 @@ button {
     display: block;
   }
   .firstView__content--text-group {
-    padding-left: 4%;
+    padding-left: 7%;
     padding-right: 7%;
     margin-top: 5rem;
   }
@@ -270,7 +278,7 @@ button {
   .firstView__content--text .verticalCatch {
     display: block;
     margin-bottom: 4rem;
-    width: 100%;
+    width: 95%;
   }
   .firstView__content--text .horizontalCatch {
     display: none;
@@ -289,6 +297,7 @@ button {
 @media screen and (min-width: 1000px) {
   .firstView__content--image {
     width: 80%;
+    height: 85vh;
   }
 }
 .sub-head {
@@ -546,7 +555,7 @@ button {
   border: rgba(93, 74, 58, 0.2) solid 1px;
   width: 80%;
 }
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 550px) {
   .opening__link-pc {
     display: inline-block;
     border: rgba(93, 74, 58, 0.2) solid 1px;
@@ -719,7 +728,7 @@ button {
 }
 .event__title {
   font-family: "Zen Kaku Gothic New", sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 700;
   line-height: 2.5rem;
@@ -755,10 +764,10 @@ button {
 }
 .event__detail--copy {
   font-family: "Zen Kaku Gothic New", sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 2.4rem;
+  line-height: 2.2rem;
   /* 120% */
   color: #5d4a3a;
   margin-bottom: 1.5rem;
@@ -1016,7 +1025,7 @@ button {
      object-fit: cover;
 }
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 550px) {
   .storeInfo .imageScroll {
     margin-bottom: 3.75rem;
   }
@@ -1184,7 +1193,7 @@ button {
 }
 .about__title {
   font-family: "Zen Kaku Gothic New", sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 700;
   line-height: 2.5rem;
@@ -1203,7 +1212,7 @@ button {
 }
 .about__text {
   font-family: "BIZ UDPGothic";
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-style: normal;
   font-weight: 700;
   line-height: 3.75rem;
@@ -1262,7 +1271,7 @@ button {
 .about .image__area--top {
   margin-bottom: 3rem;
 }
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 550px) {
   .about .image__area--top {
     margin-bottom: 0;
   }
@@ -1273,7 +1282,7 @@ button {
 .about .image__area--top figure:nth-child(1) img {
   border-radius: 0 1rem 1rem 0;
 }
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 550px) {
   .about .image__area--top figure:nth-child(1) {
     width: 43%;
   }
@@ -1294,7 +1303,7 @@ button {
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 550px) {
   .about .image__area--top figure:nth-child(2) {
     width: 25%;
   }
@@ -1320,7 +1329,7 @@ button {
 .about .image__area img:nth-child(1) img {
   border-radius: 1rem;
 }
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 550px) {
   .about .image__area img:nth-child(1) {
     width: 30%;
   }
@@ -1339,7 +1348,7 @@ button {
      object-fit: cover;
   border-radius: 1rem;
 }
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 550px) {
   .about .image__area img:nth-child(2) {
     width: 30%;
     margin-top: 35%;
@@ -1459,7 +1468,7 @@ button {
 }
 .access__title {
   font-family: "Zen Kaku Gothic New", sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 700;
   line-height: 2.5rem;

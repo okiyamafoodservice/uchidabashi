@@ -128,8 +128,15 @@
 }
 .footer__link .instagramLink {
   background-color: #ff7f3e;
-  padding: 0.37rem 0.69rem;
-  border-radius: 25px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.8rem;
 }
 .footer__link .instagramLink i {
   color: #ffffff;
@@ -149,6 +156,7 @@
   }
   .footer__link {
     display: flex;
+    align-items: center;
     width: 100%;
     -moz-column-gap: 2.5rem;
          column-gap: 2.5rem;
@@ -157,6 +165,7 @@
   }
   .footer__link--list {
     font-size: 1rem;
+    margin-bottom: 1rem;
   }
 }
 /*# sourceMappingURL=footer.css.map */

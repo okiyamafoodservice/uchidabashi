@@ -9,7 +9,7 @@ $color-brown: #5d4a3a;
 $color-skyblue: #80c4e9;
 
 $breakpoints: (
-  "sm": "screen and (min-width: 430px)",
+  "sm": "screen and (min-width: 550px)",
   "md": "screen and (min-width: 1000px)",
   "lg": "screen and (min-width: 992px)",
   "xl": "screen and (min-width: 1200px)",
@@ -122,6 +122,10 @@ img {
 
 main {
   padding-top: 3rem;
+
+  @include media(sm) {
+    padding-top: 8rem;
+  }
 
   @include media(md) {
     padding-top: 10rem;
@@ -252,17 +256,21 @@ button {
     margin-bottom: 3.69rem;
     @include mx;
 
+    &--text-group {
+      margin-top: -7rem;
+    }
+
     &--subtext {
       display: none;
       white-space: nowrap;
     }
 
     &--image {
-      height: 30rem;
-      border-radius: 0rem 12rem 1.5rem 0rem;
+      height: 120vw;
+      border-radius: 0rem 8rem 1rem 0rem;
       background: url(../images/dammy08.jpg) lightgray 50% / cover no-repeat;
-      width: 75%;
-      margin-bottom: 3.8rem;
+      width: 88%;
+      margin-bottom: 3.5rem;
     }
 
     &--text {
@@ -296,7 +304,7 @@ button {
       justify-content: space-between;
 
       &--image {
-        height: 90vh;
+        height: 70vh;
         border-radius: 0rem 18.96875rem 1.5rem 0rem;
         background: url(../images/dammy08.jpg) lightgray 50% / cover no-repeat;
         width: 70%;
@@ -312,7 +320,7 @@ button {
     }
 
     &--text-group {
-      padding-left: 4%;
+      padding-left: 7%;
       padding-right: 7%;
       margin-top: 5rem;
     }
@@ -324,7 +332,7 @@ button {
       .verticalCatch {
         display: block;
         margin-bottom: 4rem;
-        width: 100%;
+        width: 95%;
       }
 
       .horizontalCatch {
@@ -352,6 +360,7 @@ button {
     &__content {
       &--image {
         width: 80%;
+        height: 85vh;
       }
     }
   }
@@ -816,7 +825,7 @@ button {
 
   &__title {
     font-family: "Zen Kaku Gothic New", sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 700;
     line-height: 2.5rem;
@@ -856,10 +865,10 @@ button {
 
     &--copy {
       font-family: "Zen Kaku Gothic New", sans-serif;
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-style: normal;
       font-weight: 500;
-      line-height: 2.4rem;
+      line-height: 2.2rem;
       /* 120% */
       color: $color-brown;
       margin-bottom: 1.5rem;
@@ -1326,7 +1335,7 @@ button {
 
   &__title {
     font-family: "Zen Kaku Gothic New", sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 700;
     line-height: 2.5rem;
@@ -1347,7 +1356,7 @@ button {
 
   &__text {
     font-family: "BIZ UDPGothic";
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-style: normal;
     font-weight: 700;
     line-height: 3.75rem;
@@ -1618,7 +1627,7 @@ button {
 
   &__title {
     font-family: "Zen Kaku Gothic New", sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 700;
     line-height: 2.5rem;
